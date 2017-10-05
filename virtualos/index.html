@@ -1,0 +1,132 @@
+<html>
+<head>
+	<title> My Resume Page </title>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/virtualos_core.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/window.style.css?k=12">
+	<link rel="stylesheet" type="text/css" href="./css/desktop.enviroment.css?k=12">
+	<link rel="stylesheet" type="text/css" href="./css/for.custom.pages.css">
+	<link rel="stylesheet" type="text/css" href="./css/resume.css">
+	<link rel="stylesheet" type="text/css" href="./css/used.windows.css?p=12">
+<!--	<link rel="stylesheet" type="text/css" href="./css/shapes.with.css.css?h=33773"> -->
+	
+<style>
+@media screen and (max-width: 800px) {
+	body{
+		min-width:800px;	
+	}
+}
+@media screen and (max-width: 900px) {
+	body{
+		min-width:900px;	
+	}
+}
+@media screen and (min-width: 900px) {
+	body{
+		min-width:1024px;	
+	}
+}
+@media screen and (max-height: 400px) {
+	body{
+		min-height:400px;	
+	}
+}
+@media screen and (max-height: 500px) {
+	body{
+		min-height:500px;	
+	}
+}
+@media screen and (max-height: 600px) {
+	body{
+		min-height:600px;	
+	}
+}
+@media screen and (min-height: 600px) {
+	body{
+		min-height:720px;	
+	}
+}
+
+body{
+	position: fixed;
+	min-width:1024px;
+	min-height:720px;
+	left:0px;
+	right:01px;
+	top:0px;
+	bottom:0px;
+}
+</style>
+	</head>
+<body>
+<div id="WorkspaceDiv">
+	<div id="DesktopDiv">
+		<div class="BackgroundDiv"></div>
+		<div class="BackgroundDiv"></div>
+		<div id="DesktopContainer"></div>
+		<div id="ProfilPicDiv">
+			<div id="ProfileEffectDiv" class="ProfileEffectClass">
+				<div id="EffectCircleDiv" style="top:-3px;left:50%;"> </div>
+				<div id="EffectCircleDiv" style="bottom:-3px;left:50%;"> </div>
+				<div id="EffectCircleDiv" style="top:50%;left:-3px;"> </div>
+				<div id="EffectCircleDiv" style="top:50%;right:-3px;"> </div>
+			</div>
+			<img src="./img/me.jpg" class="MyBubble" alt="Me">
+			<div id="MyBubbleText">
+				<span class="BBF">Name:</span> Varga Zsolt<br>
+				<span class="BBF">Nickname:</span> Shadowvzs<br>
+				<span class="BBF">Age:</span> <span id="MyCurrentAge">30</span><br>
+				<span class="BBF">Email:</span> shadowvzs@hotmail.com<br>
+				<span class="BBF">Base:</span> HTML, PHP, CSS, JS, MySQL<br>
+				<span class="BBF">Subs:</span> JQuery<br>
+				<span class="BBF">Tools:</span> Github, Ubuntu server<br>
+				<span class="BBF">Interest:</span> NodeJS or any fun<br>
+			</div>
+		</div>
+	</div>
+	<div id="TaskBar_TaskGroup_TaskList_Container">		<!-- here coming the task lists in task groups, how much button on taskbar, that much task list (ul li) --> </div>
+
+	<div id="TaskBar">
+		<table>
+		<tr><td>
+			<div class="TaskBarHighlightable" onclick="$('#TaskBar_StartMenuDiv').fadeToggle();resume.StartMenuUp=true;"><div id="TaskBar_StartIcon"></div> Start </div>
+			<span id="TaskBarSeparator"></span> 
+			<a title="Show/Hide my profile"><div class="TaskBarHighlightable" id="SM_AboutMe" onclick="$('#ProfilPicDiv').fadeToggle();" style="vertical-align:middle;display:inline-block;"><img src="./img/startmenu/mini_me.jpg" id="SM_AboutMeIcon"></div></a> 
+			<a title="Show/Hide settings"><div class="TaskBarHighlightable" id="SM_Settings" style="vertical-align:middle;display:inline-block;"><img src="./img/startmenu/settings.png" id="SM_SettingsIcon"></div></a> 
+			<a title="Sound settings"><div class="TaskBarHighlightable" id="SM_Sound" onclick='$("#VolumeControlDiv").show();resume.Sound.Visible=true;' style="vertical-align:middle;display:inline-block;"><img src="./img/startmenu/soundon.png" id="SM_SoundIcon"></div></a>
+			<a title="Full Screen mode"><div class="TaskBarHighlightable" id="SM_FullScreen" onclick="resume.ToggleFullScreen();" style="vertical-align:middle;display:inline-block;"><img src="./img/startmenu/fullscreen_1.png" id="SM_FullScreenIcon"></div></a>
+			<div id="VolumeControlDiv">
+				Volume: <span id="VolumeAmount">100%</span><br>
+				<input type="range" min="0" max="100" value="20" step="5" style="width: 100px;" onchange='resume.SetVolume($(this));' id="VolumeInputBar">
+			</div>	
+			<span id="TaskBarSeparator"></span> <span id="TaskBarArrow1" class="TaskBarHighlightable" onclick="resume.TaskScrollLeft(-100);">&#171;</span>
+		</td><td><div id="taskGroupListDiv"><div id="taskGroupListContDiv"> <!-- here put jQuery the app buttons in taskbar -->  </div></div>
+		</td><td>
+		<div id="TaskBarRightSide">
+		<span id="TaskBarArrow2" class="TaskBarHighlightable" onclick="resume.TaskScrollLeft(100);">&#187;</span>
+		<span id="TaskBarSeparator"></span>
+			<div class="TaskBarHighlightable" id="TaskTimeDate" onmouseover="$('#TimeDateTooltip').fadeIn();" onmouseleave="$('#TimeDateTooltip').fadeOut();"> 00:00</div>
+		</div>
+		</td></tr></table>
+	</div>
+	<div id="TaskBar_StartMenuDiv" onmouseenter="if (resume.StartMenuUp){resume.MouseInStartMenu=true;};" onmouseleave="if (resume.StartMenuUp){resume.MouseInStartMenu=false;};">
+		<div id="TaskBar_StartMenuHeadLineDiv"><span>Welcome on board!</span></div>
+		<div id="TaskBar_StartMenuItemListDiv">
+			<!--  here will be the item list for start menu added by jquery -->
+		</div>
+		<div id="TaskBar_StartMenuCatListDiv">
+			<!--  here will be the item category list for start menu added by jquery -->
+		</div>		
+	</div>
+	<div id="TimeDateTooltip">
+		<span id="TooltipTime"></span> <span id="TooltipTimeZone" style="font-family:arial;font-size:10px;"></span><br>
+		<span id="TooltipDate"></span><br>
+	</div>
+</div>
+<script>
+	$(document).ready(function(){
+		resume.SystemInit();
+	});
+</script>
+</body>
+</html>
