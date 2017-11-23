@@ -19,26 +19,7 @@ body, html{
 </style>
 </head>
 <body>
-<script type="module">
-  import {valami} from './lib1.js';
-
-  alert(valami);
-</script>
-<script>
-function stripSlashes(str){ 
-	//return str.replace(/\(.)/mg, "$1"); 
-}
-function addslashes(string) {
-    return string.replace(/\\/g, '\\\\').
-        replace(/\u0008/g, '\\b').
-        replace(/\t/g, '\\t').
-        replace(/\n/g, '\\n').
-        replace(/\f/g, '\\f').
-        replace(/\r/g, '\\r').
-        replace(/'/g, '\\\'').
-        replace(/"/g, '\\"');
-}
-
+<script async>
 $.fn.removeCss=function(toDelete) {
 	let props = $(this).attr('style').split(';');
 	let tmp = -1;
@@ -285,9 +266,6 @@ var windowManager={
 		$(`#${id} .${body}`).html(msg)
 	},
 	newDialog(dialogId, winBody, buttons) {
-		//alert("dialog id: "+dialogId)
-		//alert("winBody: "+winBody)
-		//alert("buttons: "+buttons)
 		let id = dialogId, themeId = 1, icons=["info", "warning", "error", "dialog"], title = icons[id] || "Unknown"
 		let icon = icons[id] ? `<img src='./img/icons/${icons[id]}.png' alt='${icons[id]}' title='${icons[id]}' class='noticeIcon unselectable'>` : ``
 		var options={
@@ -390,22 +368,7 @@ windowManager.newDialog(2, "This is a test for<br>dialog window", [["Close", "cl
 newAction[4] = [6, "newDialog",[3, "This is a new dialog window what was created from timed message window", [["Close", "close", false, false]]], true]
 timers = [[3, "changeContent", "I open a new dialog <br> window in 3 second<br>after another 3 second will be<br> removed this message", false], newAction[4], [9, "close", false, false]]			
 windowManager.newMessage("This is a timed message", timers)
-
-//alert(typeof(null)+typeof(false))
-/*
-var ttt = []
-alert(typeof ttt==="object")
-var newArr = typeof ttt==="object" ? [...ttt] : [ttt]
-alert(newArr)
-function s(id=null, g=null){
-	return id ? "2" : "3"
-}
-alert(s(...ttt))
-*/
 </script>
-<!--
-
-	-->
 
 </body>
 </html>
