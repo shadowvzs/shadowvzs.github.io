@@ -1,0 +1,279 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800');
+@import url("./common.css");
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    position: relative;
+    height:   100%;
+	/*	width:    1800px; */
+}
+body {
+    background-color: #fff;
+    font-size: 0;
+    font-weight: 400;
+	width: 100%;
+	text-align: center;
+	text-shadow: 3px 3px 10px rgba(0,0,0,0.2); 
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+	position: absolute;
+	display: block;
+	top:     0;
+	left:    0;
+	height: 448px;
+	width: 100%;
+	color: #fff;
+	background-color: #000;
+	text-shadow: 3px 3px 10px rgba(0,0,0,0.7); 
+	background: none no-repeat center center scroll; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+	
+	header .title {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		text-align: center;
+		width: 100%;
+		min-width: 150px;
+		max-width: 600px;
+		height: auto;
+		padding-bottom: 38px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+		header .title h1 {
+			font-size: 42px;
+			text-transform: uppercase;		
+			margin-top: 28px;
+			margin-bottom: 12px;
+			font-weight: 700;
+		}
+		
+		header .title p {
+			margin-top: 20px;
+			font-size: 18px;		
+			line-height: 28px;
+		}
+		
+section {
+	position:  absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display:   block;
+	max-width: 768px;
+	width:     100%;
+	top:       450px;	
+}
+	section h1 {
+		display: block;
+		margin-top: 58px;
+		font-size: 12px;
+		color: #a0a0a0;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: 200;
+		letter-spacing: 0.38px;
+	}
+	
+
+	section main, section main img, section footer, section footer div.form input, section footer div.form textarea {
+		display: block;
+		width: 100%;
+	}
+
+	section main {
+		margin-top: 50px;
+		text-align: left;
+		padding-bottom: 10px;
+	}
+	
+		section main article {
+			display: block;
+			margin-top: 20px;
+			padding: 10px 0 9px 0;
+		}
+		
+
+		section main article:last-child {
+			margin-top: 18px;
+		}
+			section main article:last-child p {
+				margin-top: 6px;
+			}	
+			
+			section main article h2 {
+				color: #343a40;	
+				font-size: 26px;
+				font-weight: 700;
+				letter-spacing: 0.9px;
+				margin:0;
+			}
+			
+			section main article p {
+				margin-top: 12px;
+				line-height: 30px;
+				color: #343a40;
+				font-size: 16px;	
+			}
+			
+			section main article img {
+				margin-top: 45px;
+			}
+
+	section footer {
+		text-align: left;
+	}		
+		section footer h3 {
+			color: #343a40;	
+			font-size: 14px;
+			font-weight: 600;
+			margin-top: 12px;
+			margin-bottom: 44px;			
+			text-transform: uppercase;	
+			padding: 30px 0;
+			border-top: 1px solid #d6d6d6;
+			border-bottom: 1px solid #d6d6d6;
+			width: 100%;
+		}
+
+		section footer div.comments {
+			display: block;
+		}
+		section footer div.comments figure {
+			position: relative;
+			display: table-row;
+			width: 100%;
+			border: 1px solid black;
+			margin: 200px 0;
+		}
+
+			section footer div.comments figure div.profile {
+				display:  table-cell;
+				vertical-align: top;
+				width: 72px;
+				padding: 0 0 0 1px;
+			}
+				section footer div.comments figure div.profile img {
+					margin-top: 10px;
+					height: 72px;
+					width: 72px;
+					border-radius: 50%;
+					border: 1px solid rgba(0, 0, 0, 0.5);
+				}
+			
+			section footer div.comments figure div.details {
+				margin-left: 90px;
+				display: table-cell;
+				padding: 6px 20px 0 26px;
+				word-wrap: break-word;
+			}
+			
+				section footer div.comments figure div.details h4 {
+					color: #343a40;	
+					font-size: 14px;
+					font-weight: 600;
+					letter-spacing: 0.3px;
+				}
+				
+				section footer div.comments figure div.details div.time {
+					position: absolute;
+					right: 20px;
+					top: 10px;
+					color: #343a40;
+					font-size: 12px;
+					font-weight: 300;
+				}	
+				
+				section footer div.comments figure div.details p {
+					margin-top: 12px;
+					line-height: 26px;
+					color: #06090b;
+					font-size: 14px;	
+				}	
+		
+		section footer input {
+			width: 100%;
+			height: 100%;
+			text-indent: 12px;
+			font-size:   14px;
+			border: 1px solid #e9ecef;
+		}
+		
+		section footer div.form {
+			margin-top: 75px;
+		}
+
+			section footer div.form h5 {
+				color: #343a40;	
+				font-size: 14px;
+				font-weight: 600;		
+				text-transform: uppercase;
+				letter-spacing: 0.2px;
+			}	
+			
+			section footer div.form textarea {
+				height: 210px;
+			}
+			
+			section footer div.form input, section footer div.form textarea {
+				border: 1px solid #d6d6d6;
+				border-radius: 4px;
+				height: 48px;
+				margin-top: 16px;
+				margin-bottom: 16px;
+			}
+		
+			section footer div.form textarea {
+				margin-top: 27px;
+				height: 209px;
+				resize: none;
+			}
+			
+			section footer div.form input[type=submit] {
+				margin-top: 52px;
+				background-color: #e0e0e0;
+				padding: 10px 10px 10px 0px;
+				text-transform: uppercase;
+				width: 197px;
+				font-weight: 600;
+				font-size: 14px;
+				letter-spacing: 0.2px;
+				cursor: pointer;
+				border: 1px solid #d6d6d6;
+				transition: 0.2s;
+			}
+			
+			section footer div.form input[type=submit]:hover {
+				background-color: #c0c0c0;
+			}
+			
+			section footer div.form input[type=submit]:active {
+				position: relative;
+				top: 1px;
+				background-color: #909090;
+			}
+			
+			
+	
+@media only screen and (max-width: 808px) {
+	/* above 768 + 40 pixel no point for padding */
+	section {
+		padding: 20px;
+	}
+}

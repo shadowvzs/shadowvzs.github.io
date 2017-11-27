@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Blog - Dashboard </title>
+        <link rel="stylesheet" href="./public/css/dashboard.css" type="text/css"/>
+		<script src="./public/js/jquery.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Task', 'Hours per Day'],
+              ['Work',     11],
+              ['Eat',      2],
+              ['Commute',  2],
+              ['Watch TV', 2],
+              ['Sleep',    7]
+            ]);
+    
+            var options = {
+              title: 'My Daily Activities',
+              titleTextStyle: {
+                  fontSize: 13,
+                  fontName:'arial'
+              },
+              legend: {textStyle: {fontSize: 13}},
+              pieHole: 0.4,
+              chartArea:{left:59,top:58, width: '230%', height: '230%'},
+            };
+    
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+          }
+        </script>        
+    </head>
+    <body>
+        <header>
+            <div class="logo">/ Smartboard</div>
+            <nav>
+                <a href="#">My Dashboard</a>
+                <a href="#" class="selected">Statistics</a>
+            </nav>
+            <div class="burger">
+                <a href="#" title="Burger">
+                    <img src="./public/img/hambi.png">
+                </a>
+            </div>
+        </header>
+        <aside>
+            <div class="container">
+                <div class="profile">
+                    <img src="./public/img/user.jpg" alt="Profile"/>
+                    <a href="#">Current user</a>
+                </div>
+                <a href="#" class="newPost">Create new</a>
+                
+                <div class="menu">
+                    <a href="#"> Dashboard</a>
+                    <a href="#">Widgets</a>
+                    <a href="#">Charts</a>
+                    <a href="#" class="selected">Tables</a>
+                    <a href="#">Alerts</a>
+                </div>
+                <div class="log-in-out">
+                    <a href="#">Login</a> / 
+                    <a href="#">Logout</a>
+                </div>  
+            </div>
+        </aside>
+        <main>
+            <div class="middle">
+                <div class="inbox">
+                    <img src="./public/img/black_bubble.png" alt="Inbox bubble"/>
+                    <p>Inbox</p>
+                    <div class="inbox_text">
+                        Want to see how your emails look in over 50+ desktop, mobile, and 
+                        webmail clients, including in plain text? Never forget to include plain text 
+                        as part of your next email campaign with Litmus Checklist.
+                    </div>
+                    <a href="#" class="read_more">Read more</a>
+                </div>
+                <figure>
+                    <img src="./public/img/new_project.jpg" alt="New Product" />
+                    <figcaption>New Product</figcaption>
+                </figure>
+                <figure>
+                    <img src="./public/img/copy_project.jpg" alt="Copy of New Product" />
+                    <figcaption>Copy of New Product</figcaption>
+                </figure>
+            </div>
+            <div class="right_side">
+                <div class="figure">
+                    <div class="frame">
+                        <img src="./public/img/white_bubble.png" alt="New Product" />
+                    </div>
+					<div class="details">
+						<h1>52</h1>
+						<p>Comments</p>
+					</div>
+                </div>
+                <div class="figure">
+                    <div class="frame">
+                        <img src="./public/img/white_eye.png" alt="Copy of New Product" />
+                    </div>
+					<div class="details">
+						<h1>26.4k</h1><br/>
+						<p>Views</p>
+					</div>
+                </div>
+                <div id="donutchart"> </div>
+            </div>            
+        </main>
+		<div class="popin-container">
+			<div class="popin">
+				<div class="close"><a href="javascript:void(0)" onclick="$('.popin-container').fadeOut();" title="Inchide">&#10005;</a></div>
+				<div class="header"></div>
+				<div class="main">
+					<h1>Categorie / by admin / 05.11.2016<a href="#" title="Editeaza articolul">Editeaza articolul</a></h1>
+				<article>
+					<h2>Un articol despre IT-isti</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu tristique odio. Donec nisl lectus, varius 
+					quis dignissim id, finibus sit amet libero. Fusce sed dignissim risus. Proin mattis luctus velit quis 
+					molestie. Quisque varius cursus ligula. Sed blandit est in mi auctor, sit amet, interdum velit tincidunt. 
+					Fusce nec erat sit amet erat fermentum egestas. Proin ipsum libero, eusimod vitae facilisis vel, effici
+					- tur sit amet tellus. Nunc nibh nulla, consequat ut quam et, ultricies bibendum nunc.
+					<br><br>
+					Ut sapien elit, condimentum a dapibus sit amet, commodo sed risus. Nulla sagittis aliquet pellen 
+					-tesque. Praesent vel arcu vitae elit fermentum rhoncus non congue mauris. Suspendisse nec 
+					commodo metus, sed volutpat mi. Curabitur interdum lobortis neque, vel mattis libero dignissim 
+					eget.
+					<br><br>
+					Sed luctus, est sit amet tempor interdum, augue elit tincidunt est, eu eleifend erat mauris in nunc. In 
+					nisi turpis, pharetra sed ligula eget, aliquet consectetur nunc. Nunc id tellus vitae leo iaculis auctor 
+					non sit amet felis. Sed aliquet lobortis ligula.
+					</p>
+				</article>
+				</div>
+			</div>
+		</div>
+		
+    </body>
+</html>
