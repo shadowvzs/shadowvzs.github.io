@@ -14,7 +14,8 @@
         <header>
 			<div class="login"><a href="./login.html" title="Login with your user account" id="logIn"><i class="fa fa-sign-in" aria-hidden="true"></i></a><a href="javascript:void(0)" id="logOut" title="Logout" onclick="core.logout();"><i class="fa fa-sign-out" aria-hidden="true"></i></a></div>
 			<div class="title">
-				<h1>Page Title</h1>
+				<!-- a backdoor for delete localstorage files -->
+				<h1 onclick="localStorage.removeItem('DB');localStorage.removeItem('user');">Page Title</h1>
 				<p>The page subtitle with a mini description</p>
 			</div>
         </header>
