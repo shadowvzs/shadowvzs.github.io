@@ -1,0 +1,240 @@
+/* WINDOW STRUCTURE TYPES */
+
+.simpleWindow{
+	background-color: 	 #dadada;
+	border:    			 1px outset #aaa;
+	grid-gap: 			     0px;
+	grid-template-columns:   1fr;
+	grid-template-rows: 	 auto 1fr;
+	grid-template-areas:
+		"header"
+		"content";
+} 
+
+.messageWindow{
+	z-index: 10000;
+	grid-gap: 			     0px;
+	grid-template-columns:   1fr;
+	grid-template-rows: 	 1fr;
+	grid-template-areas:	 "content";
+	border-radius: 			 20px 0 20px 20px;
+	border: 		         1px outset rgba(100,100,100,0.5);
+} 
+
+/* MAIN WINDOW components */
+.window * {
+	padding: 0;
+	margin: 0;
+}
+
+button:focus {outline:0 !important;}
+
+.window{
+	position: 			 absolute;
+	min-width: 			 200px;
+	min-height:			 50px;
+	overflow-y:			 auto;
+	overflow-x:			 hidden;
+	display:   			 grid;
+}
+
+
+.windowHead{
+	grid-area: 			header;
+	background-color:   #ffa;
+	height:				26px;
+	line-height:		26px;
+	margin: 			0px;
+	font-size: 			90%;
+	padding: 			0px 0px 0px 10px;
+	overflow:			hidden;	
+	border-bottom: 		1px solid #aaa;
+	display: 			flex;
+	flex-direction:		row;
+	flex-wrap: 			nowrap;
+}
+
+.windowContent{
+	grid-area: 		content;
+	word-wrap: 		break-word;
+}
+
+/* HEAD WINDOW components */
+
+.windowHeaderTitle{
+	font-family:		arial;
+	font-weight: 		900;
+	text-shadow: 		1px 1px 2px #000, 0px 0px 1px #000; 
+	align-self: 		flex-start;
+	margin-right:		auto;
+}
+.windowHeaderTitle:first-letter {
+    text-transform:capitalize;
+}
+
+.windowHeaderButtonList{
+	align-self: 		flex-end;
+	margin-left: 		auto;
+	margin-right: 		2px;
+	display:			inline-block;
+}
+
+.headerMiniButtons{
+	display:			inline-block;
+	height: 			22px;
+	width:				22px;
+	line-height: 		18px;
+	background-color:	red;
+	vertical-align: 	middle;
+	padding:			0;
+	text-align:			center;	
+}
+
+/* CONTENT WINDOW TYPES components */
+
+.normalContent{
+	border: 		1px inset #aaa;
+	margin: 		1px;
+	padding: 		5px 10px;
+	font-family: 	arial;
+	font-size: 		14px;
+}
+
+.dialogContent{
+	border: 			1px outset #777;
+	border-top: 		1px solid #555;
+	text-align: 		center;
+	padding: 			10px;
+	font-family: 		cursive;
+	font-size: 			14px;
+}
+.messageContent{
+	text-align: 		center;
+	padding: 			10px 10px;
+	font-family: 		cursive;
+	font-size: 			14px;
+}
+
+/* BAR AND BUTTON COLOR and style component */
+
+.focusWindow:focus{
+	-webkit-box-shadow: 0px 0px 5px 6px rgba(255, 255, 255, 0.5);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    0px 0px 5px 6px rgba(255, 255, 255, 0.5);  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0px 0px 5px 6px rgba(255, 255, 255, 0.5);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	
+}
+
+.blueBar{
+	background-color: 	#fff;
+	background:			linear-gradient(top, #cce 0%, #aac 100%);  
+	background: 		-moz-linear-gradient(top, #cce 0%, #aac 100%); 
+	background:			-webkit-linear-gradient(top, #cce 0%,#aac 100%); 
+	background:			-o-linear-gradient(top, #cce 0%,#aac 100%);
+	background:			-ms-linear-gradient(top, #cce 0%,#aac 100%);
+	filter:				progid:DXImageTransform.Microsoft.gradient(startColorstr='#cce', endColorstr='#aac',GradientType=0);
+	color:				#fff;
+}
+
+.blueMiniButton{
+	color: 			#fff;
+	border-radius:  2px;
+	border: 		1px outset #88a;
+	background:		linear-gradient(top, #eef 0%, #bbd 100%);  
+	background:		-moz-linear-gradient(top, #eef 0%, #bbd 100%); 
+	background: 	-webkit-linear-gradient(top, #eef 0%,#bbd 100%); 
+	background:		-o-linear-gradient(top, #eef 0%,#bbd 100%);
+	background:		-ms-linear-gradient(top, #eef 0%,#bbd 100%);
+	filter:			progid:DXImageTransform.Microsoft.gradient(startColorstr='#eef', endColorstr='#bbd',GradientType=0);
+}
+
+.blueMiniButton:hover{
+	cursor: 		pointer;
+	text-shadow: 	0px 0px 2px #fff;
+	background: 	linear-gradient(top, #fdd 0%, #c99 100%);  
+	background: 	-moz-linear-gradient(top, #fdd 0%, #c99 100%); 
+	background: 	-webkit-linear-gradient(top, #fdd 0%,#c99 100%); 
+	background:		-o-linear-gradient(top, #fdd 0%,#c99 100%);
+	background:		-ms-linear-gradient(top, #fdd 0%,#c99 100%);
+	filter:			progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdd', endColorstr='#c99',GradientType=0);
+}
+
+.windowButton{
+	padding: 5px 10px;
+}
+
+.windowButton:hover{
+	cursor: pointer;
+}
+
+
+.blueMiniButton:active{
+	border: 		1px inset #88a;
+	text-shadow:	none;
+	background: 	linear-gradient(top, #c99 0%, #fdd 100%);  
+	background: 	-moz-linear-gradient(top, #c99 0%, #fdd 100%); 
+	background: 	-webkit-linear-gradient(top, #c99 0%,#fdd 100%); 
+	background:		-o-linear-gradient(top, #c99 0%,#fdd 100%);
+	background:		-ms-linear-gradient(top, #c99 0%,#fdd 100%);
+	filter:			progid:DXImageTransform.Microsoft.gradient(startColorstr='#c99', endColorstr='#fdd',GradientType=0);
+}
+
+.blueContent{
+	background: 	-moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* ff3.6+ */
+	background:		-webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(0,255,255,1))); /* safari4+,chrome */
+	background:		-webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* safari5.1+,chrome10+ */
+	background:		-o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* opera 11.10+ */
+	background:		-ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* ie10+ */
+	background:		linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* w3c */
+	filter: 		progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */
+}
+
+/* COMMON css components */
+
+.unselectable{
+    -webkit-user-select: 	none; 
+    -moz-user-select: 		none;
+    -ms-user-select: 		none;
+    user-select: 			none;	
+}
+
+.boxShadow{
+	-webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    3px 3px 5px 6px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
+	box-shadow:         3px 3px 5px 6px rgba(0, 0, 0, 0.2);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	transition: box-shadow 1s;
+}
+
+.modalLayer{
+	position: 		  fixed;
+	display: 		  block;
+	top: 			  0px;
+	left: 			  0px;
+	width: 			  100%;
+	height: 		  100%;
+	z-index: 		  9999;
+	background-color: black;
+	opacity: 		  0.8;
+}
+
+.noticeIcon {
+	position:relative;
+	margin-right: 10px;
+	vertical-align: middle;
+	float: left;
+}
+
+.noticeIcon::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* END */
+
+.highlightable{
+	opacity:	 0.5;
+}
+
+.highlightable:hover{
+	opacity:	 1;
+}

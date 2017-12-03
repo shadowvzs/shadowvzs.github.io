@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url("./common.css");
+@import url("./reset.css");
 
- html {
-    position: relative;
-    height:   100%;
+html {
+   position: relative;
+   height:   100%;
 	/*	width:    1800px; */
- }
+}
 body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -86,12 +87,14 @@ section {
 }
 
 	section main {
-		display:   block;
+		position: relative;
 		grid-area: gMain;
 		font-size: 0;
 		padding-left:  15px;
 		padding-right: 85px;
 		padding-top:   21px;
+		display: flex;
+		flex-direction: column-reverse;
 	}
 
 		section main article {
@@ -101,19 +104,28 @@ section {
 			margin-top: 0px;
 			margin-bottom:  65px;
 			text-align:     left;
+			font-size: 14px;
+			line-height: 26px;		
+			color: #000;			
 		}
 		
-		section main article .hidden {
-			display: none;
+		section main article.reset {
+			margin:		0 auto; 
+			position: 	absolute; 
+			top:		0;
+			left:		0;
+			right:		0;
+			bottom: 	auto;
+			text-align: center;
 		}
 		
-		section main article:last-child	{
-			margin-bottom:  0;
-		}
-			
 			section main article .imgParent {
 				width:         100%;
-				margin-bottom: 29px;
+			}
+			
+			section main article img{
+				width: 100%;
+				margin: 1em 0;
 			}
 			
 			section main article .imgParent img {
@@ -149,18 +161,12 @@ section {
 			section main article a:hover {
 				text-shadow: 4px 4px 10px rgba(50,70,200, 0.8);
 			}	
-			section main article p {
-				display: block;
-				margin-bottom: 6px;
-				font-size: 14px;
-				line-height: 26px;
-			}
 
 			section main article a {
 				display: inline-block;
 				color: #1c7cd6;
 				margin-bottom: 0;
-				margin-right: 20px;
+				margin: 0 20px;
 				font-size: 14px;
 				font-weight: bold;
 			}
@@ -205,6 +211,7 @@ section aside {
 				height: 100%;
 				text-indent: 12px;
 				font-size:   14px;
+				padding-right: 40px;
 				border: 1px solid #e9ecef;
 			}
 		
@@ -217,6 +224,10 @@ section aside {
 				top: 12px;
 				font-size: 18px;
 				right: 18px;
+			}
+			
+			section aside .search .search_box i {
+				cursor: pointer;
 			}
 		
 		section aside .search hr{
@@ -276,4 +287,27 @@ section aside {
 	section aside .search .search_box{
 		max-width: 100%;
 	}
+}
+
+span.hidden {
+	display: none;
+	border-color: #e9ecef;
+}
+
+#hidden{
+	padding: 0 50px;
+}
+
+h2 {
+	margin-top: 1em;
+	margin-bottom: 1em;	
+}
+
+main article p span.hidden{
+	margin: 400px;
+	background-color:blue;
+}
+
+h2.reset{
+	margin:0;
 }

@@ -3,65 +3,43 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Blog - Article </title>
-        <link rel="stylesheet" href="./public/css/article.css" type="text/css"/>   
+        <link rel="stylesheet" href="./public/css/article.css" type="text/css"/> 
+		<link rel="stylesheet" href="./public/css/window.style.css" type="text/css"/> 
 		<script src="./public/js/jquery.js"></script>
 		<script src="./public/js/common.js"></script>
 		<script src="./public/js/article.js"></script>
+		<script src="./public/js/windows.js"/></script>	
 		<script>
 		</script>
     </head>
     <body>
         <header class="background">
 			<div class="login"><a href="./login.html" title="Login with your user account" id="logIn"><i class="fa fa-sign-in" aria-hidden="true"></i></a><a href="javascript:void(0)" id="logOut" title="Logout" onclick="core.logout();"><i class="fa fa-sign-out" aria-hidden="true"></i></a></div>
-			<!--  <i class="fa fa-user" aria-hidden="true"></i>
--->
 			<div class="title">
 				<h1>articol despre zebre</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod finibus arcu eget efficitur.s</p>
 			</div>
         </header>
 		<section>
-			<h1>articole despre animale / posted by: admin / 05.11.2016</h1>
+			<h1><span class="art_title">Categorie</span> / by <span class="art_author">admin</span> / <span class="art_time">05.11.2016</span></h1>
 			<main>
-				<!--
-				<article>
-					<h2>Subtitlu si detalii</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod finibus arcu eget efficitur. Morbi commodo ut risus sed sollicitudin. Etiam non nibh eget diam tristique hendrerit id eu mauris. Maecenas egestas eros id vestibulum pretium. 
-					<br><br>Nullam consectetur retrum erat quis facilisis. Maecenas ligula ex, ultrices sed augue et, placerat venenatis lectus. In aliquet in diam et aliquam. Pellentesque vestibulum libero vitae tincidunt rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In vitae dictum libero, ac cursus arcu. Sed ac nulla metus. Cras dictum vulputate congue. Cras erat sem, interdum eget ullamcorper a, egestas nec erat. Nullam gravida ligula nec leo pulvinar, id mattis ante tristique.
-				</article>
-				<article>
-					<h2>Subtitlu si detalii nr. 2</h2>
-					<p>Duis lorem nunc, interdum convallis odio sit amet, egestas feugiat ex. Proin porttitor, odio iaculis varius consequat, turpis lorem pellentesque ligula, quis ornare erat justo in enim. Nullam ut pharetra felis. Mauris id pellentesque justo, et dapibus lacus. Praesent sapien libero, ullamcorper rutrum congue in. maximus eget tellus. Mauris vitae urna ac mauris varius tincidunt. <img src="../public/img/article/article_2.jpg" alt="articlo 2"></p>
-				</article>
-				<article>
-					<h2>Subtitlu si detalii nr. 3</h2>
-					<p>Morbi finibus vehicula lacus. Vestibulum a felis quam. Sed ac ipsum fermentum, mollis odio sed, rutrum ante. Pellentesque faucibus, sapien sit amet porttitor ultricies, ligula massa venenatis ex, quis ultrices orci erat imperdiet leo. Sed pharetra in purus eu accumsan. Quisque accumsan iaculis ex vel laculis.<br><br>Praesent fermentum nisl eleifend, hendrerit magna vel, eleifend metus. Phasellus eget eros tellus.
-				</article>	
-				-->
+				<!-- article will be inserted to here -->
 			</main>			
 			<footer>
 				<h3>0 Comment</h3>
 				<div class="comments">
-				<!--
-					<figure>
-						<div class="profile">
-							<img src="./public/img/profile.png" alt="profile">
-						</div>
-						<div class="details">
-							<h4>Ionut Bogdan</h4>
-							<p>Eu cred ca zebrele...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod finibus arcu eget efficitur. Morbi commodo ut risus sed sollicitudin. Etiam non nibh eget diam tristique hendrerit id eu mauris. Morbi commodo ut risus sed sollicitudin.</p>
-						</div>
-					</figure>
-					-->
+				<!-- comments will be inserted into this div -->
 				</div>
 				<div class="form">
-					<h5>adauga comentariu</h5>
+					<h5>Add a new comment</h5>
 					<textarea id="userMessage" minlength="3" required> </textarea>
-					<h5>nume prenume</h5>
-					<input type="text" value="" id="userName" placeholder="" minlength="3" title="Please enter your name" required>
-					<h5>email</h5>
-					<input type="text" value="" id="userEmail" minlength="7" placeholder=""  pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]{2,15}@[a-zA-Z0-9-]{2,15}.[a-z]{2,3}" title="Please enter a correct email address. e.g. josh@gmail.com" required>
-					<input type="submit" value=" posteaza cometariu" onclick="core.addNewComment();">
+					<span class="guest-input">
+						<h5>Your name</h5>
+						<input type="text" value="" id="userName" placeholder="" minlength="3" title="Please enter your name" required>
+						<h5>email</h5>
+						<input type="text" value="" id="userEmail" minlength="7" placeholder=""  pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]{2,15}@[a-zA-Z0-9-]{2,15}.[a-z]{2,3}" title="Please enter a correct email address. e.g. josh@gmail.com" required>
+					</span>
+					<input type="submit" value=" post " onclick="core.addNewComment();">
 				</div>
 			</footer>
 		<section>

@@ -3,53 +3,11 @@
     <head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Blog - Login in </title>
-        <link rel="stylesheet" href="./public/css/sign.css" type="text/css"/>  
+        <link rel="stylesheet" href="./public/css/sign.css" type="text/css"/> 
+		<link rel="stylesheet" href="./public/css/window.style.css" type="text/css"/> 
 		<script src="./public/js/jquery.js"></script>
-		<script>	
-		//localStorage.removeItem("DB");
-
-			var users, db;			
-			var core = {
-				getDate (timestamp = "0"){
-					let t = new Date(parseInt(timestamp, 10)*1000);
-					return `${t.getFullYear()}. ${(t.getMonth()+1).toString().padStart(2, "0")}. 
-						${t.getDate().toString().padStart(2, "0")} 						
-						${t.getHours().toString().padStart(2, "0")}:
-						${t.getMinutes().toString().padStart(2, "0")}:
-						${t.getSeconds().toString().padStart(2, "0")}`;
-				},	
-				loadDatabase(Database) {
-					db = Database;
-					users = db.users;
-				}, 
-				userAuth(id, obj, username, password){
-					if ((obj.username != username)||(obj.password != password)) return;
-					alert("You logged in with success");
-					localStorage.user = `{"${id}":${JSON.stringify(users[id])}}`;
-					location.href = "./index.html";
-				},
-				login(){
-					let inputs = [$("#userName"),$("#userPass")], username = inputs[0].val().trim(), password = inputs[1].val().trim();
-					Object.entries(users).forEach(
-						([key, value]) => core.userAuth(key, value, username, password)
-					);	
-					alert("Wrong username or password...")
-					return false;
-				},
-				reg(){
-				
-				}
-			}	
-			
-			$(document).ready( () => {
-				if (localStorage.user){
-					location.href = "./index.html";
-				}else{
-					localStorage.DB ? core.loadDatabase(JSON.parse(localStorage.DB)) : $.getJSON("./database/db.json", result => {core.loadDatabase(result)})
-				}
-			});	
-		
-		</script>
+		<script src="./public/js/sign_inout.js"></script>
+		<script src="./public/js/windows.js"/></script>	
 	</head>
     <body>
 		<section>
@@ -57,7 +15,7 @@
 				<h1 class="login">Log in</h1>
 				<input class="login" id="userName" type="text" placeholder="Username" autofocus="autofocus" pattern="[a-zA-Z]{3,25}[0-9]{0,4}" title="Username should only contain letters or/and numbers . e.g. John" required>
 				<input class="login" id="userPass" type="password" placeholder="Password" pattern="[a-zA-Z0-9]{6,25}" title="Password should only letters or/and numbers and minimum 6 character" required>
-				<input class="login" type="submit" title="Send data to server" value="Sign in" onclick="core.login();">
+				<button class="sign" onclick="core.login();"> Sign in</button>
 				<a href="./reg.html" title="Create a new account">Sign up</a>
 				<a href="#" class="disabled">Forget password?</a>
 			</div>
