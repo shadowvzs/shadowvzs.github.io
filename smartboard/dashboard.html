@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Blog - Dashboard </title>
+        <link rel="stylesheet" href="./public/css/dashboard.css" type="text/css"/>
+		<link rel="stylesheet" href="./public/css/window.style.css" type="text/css"/> 
+  		<script src="./public/js/jquery.js"></script>
+		<script src="./public/js/common.js"></script>
+		<script src="./public/js/dashboard.js"></script>
+		<script src="./public/js/windows.js"/></script>	
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+		google.charts.load("current", {packages:["corechart"]});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+			let view = Math.random()*1000000, messages=Object.keys(virtualDB.messages).length, comments=Object.keys(virtualDB.comments).length, articles=Object.keys(virtualDB.articles).length, users = Object.keys(virtualDB.users).length, units = ["", "k", "m"];
+			let unit = ~~(Math.log(view)/Math.log(1000)), viewStr = ~~(view/Math.pow(1000,unit))+units[unit];
+			unit = ~~(Math.log(comments)/Math.log(1000)); let commentsStr =  ~~(comments/Math.pow(1000,unit))+units[unit]
+			let data = google.visualization.arrayToDataTable([
+			  ['Database', 'Data'],
+			  ['Article',  articles],
+			  ['Comment',  comments],
+			  ['Messages', messages],
+			  ['Users',  users]
+			]);
+
+			let options = {
+			  title: 'Data in Database',
+			  titleTextStyle: {
+				  fontSize: 13,
+				  fontName:'arial'
+			  },
+			  legend: {textStyle: {fontSize: 13}},
+			  pieHole: 0.4,
+			  chartArea:{left:59,top:58, width: '230%', height: '230%'},
+			};
+
+			let chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+			chart.draw(data, options);
+			
+			$("main .right_side .figure .details h1.comments").html(commentsStr);
+			$("main .right_side .figure .details h1.views").html(viewStr);
+		
+		}
+        </script>  
+
+		
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="./index.html" title="go to Home page">/ Smartboard</a></div>
+            <nav>
+			<!--
+                <a href="#">My Dashboard</a>
+                <a href="#" class="selected">Statistics</a>
+			-->
+            </nav>
+            <div class="burger">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+ 				<span></span>
+				<span id="burger_menu"></span>					
+            </div>
+		
+        </header>
+        <aside>
+            <div class="container">
+                <div class="profile">
+                    <img src="./public/img/avatar/guest.png" class="avatar" alt="Profile" onerror="this.src='./public/img/avatar/guest.png';" />
+                    <a href="javascript:void(0)" class="username" onclick="core.userInformation()">Guest user</a>
+                </div>
+                <a href="javascript:void(0)" class="newPost" onclick="core.readArticle('');">Create new</a>
+                
+                <div class="menu">
+				<!-- i inser here the menu with javascript -->
+                </div>
+                <div class="log-in-out">
+                    <a href="./login.html" class="logIn">Login</a><a href="javascript:void(0)" onclick="core.logout();" class="logOut">Logout</a>
+                </div>  
+            </div>
+        </aside>
+        <main>
+            <div class="middle">
+                <div class="inbox">
+                    <div class="inbox-header"><img src="./public/img/black_bubble.png" alt="Inbox bubble"/> <h1>Inbox</h1></div>
+                    <div class="inbox_text">
+                        Want to see how your emails look in over 50+ desktop, mobile, and 
+                        webmail clients, including in plain text? Never forget to include plain text 
+                        as part of your next email campaign with Litmus Checklist.
+						
+					</div>
+                    <a href="javascript:void(0);" onclick="core.toggleInbox();" class="read_more">Show more</a>
+                </div>
+            </div>
+			
+            <div class="right_side">
+                <div class="figure">
+                    <div class="frame">
+                        <img src="./public/img/white_bubble.png" alt="New Product" />
+                    </div>
+					<div class="details">
+						<h1 class="comments">0</h1>
+						<p>Comments</p>
+					</div>
+                </div>
+                <div class="figure">
+                    <div class="frame">
+                        <img src="./public/img/white_eye.png" alt="Copy of New Product" />
+                    </div>
+					<div class="details">
+						<h1 class="views">0</h1><br/>
+						<p>Views</p>
+					</div>
+                </div>
+                <div id="donutchart"> </div>
+            </div>            
+        </main>
+		<div class="popin-container">
+			<div class="popin">
+				<div class="close"><a href="javascript:void(0)" title="Close" onclick="core.closeArticleWindow();">&#10005;</a></div>
+				<div class="header"><div class="title"></div></div>
+				<div class="main readArticle">
+
+					<h1><span class="art_title">Categorie</span> / by <span class="art_author">admin</span> / <span class="art_time">05.11.2016</span><a href="javascript:void(0)" title="Edit article" onclick="core.switchArticle();">Edit article</a></h1>
+					<article style="max-width: 768px; overflow: hidden;">
+					
+					</article>
+				</div>
+				<div class="main editArticle">
+					<h1><span class="art_title">Categorie</span> / by <span class="art_author">admin</span> / <span class="art_time">05.11.2016</span><button onclick="core.saveArticle();"> Save </button></h1>
+					<article>
+						<input type="text" class="art_inp_title" value="" placeholder="Article title">
+						<input type="text" class="art_inp_desc" value="" placeholder="Article description">
+						<textarea placeholder="enter a long text here; if you want write title use h2 tags ..."></textarea>
+					</article>
+				</div>
+			</div>
+		</div>
+		
+    </body>
+</html>

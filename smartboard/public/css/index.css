@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("./common.css");
+@import url("./reset.css");
+
+html {
+   position: relative;
+   height:   100%;
+	/*	width:    1800px; */
+}
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0;
+    font-weight: 400;
+	width: 100%;
+	text-align: center;
+	text-shadow: 3px 3px 5px rgba(0,0,0,0.3); 
+}
+
+a {
+    text-decoration: none;
+	outline: none;
+}
+
+header {
+	position: absolute;
+	display: block;
+	top:     0;
+	left:    0;
+	height: 448px;
+	width: 100%;
+	color: #fff;
+	background-color: #000;
+	background: url(../img/cover.jpg) no-repeat center center scroll; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+	header .title {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		text-align: center;
+		width: 100%;
+		min-width: 150px;
+		max-width: 600px;
+		height: auto;
+		padding-bottom: 38px;
+		padding-left: 50px;
+		padding-right: 50px;
+		margin-left: 15px;
+	}
+
+		header .title h1 {
+			font-size: 42px;
+			text-transform: uppercase;		
+			margin-top: 24px;
+			margin-bottom: 15px;
+			font-weight: 700;
+		}
+		
+		header .title p {
+			margin-top: 12px;
+			font-size: 18px;		
+			line-height: 28px;
+		}
+		
+section {
+	position: absolute;
+	top:      485px;
+	width:    100%;
+	left: 50%;
+	transform: translate(-50%);
+	max-width:  1200px;
+	min-height: 100%;
+	display:    grid;
+	font-size:  0;
+	color: #343a40;
+    grid-column-gap:   0px;
+	grid-template-columns: 2fr  1fr;
+	grid-template-rows:    1fr;
+	grid-template-areas:   "gMain gSearch";
+}
+
+	section main {
+		position: relative;
+		grid-area: gMain;
+		font-size: 0;
+		padding-left:  15px;
+		padding-right: 85px;
+		padding-top:   21px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+		section main article {
+			display: block;
+			padding: 0px;
+			padding-bottom: 25px;
+			margin-top: 0px;
+			margin-bottom:  65px;
+			text-align:     left;
+			font-size: 14px;
+			line-height: 26px;		
+			color: #000;			
+		}
+		
+		section main article.reset {
+			margin:		0 auto; 
+			position: 	absolute; 
+			top:		0;
+			left:		0;
+			right:		0;
+			bottom: 	auto;
+			text-align: center;
+		}
+		
+			section main article .imgParent {
+				width:         100%;
+			}
+			
+			section main article img{
+				width: 100%;
+				margin: 1em 0;
+			}
+			
+			section main article .imgParent img {
+				position: relative;
+				display: block;
+				width: 100%;
+				box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+			}
+			
+			section main article .imgParent img:hover {
+				box-shadow: 0 0 25px rgba(0, 0, 100, 0.5);
+			}
+			
+			section main article h1 {
+				display: block;
+				margin-bottom: 20px;
+				font-size: 26px;
+				letter-spacing: 1px;
+			}
+			
+			section main article a h1 {
+				display: block;
+				margin-bottom: 20px;
+				font-size: 26px;
+				letter-spacing: 1px;
+				color: #000;
+				text-shadow: 4px 4px 10px rgba(0,0,0, 0.8);
+			}
+			section main article a h1:hover {
+				text-shadow: 4px 4px 10px rgba(0,0,0, 0.8), 0px 0px 10px rgba(50,70,200, 0.8);
+			}
+			
+			section main article a:hover {
+				text-shadow: 4px 4px 10px rgba(50,70,200, 0.8);
+			}	
+
+			section main article a {
+				display: inline-block;
+				color: #1c7cd6;
+				margin-bottom: 0;
+				margin: 0 20px;
+				font-size: 14px;
+				font-weight: bold;
+			}
+
+section aside {
+	grid-area: gSearch;
+	font-size: 0;
+	padding-left: 13px;
+	padding-right: 49px;
+	padding-top: 10px;
+	margin-left: 0;
+	text-align: left;
+}		
+
+	section aside .search {
+		margin-top: 2px;
+		text-align: left;
+	}
+	
+		section aside .search h1 {
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-top:    7px;
+			margin-bottom: 18px;
+			margin-left: 0px;
+			color: #343a40;
+		}
+		
+		section aside .search .search_box {
+			position:  relative;
+			display:   block;
+			min-width: 200px;
+			width:     100%;
+			max-width: 340px;
+			height:    44px;
+			margin-bottom: 46px;
+			color:         #868e96;
+		}
+	
+			section aside .search .search_box input {
+				width: 100%;
+				height: 100%;
+				text-indent: 12px;
+				font-size:   14px;
+				padding-right: 40px;
+				border: 1px solid #e9ecef;
+			}
+		
+			section aside .search .search_box input:focus {
+				border: 1px solid #c9cccf;
+			}
+		
+			section aside .search .search_box i {
+				position: absolute;
+				top: 12px;
+				font-size: 18px;
+				right: 18px;
+			}
+			
+			section aside .search .search_box i {
+				cursor: pointer;
+			}
+		
+		section aside .search hr{
+			display: block;
+			font-size:0;
+			margin-top: 30px;
+			border-color: #e9ecef;
+		}
+		
+		section aside .search p {
+			font-size: 14px;
+			color:     #868e96;
+			margin-top:     20px;
+			line-height:    26px;
+		}			
+
+@media only screen and (max-width: 1440px) {
+	section main {
+		padding-right: 40px;
+	}	
+}
+	
+@media only screen and (max-width: 768px) {
+	header .title{
+		padding: 0;
+		margin: 0;
+	}
+	
+		header .title h1{
+			margin-top: 0;
+		}
+
+	section {
+		top:        451px;
+		max-width:  768px;
+		overflow: hidden;
+		grid-template-columns:  1fr;
+		grid-template-rows:     auto 1fr;
+		grid-template-areas:    "gSearch" 
+								"gMain";
+	}
+	
+	section aside, section main{
+		padding: 50px 20px 50px 20px;
+		margin:  0;
+		width:   100%;
+	}
+
+	section aside .search {
+		margin:    0 auto;
+		min-width: 200px;
+		max-width: 600px;
+		width:     100%;	
+		padding: 0 20px;
+	}
+	
+	section aside .search .search_box{
+		max-width: 100%;
+	}
+}
+
+span.hidden {
+	display: none;
+	border-color: #e9ecef;
+}
+
+#hidden{
+	padding: 0 50px;
+}
+
+h2 {
+	margin-top: 1em;
+	margin-bottom: 1em;	
+}
+
+main article p span.hidden{
+	margin: 400px;
+	background-color:blue;
+}
+
+h2.reset{
+	margin:0;
+}

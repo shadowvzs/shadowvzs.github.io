@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("./common.css");
+
+*{
+    box-sizing: border-box;
+}
+
+body,html {
+    position:relative;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+	outline: 0;
+	cursor: pointer;
+}		
+
+section{
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: 293px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding: 50px 0 50px 0;
+}
+
+	section .form h1 {
+		font-size: 28px;
+		letter-spacing: 0.7px;
+		text-align: center;
+		font-weight: 100;
+		display: block;
+	}
+	
+	section .form input {
+		width: 		 100%;
+		height: 	 45px;
+		line-height: 45px;
+		font-size:   14px;
+		border-radius:  4px;
+		border: 1px solid #d2d3d5;
+		text-indent:    14px;
+		display:        block;
+		letter-spacing: 0.8px;
+	}	
+	
+	section .form input:focus {
+		border: 1px solid #374e60;
+	}
+	
+	section .form input[type=email].reg {
+		margin-bottom:  27px;
+	}
+	
+	section .form input:invalid{
+		/* border: 1px solid #ff0000; */
+	}
+	
+	section .form h1.reg {
+		margin-bottom: 40px;
+	}
+	
+	section .form input.reg {
+		margin-bottom:  8px;		
+	}
+	
+	section .form h1.login {
+		margin-bottom: 50px;
+	}	
+	section .form input.login {
+		margin-bottom:  20px;
+	}	
+
+	section .form button.sign:hover {
+		background-color: #286090;
+	}
+
+	section .form button.sign:active {
+		background-color: #1f4c73;
+	}
+	
+	section .form button.sign{
+		text-indent:    0;
+		width:   100%;
+		height:  45px;
+		line-height:   45px;
+		font-size:     14px;
+		border-radius: 4px;	
+		background-color: #364fc6;
+		color: #fff;
+		border: none;
+		font-weight: 600;
+		letter-spacing: 0.3px;
+		cursor: pointer;
+		margin: 0;		
+		margin-top: 45px;
+		margin-bottom: 45px;		
+	}
+
+	section .form a {
+		font-size:  13px;
+		color: 		#354fc6;
+		border-bottom: 1px solid #a8b3e1;
+		margin: 0 7px;
+	}
+
+	section .form a.disabled{
+		color: 		#808487;
+		border-bottom: 1px solid #c3c7ca;		
+	}

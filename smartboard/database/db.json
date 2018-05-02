@@ -1,0 +1,115 @@
+{
+	"base" : {
+		"title" : "Wild Life",
+		"subtitle" : "Welcome on wild life blog, we wish you a happy surfing, reading on our site",
+		"welcomeMessage" : ["id_1000"],
+		"color" : ["#000","#00f","#f00"]
+	},
+	"articles" : {
+		"id_1236" : {
+			"author" : "id_5687",
+			"title" : "The playful seal",
+			"time" : "1511640489",
+			"short_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod finibus arcu eget efficitur. Morbi commodo ut risus sed sollicitudin. Etiam non nibh eget diam tristique hendrerit id eu mauris.",
+			"full_text" : "<h2>Lorem ipsum</h2> dolor sit amet, consectetur adipiscing elit. Ut eu tristique odio. Donec nisl lectus, varius quis dignissim id, finibus sit amet libero. Fusce sed dignissim risus. Proin mattis luctus velit quis molestie. Quisque varius cursus ligula. Sed blandit est in mi auctor, sit amet, interdum velit tincidunt. Fusce nec erat sit amet erat fermentum egestas. Proin ipsum libero, eusimod vitae facilisis vel, effici - tur sit amet tellus. Nunc nibh nulla, consequat ut quam et, ultricies bibendum nunc. <br><br>Ut sapien elit, condimentum a dapibus sit amet, commodo sed risus. Nulla sagittis aliquet pellen -tesque. Praesent vel arcu vitae elit fermentum rhoncus non congue mauris. Suspendisse nec commodo metus, sed volutpat mi. Curabitur interdum lobortis neque, vel mattis libero dignissim eget. <br><br>Sed luctus, est sit amet tempor interdum, augue elit tincidunt est, eu eleifend erat mauris in nunc. In nisi turpis, pharetra sed ligula eget, aliquet consectetur nunc. Nunc id tellus vitae leo iaculis auctor non sit amet felis. Sed aliquet lobortis ligula.",
+			"comments" : []
+		},
+		"id_1237" : {
+			"author" : "id_5687",
+			"title" : "The tall giraffe",
+			"time" : "1510040489",
+			"short_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod finibus arcu eget efficitur. Morbi commodo ut risus sed sollicitudin. Etiam non nibh eget diam tristique hendrerit id eu mauris.",
+			"full_text" : "<h2>Lorem ipsum</h2> dolor sit amet, consectetur adipiscing elit. Ut eu tristique odio. Donec nisl lectus, varius quis dignissim id, finibus sit amet libero. Fusce sed dignissim risus. Proin mattis luctus velit quis molestie. Quisque varius cursus ligula. Sed blandit est in mi auctor, sit amet, interdum velit tincidunt. Fusce nec erat sit amet erat fermentum egestas. Proin ipsum libero, eusimod vitae facilisis vel, effici - tur sit amet tellus. Nunc nibh nulla, consequat ut quam et, ultricies bibendum nunc. <br><br>Ut sapien elit, condimentum a dapibus sit amet, commodo sed risus. Nulla sagittis aliquet pellen -tesque. Praesent vel arcu vitae elit fermentum rhoncus non congue mauris. Suspendisse nec commodo metus, sed volutpat mi. Curabitur interdum lobortis neque, vel mattis libero dignissim eget. <br><br>Sed luctus, est sit amet tempor interdum, augue elit tincidunt est, eu eleifend erat mauris in nunc. In nisi turpis, pharetra sed ligula eget, aliquet consectetur nunc. Nunc id tellus vitae leo iaculis auctor non sit amet felis. Sed aliquet lobortis ligula.",
+			"comments" : []
+		},		
+		"id_1238" : {
+			"author" : "id_5687",
+			"title" : "The wild zebra",
+			"time" : "1501640489",
+			"short_text" : "Black & white stripes, four legg, who is he? The unique stripes of zebras make them one of the animals most familiar to people.",
+			"full_text" : "<h2>Subtitlu si detalii</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod finibus arcu eget efficitur. Morbi commodo ut risus sed sollicitudin. Etiam non nibh eget diam tristique hendrerit id eu mauris. Maecenas egestas eros id vestibulum pretium. Nullam consectetur retrum erat quis facilisis. Maecenas ligula ex, ultrices sed augue et, placerat venenatis lectus. In aliquet in diam et aliquam. Pellentesque vestibulum libero vitae tincidunt rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In vitae dictum libero, ac cursus arcu. Sed ac nulla metus. Cras dictum vulputate congue. Cras erat sem, interdum eget ullamcorper a, egestas nec erat. Nullam gravida ligula nec leo pulvinar, id mattis ante tristique.  <h2>Subtitlu si detalii nr. 2</h2>Duis lorem nunc, interdum convallis odio sit amet, egestas feugiat ex. Proin porttitor, odio iaculis varius consequat, turpis lorem pellentesque ligula, quis ornare erat justo in enim. Nullam ut pharetra felis. Mauris id pellentesque justo, et dapibus lacus. Praesent sapien libero, ullamcorper rutrum congue in. maximus eget tellus. Mauris vitae urna ac mauris varius tincidunt.  <img src='./public/img/article/article_2.jpg' alt='article 2'> <h2>Subtitlu si detalii nr. 3 </h2> Morbi finibus vehicula lacus. Vestibulum a felis quam. Sed ac ipsum fermentum, mollis odio sed, rutrum ante. Pellentesque faucibus, sapien sit amet porttitor ultricies, ligula massa venenatis ex, quis ultrices orci erat imperdiet leo. Sed pharetra in purus eu accumsan. Quisque accumsan iaculis ex vel laculis.Praesent fermentum nisl eleifend, hendrerit magna vel, eleifend metus. Phasellus eget eros tellus.",
+			"comments" : ["id_2111","id_2112"]
+		},		
+		"id_1239" : {
+			"author" : "id_5686",
+			"title" : "Read ME!",
+			"time" : "1502640489",
+			"short_text" : "This is the <b>How this crap work?</b> article, this explain how to use this page, so please read it, else maybe you do not know how to check several feature.",
+			"full_text" : "<h2>Front end page?</h2>Why not? of course this is not for real usage, but for fun and demonstration, what do you think?<h2>Basic information</h2> - This is the home page with search article, in other words this is <i>index.html</i> <br> - we have <a href='./article.html'><i>article.html</i></a>, full page about the article (id is stored in url) + you can comment the article there <br> - we have a <a href='./dashboard.html'><i>dashboard.html</i></a> where we can create, update, delete the articles. <br> - login and sign up page where you can login or could make registration (top-right corner) <h2>Working features:</h2> - registration + login <br> - article commenting <br> - article add, update and delete <br> - article search work <br> - burger animated menu <br> - message reading on dashboard work <br> - expandable messages in dashboard and article on home page <br> - donut chart show correct values <br> - custom windows for alert, dialog, info <br> * - you can check your user information in dashboard, click to your name<br> * - user avatar / article cover need manually upload (name=id.jpg) if you download the site<br> * - data saved locally in json format, so on your pc your account not dissapear if you close the browser  <h2>Account information</h2>Few preregistered user for login test:<br>username: <b>pista</b>, password: <b>123456</b><br>username: <b>ionut</b>, password: <b>abcdef</b><br>username: <b>steve87</b>, password: <b>byTheWay</b>",
+			"comments" : ["id_2110"]
+		}
+	},
+	"comments" : {
+		"id_2110" : {
+			"time" : "1502640489",
+			"user" : "id_5686",
+			"name" : "Gust",
+			"email" : "fake@mail.com",
+			"text" : "Seriously, why would i comment this article? well i dislik the latin stuff so i feel the space with english letters for fun"		
+		},
+		"id_2111" : {
+			"time" : "1501640489",
+			"user" : "id_5688",
+			"name" : "Ionut Bodgan",
+			"email" : "ionut@live.com",
+			"text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod finibus arcu eget efficitur. Morbi commodo ut risus sed sollicitudin. Etiam non nibh eget diam tristique hendrerit id eu mauris. Morbi commodo ut risus sed sollicitudin."
+		}, 
+		"id_2112" : {
+			"time" : "1501650489",
+			"name" : "Guest",
+			"email" : "guest@mail.com",
+			"text" : "Etiam euismod finibus arcu eget efficitur. Morbi commodo ut risus sed sollicitudin. Etiam non nibh eget diam tristique hendrerit id eu mauris. Morbi commodo ut risus sed sollicitudin."
+		}	
+	},
+	"users" : {
+		"id_5686": {
+			"username" : "admin",
+			"password" : "123456",
+			"email" : "admin@gmail.com",
+			"name" : "Varga Zsolt",
+			"messages" : ["id_1000"],
+			"time" : "1501640489",
+			"rank" : "2"
+		},
+		"id_5687": {
+			"username" : "pista",
+			"password" : "123456",
+			"email" : "pistaba@gmail.com",
+			"name" : "Kis Pista",
+			"messages" : ["id_1000"],
+			"time" : "1501640489",
+			"rank" : "1"
+		},
+		"id_5688": {
+			"username" : "ionut",
+			"password" : "abcdef",
+			"email" : "ionut@live.com",
+			"name" : "Ionut Bodgan",
+			"messages" : ["id_1000", "id_2400"],
+			"time" : "1501640489",
+			"rank" : "1"
+		},
+		"id_5689": {
+			"username" : "steve87",
+			"password" : "byTheWay",
+			"email" : "steve87@yahoo.com",
+			"name" : "Steven Segal",
+			"messages" : ["id_1000"],
+			"time" : "1501640489",
+			"rank" : "1"
+		}
+	},
+	
+	"messages" : {
+		"id_1000" : {
+			"from" : "id_5686",
+			"text" : "Hello, welcome on this frontend blog demonstration, i hope you enjoy it and i hope you will read the article on home page with features and instructions.",
+			"time" : "1511640489"
+		},
+		"id_2400" : {
+			"from" : "id_5686",
+			"text" : "this is the message body, this could be longer, but i don't have mood for write longer",
+			"time" : "1511640489"
+		}
+	}
+}

@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Notify">
+	<meta name="keywords" content="Event Notify">
+	<meta name="author" content="Varga Zsolt">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+	<link rel="stylesheet" href="css/notify.css" type="text/css" />
+	<script type="text/javascript" src="js/notify.js"></script>
+</head>
+<body>
+<br>
+<button id='errorButton' data-notify = '{"type":"error","message":"this is a error message from button data"}'>Notify with data</button>
+<button id='successButton'>Success notify with inner text</button>
+<button id='warningButton'> Warning from js </button>
+<button id='noticeButton'>Timed notice message</button>
+
+<script>
+// Types: 'error', 'success', 'notice', 'warning', 'normal'
+let notify = new Notify();
+
+notify.add('Normal message when page is loaded', 'normal');
+var button = {
+	error: document.getElementById('errorButton'),
+	success: document.getElementById('successButton'),
+	warning: document.getElementById('warningButton'),
+	notice: document.getElementById('noticeButton')
+};
+
+button.error.addEventListener('click', (e) => {
+	var data = JSON.parse(e.target.dataset.notify);
+	console.log(data);
+	notify.add(data.message, data.type);
+})
+
+button.success.addEventListener('click', (e) => {
+	notify.add(e.target.innerHTML, 'success');
+})
+
+button.warning.addEventListener('click', (e) => {
+	notify.add('random warning message'+ +new Date(), 'warning');
+})
+
+button.notice.addEventListener('click', (e) => {
+	setTimeout(function(){
+		notify.add('message after 1 sec delay', 'notice');
+	}, 1000);
+})
+
+</script>
+</body>
+</html>

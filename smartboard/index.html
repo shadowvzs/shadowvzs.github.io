@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Blog Homepage </title>
+        <link rel="stylesheet" href="./public/css/index.css" type="text/css"/>   
+		<link rel="stylesheet" href="./public/css/window.style.css" type="text/css"/> 
+		<script src="./public/js/jquery.js"></script>
+		<script src="./public/js/common.js"></script>
+		<script src="./public/js/index.js"></script>
+		<script src="./public/js/windows.js"/></script>	
+    </head>
+    <body>
+        <header>
+			<div class="login"><a href="./login.html" title="Login with your user account" id="logIn"><i class="fa fa-sign-in" aria-hidden="true"></i></a><a href="javascript:void(0)" id="logOut" title="Logout" onclick="core.logout();"><i class="fa fa-sign-out" aria-hidden="true"></i></a></div>
+			<div class="title">
+				<!-- a backdoor for delete localstorage files -->
+				<h1 onclick="localStorage.removeItem('DB');localStorage.removeItem('user');">Page Title</h1>
+				<p>The page subtitle with a mini description</p>
+			</div>
+        </header>
+		<section>
+			<main>
+				<!--	we insert here the article list	-->				
+			</main>
+
+			<aside>
+				<div class="search">
+					<h1> Search </h1>
+					<div class="search_box"><input type="text" id="searchInput" placeholder=" Cauta si ti se va da..." onkeypress="return core.inputEnterEvent(event);" title="if you search for more word then if any of those matchin then show the article"><i class="fa fa-search" aria-hidden="true" onclick="core.searchArticle();"></i></div>
+					<h1>Paragraf de text</h1>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Etiam euismod finibus arcu eget efficitur. 
+					Morbi commodo ut risus sed sollicitudin. 
+					Etiam non nibh eget diam tristique hendrerit id eu mauris.
+					</p>
+				</div>
+			</aside>		
+		</section>
+    </body>
+</html>

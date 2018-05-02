@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Blog - Login in </title>
+        <link rel="stylesheet" href="./public/css/sign.css" type="text/css"/> 
+		<link rel="stylesheet" href="./public/css/window.style.css" type="text/css"/> 
+		<script src="./public/js/jquery.js"></script>
+		<script src="./public/js/sign_inout.js"></script>
+		<script src="./public/js/windows.js"/></script>	
+	</head>
+    <body>
+		<section>
+			<div class="form">
+				<h1 class="login">Log in</h1>
+				<input class="login" id="userName" type="text" placeholder="Username" autofocus="autofocus" pattern="[a-zA-Z]{3,25}[0-9]{0,4}" title="Username should only contain letters or/and numbers . e.g. John" required>
+				<input class="login" id="userPass" type="password" placeholder="Password" pattern="[a-zA-Z0-9]{6,25}" title="Password should only letters or/and numbers and minimum 6 character" required>
+				<button class="sign" onclick="core.login();"> Sign in</button>
+				<a href="./reg.html" title="Create a new account">Sign up</a>
+				<a href="#" class="disabled">Forget password?</a>
+			</div>
+		</section>
+    </body>
+</html>

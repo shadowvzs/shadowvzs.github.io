@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;	
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+body {
+	background: #c0392b;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.notify-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 0 4px;
+	min-width: 200px;
+	width: 98%;
+	max-width: 400px;
+	height: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 9999;
+}
+
+	.notify {
+		position: relative;
+		color: #fff; /* Default */
+		border: 1px solid transparent;
+		border-radius: 4px;
+		padding: 15px;
+		padding-right: 20px;
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+		opacity: 1;
+		margin: 3px 0;
+		border: 1px solid transparent;
+		font-family: sans-serif;
+		-webkit-animation:slideIn 500ms forwards;
+		animation: slideIn 500ms forwards;
+		-webkit-animation-delay: 100ms;
+		animation-delay: 100ms;
+		color: #fff;
+		text-shadow: 1px 0 1px #000, -1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
+	}
+
+	.notify .close-notify {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: inline-block;
+		margin: auto;
+		right: 10px;
+		font-family: arial;
+		font-size: 30px;
+		color: red;
+		opacity: 0.3;
+		cursor: pointer;
+		text-shadow: 1px 0 1px #000, -1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
+	}
+
+	.notify .close-notify:hover {
+	  opacity: 0.7;
+	}
+
+	.notify.warning {
+		border-color: rgba(255, 255, 0, 0.9);
+		background-color: rgba(255, 255, 0, 0.5);
+	}
+
+	.notify.notice {
+		border-color: rgba(0, 0, 200, 0.9);
+		background-color: rgba(0, 0, 200, 0.5);
+	}
+
+	.notify.success {
+		border-color: rgba(100, 100, 255, 0.*);
+		background-color: rgba(100, 100, 255, 0.5);
+	}
+
+	.notify.error {
+		border-color: rgba(255, 50, 50, 0.9);
+		background-color: rgba(255, 50, 50, 0.5);
+	}
+
+	.notify.normal {
+		border-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+
+	.notify.fade-out {
+	  opacity: 0;
+	  transition: opacity 500ms ease-in-out;
+	  -moz-transition: opacity 500ms ease-in-out;
+	  -webkit-transition: opacity 500ms ease-in-out;
+	}
+
+	@keyframes slideIn {
+	  100% { margin-left: 0px; }
+	}
+
+	@-webkit-keyframes slideIn {
+	  100% { margin-left: 0px; }
+	}
+
+	@-moz-keyframes slideIn {
+	  100% { margin-left: 0px; }
+	}
+
+	@-o-keyframes slideIn {
+	  100% { margin-left: 0px; }
+	}
+
+	@-webkit-keyframes slideIn {
+	  100% { max-height: 200px; }
+	}
+
+	@-moz-keyframes slideIn {
+	  100% { max-height: 200px; }
+	}
+
+	@-o-keyframes slideIn {
+	  100% { max-height: 200px; }
+}
