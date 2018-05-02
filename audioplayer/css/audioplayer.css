@@ -140,7 +140,7 @@
 #audioPlayer .details .volume_row .anchor_icon {
 	position: relative;
 	top: -3px;	
-	left: 10px;
+	left: 7px;
 	font-size: 16px;
 	cursor: pointer;
 	display: inline-block;
@@ -149,7 +149,7 @@
 #audioPlayer .details .volume_row .random_icon {
 	position: relative;
 	top: -3px;	
-	left: 20px;
+	left: 14px;
 	color: #ccc;
 	font-size: 16px;
 	cursor: pointer;
@@ -268,8 +268,8 @@
 
 #audioPlayer .details .button {
 	position: relative;
-	width: 20px;
-	height: 20px;
+	width: 24px;
+	height: 24px;
 	text-align: center;
 	font-size: 14px;
 	background: #3a3d42;

@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Calendar">
+	<meta name="keywords" content="Event Calendar">
+	<meta name="author" content="Varga Zsolt">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+	<link rel="stylesheet" href="css/calendar.css" type="text/css" />
+	<script type="text/javascript" src="js/calendar.js"></script>
+	<script type="text/javascript" src="db/events.json"></script>
+</head>
+<body>
+<input type="text" title="Output" id="output" placeholder="date" value="">
+<button class='showCal'>Show/Hide</button>
+
+<script>
+
+setup = {
+	callback: function(date, event) { 
+		var str = 'Ths is a callback for date '+date+'\n\n';
+		if (event) {
+			for (e of event) {
+				str += 'Event: '+e.title+'\nMessag: '+e.message+'\nDate: '+e[this.data.key]+'\n\n';
+			}
+		}
+		console.log(str);
+	},
+	// if we select a day then will be placed in this input
+	output: '#output',
+	// start with day view mod (0-3)
+	viewMode: 0,
+	// limit on years
+	range: {
+		min: 2000,
+		max: 2143,
+	},
+	// calendar place and event when appear
+	show: {
+		event: ['click', '.showCal'],
+		place: '.showCal',
+	},
+	// data and event date key
+	data: {
+		key: 'created',
+		list: JSON.parse(data)
+	}
+};
+
+
+
+
+var c = new Calendar(setup);
+
+</script>
+</body>
+</html>
