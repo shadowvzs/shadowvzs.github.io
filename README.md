@@ -6,3 +6,5 @@ Online Demo:
  * https://shadowvzs.github.io/audioplayer
  * https://shadowvzs.github.io/notify
  * https://shadowvzs.github.io/calendar
+ * https://shadowvzs.github.io/custom_v_scrollbar
+ * https://shadowvzs.github.io/infinityscroll
