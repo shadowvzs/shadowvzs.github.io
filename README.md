@@ -4,6 +4,7 @@ Online Demo:
  * https://shadowvzs.github.io/windows
  * https://shadowvzs.github.io/smartboard
  * https://shadowvzs.github.io/audioplayer
+ * https://shadowvzs.github.io/audioplayer/advanced
  * https://shadowvzs.github.io/notify
  * https://shadowvzs.github.io/calendar
  * https://shadowvzs.github.io/custom_v_scrollbar
