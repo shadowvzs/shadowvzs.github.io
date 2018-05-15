@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Scrolling">
+		<meta name="keywords" content="HTML,CSS,JavaScript,JSON,Ajax">
+		<meta name="author" content="Varga Zsolt">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>test</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	</head>
+	<body>
+		<button id="toggleApp">Show / Hide</button> <button id="destroyApp">Destroy</button>
+		<div id="audioPlayer">
+		<div style="position: relative;">
+			<div class="header not_selectable">
+				Audio Player
+				<div class="close">&times;</div>
+			</div>
+			<div class="details not_selectable">
+				<div class="title"> Select something</div>
+				<div class="track-timer"> 
+					<span class="currentTime"> 00:00 </span> / <span class="duration"> 00:00 </span>
+				</div>
+				<input class="track" type="range" min="0" max="0"><br>
+				
+				<div class="volume_row">
+					<span class="loop_icon" title="If audio reach to the end then jump to next audio file">&infin;</span>
+					<span class="anchor_icon" title="If loop is on then same audio will be played after it is ended">&#9875;</span>
+					<span class="random_icon" title="Next audio will be random">&#x2608;</span>
+					<span class="spacer"></span>
+					<span class="speaker_icon" title="Change audio volume">&#128266;</span>
+					<span class="volume_bar">
+						<div class="volume_dir">-</div>
+						<input class="volume" type="range" min="0" max="100">
+						<div class="volume_dir">+</div>
+					</span>
+				</div>
+				<center>
+					<div class="button play">&#9205;</div>
+					<div class="button pause">&#9208;</div>
+					<div class="button stop">&#9209;</div>
+				</center>
+			</div>
+			<div class="container">
+				<div class="list content"></div>
+				<input type="range" class="scrollBar" value="0" min="0" max="100">
+			</div>
+		</div>
+		</div>
+		<link rel="stylesheet" href="css/advanced.css" type="text/css" />
+		<script type="text/javascript" src="js/advanced.js"></script>	
+		<script>
+
+		</script>		
+		<style>
+
+		</style>
+	</body>
+</html>
