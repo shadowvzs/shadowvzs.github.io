@@ -29,11 +29,11 @@ $(function() {
         }
     });
 	
-	$(window).scrollTop(0);
+	$( document.body ).scrollTop(0);
 	changeActive(0);
 	
-	$( window ).scroll(function() {
-		var currentY = $(document).scrollTop();
+	$( document.body ).scroll(function() {
+		var currentY = $(document.body).scrollTop();
 		var i, target;
 		for (i = 0;i<linkMax;i++) {
 			if ($(targets[i]).offset().top > currentY) {
