@@ -9,3 +9,5 @@ Online Demo:
  * https://shadowvzs.github.io/calendar
  * https://shadowvzs.github.io/custom_v_scrollbar
  * https://shadowvzs.github.io/infinityscroll
+ * https://shadowvzs.github.io/tema3a
+ * https://shadowvzs.github.io/tema3b
