@@ -179,6 +179,7 @@ input[name="search"] ~ button:hover {
 	height: 100vh;
 	min-height: 500px;
 	width: 100vw;
+	max-width: 100vw;
 }
 
 .featurette-divider {
