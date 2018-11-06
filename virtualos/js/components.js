@@ -927,10 +927,9 @@ const componentData = {
 								new: "true"
 							}
 						}
-						openItem(item, e);
+						setTimeout(() => openItem(item, e), 2000);
 					}
 				}
-				console.log(hash);
 			}
 
 			function searchInVfs(items, id) {
