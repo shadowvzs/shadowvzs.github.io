@@ -1,6 +1,0 @@
-{
-"text":
-[
-["write somthing","Ready!"]
-]
-}
