@@ -1,5 +1,5 @@
 const core = Object.freeze(new Core());
-localStorage.clear();
+//localStorage.clear();
 function Core() {
 	const head = document.querySelector("head"),
 		components = {},
