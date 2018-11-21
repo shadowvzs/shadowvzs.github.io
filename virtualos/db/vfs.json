@@ -520,6 +520,18 @@
 					"type":"dir",
 					"child":[
 						{
+						   "name":"My samples",
+						   "id":"R7p2kJZs2cmOm8XGVmvcQ0Gm5szQG12T",
+						   "description":"Usefull functions",
+						   "icon":"file",
+						   "type":"html",
+						   "createtime":1503812702,
+						   "lastmodify":1503812702,
+						   "readonly":false,
+						   "onstartmenu":true,
+						   "url":"javascript_git.html"
+						},
+						{
 						   "name":"Few links",
 						   "id":"R7p2kJZs2cmOm8XGVmvcQ0Gm5szQGT3T",
 						   "description":"Usefull functions",
