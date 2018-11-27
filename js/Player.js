@@ -45,7 +45,7 @@ class Player extends Entity {
                 this.score += ~~(this.core.level * 1.50) + 10; 
                 this.reset();
                 this.ready = true;
-				this.core.infobar.render();
+                this.core.infobar.render();
             }, 300);
         }
     }

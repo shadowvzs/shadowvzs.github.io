@@ -6,7 +6,7 @@ class Core {
         this.resources.onReady(this.start.bind(this));
         this.player = new Player(this, "images/char-boy.png");
         this.infobar = new Infobar(this);   
-		this.misc = [];
+        this.misc = [];
         this.status = false;
     }
 
@@ -37,21 +37,21 @@ class Core {
             setTimeout(() => this.allEnemies.push(new Enemy(this)), rnd );
         }
         this.run();
-		const win = this.container.querySelectorAll('.maximize');
-		if (win) {
-			win.forEach( w => w.classList.remove('maximize') );
-		}
+        const win = this.container.querySelectorAll('.maximize');
+        if (win) {
+            win.forEach( w => w.classList.remove('maximize') );
+        }
     }
 
     levelUp() {
         this.level++;
         this.infobar.render();        
         const rnd = Math.random() * 1000;
-		(this.level % 7 == 0) && setTimeout( _ => this.allEnemies.push(new Enemy(this)), rnd );       
+        (this.level % 7 == 0) && setTimeout( _ => this.allEnemies.push(new Enemy(this)), rnd );       
         this.misc = [];
         if ((Math.random() * 100) < (this.level / 2 + 30)) {
-			this.misc.push(new Misc(this));
-		}
+            this.misc.push(new Misc(this));
+        }
 	}
 	
     toggleStatus() {
@@ -62,7 +62,7 @@ class Core {
 
     reset() {
         this.allEnemies = [];
-		this.miscs = [];
+        this.miscs = [];
         this.level = 1;
         this.player.life = 3;
         this.player.score = 0;
@@ -103,7 +103,7 @@ class Core {
             ],
             numRows = 6,
             numCols = 5,
-			{width, height} = this.ctx.canvas;
+            { width, height } = this.ctx.canvas;
         let row, col;
 
         this.ctx.clearRect(0,0,width,height);

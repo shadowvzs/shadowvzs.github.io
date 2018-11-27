@@ -2,7 +2,6 @@ class Enemy extends Entity {
 
     constructor(core) {
         super(core, 'images/enemy-bug.png', [tileSize.x * 2, 0]);
-        
         this.placeEnemy();
         this.setSpeed();
     }
