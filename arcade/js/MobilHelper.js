@@ -32,8 +32,7 @@ class MobilHelper {
             } else {
                 direction = ['y', Math.sign(dY) * tileSize.y];
             }
-            alert(JSON.stringify(direction));
-            this.player.update();
+            this.player.update(direction);
         }
     }
 
