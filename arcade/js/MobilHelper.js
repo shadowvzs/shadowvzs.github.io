@@ -8,7 +8,8 @@ class MobilHelper {
 
     createEvents() {
         document.ontouchstart = function(ev) {
-            alert(ev.touches[0].clientX + ' start');
+            alert(JSON.stringify(ev));
+            alert(ev.clientX);
         }
         document.ontouchend = function(ev) {
             alert(ev.touches[0].clientX + ' start');
