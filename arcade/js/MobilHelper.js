@@ -14,8 +14,7 @@ class MobilHelper {
         }
 
         document.ontouchend = ev => {
-            alert(this.player.ready ? '1' : '0');
-            if (!this.player.ready) {
+            if (!this.player.ready || !this.core.status) {
                 return;
             }
             this.endX = ev.changedTouches[0].clientX;
@@ -33,6 +32,7 @@ class MobilHelper {
             } else {
                 direction = ['y', Math.sign(dY) * tileSize.y];
             }
+            alert(JSON.stringify(direction));
             this.player.update();
         }
     }
