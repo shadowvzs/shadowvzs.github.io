@@ -14,7 +14,7 @@ class MobilHelper {
         }
 
         document.ontouchend = ev => {
-            alert(this.player.ready);
+            alert(this.player.ready ? '1' : '0');
             if (!this.player.ready) {
                 return;
             }
