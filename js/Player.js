@@ -83,7 +83,7 @@ class Player extends Entity {
         if (this.life > 0) {
             this.render();
         } else {
-			this.core.infobar.updateScore();
+            this.core.infobar.updateScore();
             this.core.toggleStatus();
        }      
     }
