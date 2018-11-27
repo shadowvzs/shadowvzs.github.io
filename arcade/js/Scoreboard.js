@@ -29,13 +29,15 @@ class Scoreboard {
 			scores.push([name, score]);
 		} else {
 			const len = scores.length;
+			let bool = true;
 			for (let i=0; i<len;i++) {
 				if (scores[i][1] < score) {
 					scores.splice(i, 0, [name, score]);
+					bool = false;
 					break;
 				}
 			}
-			scores.push([name, score]);
+			bool && scores.push([name, score]);
 		}
 		this.saveScoreHistory(scores.splice(0, 10));
 		this.render();

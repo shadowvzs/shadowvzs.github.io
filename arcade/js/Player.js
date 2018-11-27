@@ -5,6 +5,7 @@ class Player extends Entity {
         this.name = "New player";
         document.addEventListener('keyup', e => this.inputHandler(e) );
         this.ready = true;
+        this.mobilhelper = new MobilHelper(core, this);
         this.profile = new Profile(core, this);
     }
 
