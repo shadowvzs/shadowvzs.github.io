@@ -7,18 +7,23 @@ class MobilHelper {
     }
 
     createEvents() {
+
         document.ontouchstart = ev => {
             this.startX = ev.touches[0].clientX;
             this.startY = ev.touches[0].clientY;
         }
+
         document.ontouchend = ev => {
+            if (!this.player.ready) {
+                return;
+            }
             this.endX = ev.changedTouches[0].clientX;
             this.endY = ev.changedTouches[0].clientY;
             const dX = this.endX - this.startX,
                 dY = this.endY - this.startY;
 
             if (dX == 0 && dY == 0) {
-                return alert('asdas');
+                return;
             }
 
             let direction;
