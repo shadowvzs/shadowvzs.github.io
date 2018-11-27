@@ -23,11 +23,11 @@ class MobilHelper {
 
             let direction;
             if (Math.abs(dX) > Math.abs(dY)) {
-                direction = dX > 0 ? 'right' : 'left';
+                direction = ['x', Math.sign(dX) * tileSize.x];
             } else {
-                direction = dY > 0 ? 'down' : 'up';
+                direction = ['y', Math.sign(dY) * tileSize.y];
             }
-            alert(direction);
+            this.player.update();
         }
     }
 
