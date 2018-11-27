@@ -3,10 +3,39 @@ class Player extends Entity {
     constructor(core, avatar) {
         super(core, avatar, [tileSize.x * 2, tileSize.y * 4.5]);
         this.name = "New player";
-        document.addEventListener('keyup', e => this.inputHandler(e) );
+        document.onkeyup = ev => this.inputHandler(ev);
         this.ready = true;
-        this.mobilhelper = new MobilHelper(core, this);
+        this.touchEvent(core);
         this.profile = new Profile(core, this);
+    }
+
+    touchEvent(core) {
+        document.ontouchstart = ev => {
+            this.startX = ev.touches[0].clientX;
+            this.startY = ev.touches[0].clientY;
+        }
+
+        document.ontouchend = ev => {
+            if (!this.ready || !core.status) {
+                return;
+            }
+            this.endX = ev.changedTouches[0].clientX;
+            this.endY = ev.changedTouches[0].clientY;
+            const dX = this.endX - this.startX,
+                dY = this.endY - this.startY;
+
+            if (dX == 0 && dY == 0) {
+                return;
+            }
+
+            let direction;
+            if (Math.abs(dX) > Math.abs(dY)) {
+                direction = ['x', Math.sign(dX) * tileSize.x];
+            } else {
+                direction = ['y', Math.sign(dY) * tileSize.y];
+            }
+            this.update(direction);
+        }
     }
 
     inputHandler(e) {
