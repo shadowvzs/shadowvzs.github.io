@@ -85,8 +85,7 @@ class Player extends Entity {
         } else {
 			this.core.infobar.updateScore();
             this.core.toggleStatus();
-			
-        }      
+       }      
     }
 
     render() {
