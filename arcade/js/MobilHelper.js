@@ -7,14 +7,28 @@ class MobilHelper {
     }
 
     createEvents() {
-        document.ontouchstart = function(ev) {
-            alert(JSON.stringify(ev));
-            alert(ev.touches[0].clientX);
-            alert(ev.touches.clientX);
-            alert(ev.clientX);
+        document.ontouchstart = ev => {
+            this.startX = ev.touches[0].clientX;
+            this.startY = ev.touches[0].clientY;
         }
-        document.ontouchend = function(ev) {
-            alert(ev.touches[0].clientX + ' start');
+        document.ontouchend = ev => {
+            this.endX = ev.changedTouches[0].clientX;
+            this.endY = ev.changedTouches[0].clientY;
+            const dX = this.endX - this.startX,
+                dY = this.endY - this.startY;
+
+            if (dX == 0 && dY == 0) {
+                return alert('asdas');
+            }
+
+            let direction;
+
+            if (Math.abs(dX) > Math.abs(dX)) {
+                direction = dX > 0 ? 'right' : 'left';
+            } else {
+                direction = dY > 0 ? 'down' : 'up';
+            }
+            alert(direction);
         }
     }
 
