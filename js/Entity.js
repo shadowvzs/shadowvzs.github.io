@@ -1,4 +1,5 @@
 class Entity {
+	
 	constructor(core, sprite, [x, y] = []) {
         this.sprite = sprite;
 		this.core = core;
