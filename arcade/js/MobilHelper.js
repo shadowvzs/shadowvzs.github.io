@@ -22,7 +22,7 @@ class MobilHelper {
             }
 
             let direction;
-
+alert(dX+' '+dY);
             if (Math.abs(dX) > Math.abs(dX)) {
                 direction = dX > 0 ? 'right' : 'left';
             } else {
