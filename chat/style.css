@@ -1,0 +1,136 @@
+* {
+    font-family: arial;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root.chat {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#root.chat .content-wrapper {
+    padding: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    margin-top: 10px;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+}
+
+#root.chat .content,
+#root.chat .user-list {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    overflow-y: scroll;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+#root.chat .content {
+    flex: 1;
+    padding: 5px;
+}
+
+#root.chat .user-list {
+    padding: 5px;
+    width: 100px;
+    background: #eee;
+}
+
+#root.chat input {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#root.chat .details {
+    display: flex;
+    justify-content: space-between;
+    min-width: 70px;
+}
+
+#root.chat input[name="message"] {
+    min-width: 100%;
+}
+
+#root.chat .status {
+    margin-top: 15px;
+}
+
+#root.chat .date {
+    font-size: 75%;
+    text-align: right;
+    font-style: italic;
+}
+
+#root.chat .user-item {
+    cursor: pointer;
+    display: block;
+    font-family: cursive;
+}
+
+
+#root.chat .msg-item {
+    position: relative;
+    line-height: 16px;
+}
+
+#root.chat .delete-msg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 3px;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    background-color: #aaa;
+    border: 1px outset #888;
+    color: #000;
+    font-family: arial;
+    font-size: 14px;
+    display: inline-block;
+    user-select: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#root.chat .delete-msg:hover {
+    background-color: #bbb;
+}
+
+#root.chat .delete-msg:active {
+    background-color: #ccc;
+    border: 1px inset #aaa;
+}
+
+#root.chat .user-item.typing {
+    animation: shake 1s linear infinite /* cubic-bezier(.36,.07,.19,.97) both */;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
