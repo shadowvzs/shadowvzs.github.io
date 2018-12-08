@@ -1,0 +1,38 @@
+<style>
+	.homepage {
+		padding: 20px;
+		text-align: center;
+	}
+
+	.homepage h1, .homepage p {
+		margin-top: 50px;
+		color: #fff;
+		font-family: cursive;
+		font-size: 60px;
+		text-shadow: 1px 0 1px #000,
+			0 1px 1px #000,
+			-1px 0 1px #000,
+			0 -1px 1px #000,
+			0.1em 0.1em 0.2em #000;
+	}
+	.homepage p {
+		color: #ffa;
+		margin-top: 40px;
+		font-size: 24px;
+		text-align: left;
+		display: inline-block;
+	}
+</style>
+<div class="homepage">
+	<h1> Welcome on home page! </h1>
+	<small> <i> this page was created for PentaStagiu homework!</i> </small>
+	<br />
+	<p> 
+		- this page javascript part was my experiment <br /> 
+ 		- i used ES6 features and few weird solution <br /> 
+		- check the nav links in header
+		- Javascript could be an art :)
+	</p>
+
+
+</div>
