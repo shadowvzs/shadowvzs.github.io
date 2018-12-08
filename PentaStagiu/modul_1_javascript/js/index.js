@@ -291,6 +291,7 @@
             this.orbits = [];
             this.electrons = [];
             this.speed = 5;
+            this.maxOrbits = 25;
             this.radius = 100;
             this.state = {
                 run: false
@@ -314,11 +315,17 @@
             }
         }
         add() {
+            if (this.orbits.length >= this.maxOrbits) {
+                return;
+            }
             this.orbits.push(new Orbit(this.channel, this));
             this.electrons.push(new Electron(this.channel, this));
             this.update();
         }
         remove() {
+            if (this.orbits.length < 1) {
+                return;
+            }
             this.orbits.pop();
             this.electrons.pop();
             this.update();
