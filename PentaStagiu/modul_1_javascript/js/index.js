@@ -353,6 +353,9 @@
             // lets make curry :)
             // here we have access to: ctxObj = atom, this = nav, ev = event
             return function(ev) {
+                if (ctxObj.state.run) {
+                    return;
+                }
                 ctxObj.channel.Content.setContent(ctxObj.DOM);
                 ctxObj.playButton.click();
                 ctxObj.run.call(ctxObj);
