@@ -3,7 +3,7 @@
     // use global variables
     const global = window;
     
-    // Base object with setState
+    // Base - basic/parent/super constructor, setState and element builder
     class Base {
         constructor(channel = false, type = false) {
             if (channel) { 
@@ -40,7 +40,7 @@
         }
     }
 
-    // Nav link obj
+    // Nav - create links in nav and make it focusable
     class Nav extends Base {
         constructor(channel, text, targets) {
             super(null, 'a');
@@ -97,7 +97,7 @@
         }
     }
 
-    // NavBar with Nav
+    // NavBar - create & render Nav's
     class NavBar extends Base {
     
         constructor(channel, list) {
@@ -117,7 +117,7 @@
         }
     }
 
-    // Page Content
+    // Content - responsable for page content div
     class Content extends Base {
         constructor(channel) {
             super(channel, 'div');
@@ -149,6 +149,7 @@
         }
     }
 
+    // Orbit - draw orbit/path/road for electrons
     class Orbit extends Base {
         constructor(channel, atom) {
             super(channel, 'div');
@@ -178,6 +179,7 @@
         } 
     }
 
+    // Electron - create, update and render the moving blue electron
     class Electron extends Base {
         constructor(channel, atom) {
             super(channel, 'div');
@@ -217,6 +219,7 @@
         } 
     }            
 
+    // Atom Controller - modify atom speed/radius/element quantity
     class AtomController extends Base {
         constructor(channel, atom) {
             super();
@@ -284,6 +287,7 @@
         }
     }
 
+    // Atom - create and render orbits & electrons
     class Atom extends Base {
         constructor(channel) {
             super(channel, 'div');
@@ -376,7 +380,7 @@
         }
     }
 
-    // Service for get data
+    // Service - return promise with ajax request (raw text data)
     class Service {
         static loadContent(url) {
             const xhr = new XMLHttpRequest();
@@ -398,6 +402,8 @@
         }
     }
 
+    // Root - init navbar, atom, content, load a basic css & insert into document 
+    // (root is our entry point in this object system)
     class Root extends Base {
         constructor () {
             // object for horizontal data sharing
