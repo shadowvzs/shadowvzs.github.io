@@ -1,5 +1,6 @@
 # shadowvzs.github.io
 Online Demo: 
+ * https://shadowvzs.github.io/PentaStagiu/modul_1_javascript/
  * https://shadowvzs.github.io/arcade/
  * https://shadowvzs.github.io/virtualos
  * https://shadowvzs.github.io/windows
