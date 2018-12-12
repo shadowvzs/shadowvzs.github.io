@@ -162,12 +162,11 @@
             this.render(1);
         }               
 
-        render(dt) {
-            const step = this.speed * dt,
-                radius = this.atom.radius;
+        render() {
+            const radius = this.atom.radius;
             let theta = 0, x, y, nX, nY;
             this.ctx.beginPath();
-            for(; theta < this.fullCircle; theta += step ) { 
+            for(; theta < this.fullCircle; theta += this.speed ) { 
                 x = radius*(Math.cos(theta)*0.2);
                 y = radius*(Math.sin(theta));    
                 nX = x*Math.cos(this.rAngle)+y*Math.sin(this.rAngle);
