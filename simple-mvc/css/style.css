@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+}
+
+.myList {
+	display: inline-block;
+	background-color: #ffd;
+	padding: 20px;
+}
+
+.myList ul {
+	list-style: none;
+}
+
+.myList input {
+	margin: 0 10px;
+}
+
+.myList .item > span {
+	font-size: 12px;
+}
+
+.myList .item {
+	padding: 20px;
+	margin-bottom: 50px;
+	border: 1px dotted #444;
+	border-radius: 20px;
+}
