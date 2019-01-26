@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.grid-container {
+  	display: grid;
+  	grid-template:
+	    'header header'
+	    'menu main'
+	    'edit main';
+	max-width: 800px;
+	margin: auto;
+}
+
+.item-add { grid-area: header; }
+.item-list { grid-area: menu; }
+.item-info { grid-area: main; }
+.item-edit { grid-area: edit; }
+
+.item-add,
+.item-edit {
+	display: inline-block;
+	background-color: #ffd;
+	padding: 20px;
+}
+
+.item-add input {
+	margin: 0 10px;
+}
+
+ul.item-list {
+	margin: 20px 0;
+	display: inline-block;
+	list-style: none;
+	text-align: left;
+	padding: 20px 0;
+	background-color: #aaf;
+	border-radius: 20px;
+}
+
+
+ul.item-list li {
+	padding: 0 20px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+ul.item-list li:hover {
+	background-color: rgba(255,255,255,.2);	
+}
+
+ul.item-list li.active {
+	background-color: rgba(255,255,255,.4);	
+}
+
+.hide {
+	display: none;
+}
+
+.item-edit,
+.item-list {
+	min-width: 260px;
+}
+
+.item-edit {
+	text-align: center;
+}
+
+.item-edit input {
+	width: 100%;
+	margin: 4px 0;
+	display: block;
+}
+
+.item-info {
+	text-align: center;
+	padding: 20px;
+}
+
+.item-info .item-header {
+	font-size: 12px;
+}
+
+.item-info button,
+.item-edit button {
+	position: relative;
+	top: 20px;
+	margin: 4px;
+}
