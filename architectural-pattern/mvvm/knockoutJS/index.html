@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MVVP - with KnockoutJS </title>
+ 		<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	</head>
+	<body>
+		<div id="root" class="grid-container">
+
+			<div class="item-add" data-bind="with: addItem">
+				<input name="title" placeholder="Title" data-bind="value: title">
+				<input name="imgSrc" placeholder="Image url" data-bind="value: imgSrc">
+				<input name="tags" placeholder="Tags" data-bind="value: tags" >
+				<button data-bind="click: $parent.addItemHandler">Add</button>
+			</div>
+
+			<div class="item-info" data-bind="with: selectedItem">
+				<h2 data-bind="text: title"></h2>
+				<h3> Rank: <span data-bind="text: rank"></span></h3>
+				<div>Counter: <span data-bind="text: clickCount"></span></div>
+				<img src="" data-bind="click: incrementCounter, attr: {src: imgSrc}" />
+				<div class="tags">
+					<h3>Tags: </h3>
+					<ul data-bind="foreach: tags">
+						<li data-bind="text: $data"></li>
+					</ul>
+				</div>
+				<div class="item-actions">
+					<button data-bind="click: showEdit">Edit</button>
+					<button data-bind="click: $parent.deleteItemHandler">Remove</button>
+				</div>
+			</div>
+
+
+			<div class="item-edit" data-bind="if: selectedItem().visible">
+				<div data-bind="with: selectedItem">
+					<h2 data-bind="text: id"></h2>
+					<input name="counter" placeholder="counter" data-bind="value: clickCount">
+					<input name="title" placeholder="title" data-bind="value: title">
+					<input name="imgSrc" placeholder="Image url" data-bind="value: imgSrc">
+					<input name="created" placeholder="created" data-bind="value: created">
+					<input name="updated" placeholder="updated" data-bind="value: updated">
+					<button data-bind="click: update">Save</button>
+					<button data-bind="click: hideEdit">Cancel</button>
+				</div>
+			</div>
+
+			<ul class="item-list" data-bind="foreach: ItemList">
+				<li data-bind="text: title, click: $parent.setItemHandler"></li>
+			</ul>
+
+		</div>
+		<script src="js/knockout-3.4.2.js"></script>
+        <script src="js/es6.js"></script>
+	</body>
+</html>

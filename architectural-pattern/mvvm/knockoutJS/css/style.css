@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+body {
+        height: 100%;
+        background: linear-gradient(to bottom, #fff, #ddd);
+}
+
+
 .grid-container {
   	display: grid;
   	grid-template:
@@ -20,7 +26,7 @@
 .item-edit { grid-area: edit; }
 
 .item-add,
-.item-edit {
+.item-edit > div {
 	display: inline-block;
 	background-color: #ffd;
 	padding: 20px;
@@ -61,7 +67,7 @@ ul.item-list li.active {
 
 .item-edit,
 .item-list {
-	min-width: 260px;
+	width: 260px;
 }
 
 .item-edit {
@@ -88,4 +94,17 @@ ul.item-list li.active {
 	position: relative;
 	top: 20px;
 	margin: 4px;
+}
+
+.item-info ul {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.item-info .tags h3, .item-info ul, .item-info ul li {
+	display: inline-block;
+}
+
+.item-info ul li:not(:first-child):before {
+	content: ', ';
 }

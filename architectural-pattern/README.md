@@ -7,7 +7,7 @@
     * add/update/save/load/delete item into localStorage
     * create list and keep track click count on image and update time
     
-* Test: https://shadowvzs.github.io/simple-mvc/
+* Test: https://shadowvzs.github.io/architectural-pattern/
 -----------------------------------
 * Description: 
     * show a basic mvc structure where model, view and controller was separated.
