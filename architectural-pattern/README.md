@@ -1,4 +1,6 @@
-# simple-js-mvc
+# architectural-pattern
+
+## javascript MVC, MVVM samples
 
 -----------------------------------
 * **Note:** this repo was created to help beginners about how the js **mvc** work
