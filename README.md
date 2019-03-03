@@ -1,10 +1,10 @@
 # shadowvzs.github.io
 Online Demo: 
- * [File Reader Test - 2018](https://shadowvzs.github.io/file-reader)
- * [Architectural Pattern - 2018](https://shadowvzs.github.io/architectural-pattern)
+ * [File Reader Test - 2018](https://shadowvzs.github.io/file-reader/)
+ * [Architectural Pattern - 2018](https://shadowvzs.github.io/architectural-pattern/)
  * [Atom - 2018](https://shadowvzs.github.io/PentaStagiu/modul_1_javascript/)
  * [Arcade - 2018](https://shadowvzs.github.io/arcade/)
- * [VirtualOS - 2018](https://shadowvzs.github.io/virtualos)
+ * [VirtualOS - 2018](https://shadowvzs.github.io/virtualos/)
  * [Audioplayer v1 - 2018](https://shadowvzs.github.io/audioplayer)
  * [Audioplayer v2 - 2018](https://shadowvzs.github.io/audioplayer/advanced)
  * [Notify - 2018](https://shadowvzs.github.io/notify)
