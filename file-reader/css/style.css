@@ -1,0 +1,48 @@
+#root {
+    text-align: center;
+}
+
+input[type="file"] {
+    position: absolute;
+    top: -1000px;
+}
+
+.results {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    margin: 30px auto;
+    font-size: 12px;
+}
+
+.dropzone {
+    border: 1px solid rgba(0, 0, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 80%;
+    min-height: 200px;
+    background: rgba(255, 255, 200, 0.5);
+    transition: 0.3s ease;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    font-family: cursive;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 0 1px #000, -1px 0 1px #000, 0 1px 1px #000, 0 -1px 1px #000;
+}
+
+.dropzone img {
+    width: 200px;
+    margin: 10px;
+}
+
+.dropzone.active {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 255, 0.2);
+}
