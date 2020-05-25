@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    text-shadow: 0 0 1px #777, -1px 0 1px #777, 0 -1px 1px #777, 1px 0 1px #777, 0 1px 1px #777;
+    font-size: 31px;
+    padding: 2px;
+}
+
+nav a {
+    padding: 16px;
+    border: 1px solid rgba(0,0,0,0.25);
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav a:hover {
+    border: 1px solid rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.2);
+}
+
+ins {
+    font-size: 32px;
+    position: absolute;
+    text-decoration: none;
+    padding: 8px;
+    color: #007;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: rgba(0,0,200,0.1);
+    border-radius: 10px;
+    margin: 8px;
+    border: 1px solid rgba(0,0,200,0.15);
+}
+
+.megye {
+    stroke: black;
+    stroke-width: 1;
+    fill: transparent;
+    cursor: pointer;
+}
+
+.megye:hover {
+    fill: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+}
