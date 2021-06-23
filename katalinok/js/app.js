@@ -1,0 +1,230 @@
+const birds = [
+    {
+        id: "1",
+        description_hu: "",
+        description_en: "",
+        color_hu: "cremino",
+        color_en: "cremino",
+        sex_hu: "2 hím és 1 tojó",
+        sex_en: "2 male and 1 female",
+        price: 14000,
+        dnaTest: true,
+        family: 1,
+        images: [
+            "./img/1_1.jpg",
+            "./img/1_2.jpg",
+            "./img/1_3.jpg"
+        ]
+    },
+
+    {
+        id: "2",
+        description_hu: "Egyfaktoros szürkeszárnyú",
+        description_en: "Single factor, greywing",
+        sex_hu: "1 hím",
+        sex_en: "1 male",
+        color_hu: "cremino",
+        color_en: "cremino",
+        price: 15000,
+        dnaTest: true,
+        family: 1,
+        images: [
+            "./img/2_1.jpg",
+            "./img/2_2.jpg",
+        ]
+    },
+
+    {
+        id: "3",
+        description_hu: "Türkiz hordozó",
+        description_en: "Potential color mutation: turquoise",
+        color_hu: "lutino",
+        color_en: "lutino",
+        sex_hu: "1 hím",
+        sex_en: "1 male",
+        price: 14000,
+        dnaTest: true,
+        family: 2,
+        images: [
+            "./img/3_1.jpg",
+            "./img/3_2.jpg",
+            "./img/3_3.jpg",
+        ]
+    },
+
+    {
+        id: "4",
+        description_hu: "Szürkeszárnyú (lehetséges türkiz hordozó)",
+        description_en: "greywing (potential color mutation: turquoise)",
+        sex_hu: "1 hím",
+        sex_en: "1 male",
+        color_hu: "lutino",
+        color_en: "lutino",
+        price: 17000,
+        dnaTest: true,
+        family: 3,
+        images: [
+            "./img/4_1.jpg",
+            "./img/4_2.jpg",
+        ]
+    },
+
+    {
+        id: "5",
+        description_hu: "Egyfaktoros szürkeszárnyú (inó hordozó és lehetséges türkiz hordozó)",
+        description_en: "Single factor, greywing (potential color mutation: ino and turquoise)",
+        sex_hu: "1 hím",
+        sex_en: "1 male",
+        color_hu: "zöld",
+        color_en: "green",
+        price: 9000,
+        family: 3,
+        images: [
+            "./img/5_1.jpg",
+            "./img/5_2.jpg",
+            "./img/5_3.jpg",
+        ]
+    },
+
+    {
+        id: "6",
+        description_hu: "Lehetséges türkiz hordozó",
+        description_en: "Turquoise parents",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "sötétzöld",
+        color_en: "dark green",
+        price: 8000,
+        family: 3,
+        images: [
+            "./img/6_1.jpg",
+            "./img/6_2.jpg",
+        ]
+    },
+
+    {
+        id: "7",
+        description_hu: "Nem ivarvizsgált (öröklődés alapján tudható a neme).",
+        description_en: "Doesn't have DNA test, but predictable.",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "cremino",
+        color_en: "cremino",
+        price: 12000,
+        family: 4,
+        images: [
+            "./img/7_1.jpg",
+        ]
+    },
+
+    {
+        id: "8",
+        description_hu: "Egyfaktoros szürkeszárnyú (türkiz és inó/pallid hordozók)",
+        description_en: "Single factor, greywing, (potential color mutation: turquoise and ino/pallid)",
+        sex_hu: "2 hím",
+        sex_en: "2 male",
+        color_hu: "zöld",
+        color_en: "green",
+        price: 10000,
+        family: 5,
+        images: [
+            "./img/8_1.jpg",
+            "./img/8_2.jpg",
+            "./img/8_3.jpg",
+            "./img/8_4.jpg",
+        ]
+    },
+]
+
+
+class App {
+    constructor() {
+        this.language = 'hu';
+        this.rootElem = document.querySelector('#root');
+
+        this.switchLanguage = this.switchLanguage.bind(this);
+        this.render = this.render.bind(this);
+
+        Array.from(document.querySelectorAll('.language-toolbar img')).forEach(x => {
+            const lang = x.dataset.lang;
+            x.onclick = () => this.switchLanguage(lang);
+        });
+
+        this.render();
+    }
+
+    switchLanguage(language) {
+        if (language === this.language) { return; }
+        this.language = language;
+        this.render();
+    }
+
+    render() {
+        const txt = birds.map(x => itemTemplate(x, this.language)).join('');
+        this.rootElem.innerHTML = txt;
+    }
+}
+
+const tr = {
+    hu: {
+        color: 'Szin:',
+        description: 'Megjegyzés:',
+        family: 'Fészekalj:',
+        forint: 'Ft',
+        images: 'Képek:',
+        price: 'Ár:',
+        sex: 'Nem:',
+    },
+    en: {
+        color: 'Color:',
+        description: 'Note:',
+        family: 'Brood:',
+        forint: 'Huf',
+        images: 'Images:',
+        price: 'Price:',
+        sex: 'Sex:',
+    }
+}
+
+const renderImage = (url) => {
+    return `<a href="${url}" target="_blank"><img src="${url}" height="128" /></a>`;
+}
+
+const itemTemplate = (item, language) => {
+    return `
+    <table>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>#${item.id}</td>
+            </tr>
+            <tr>
+                <td>${tr[language].sex}</td>
+                <td>${item['sex_'+language]}</td>
+            </tr>
+            <tr>
+                <td>${tr[language].family}</td>
+                <td>#${item.family}</td>
+            </tr>
+            <tr>
+                <td>${tr[language].color}</td>
+                <td>${item['color_'+language]}</td>
+            </tr>
+            <tr>
+                <td>${tr[language].description}</td>
+                <td>${item['description_'+language] || '-'}</td>
+            </tr>
+            <tr>
+                <td>${tr[language].price}</td>
+                <td>${item.price + ' ' + tr[language].forint}</td>
+            </tr>
+            <tr>               
+                <td>${tr[language].images}</td>
+                <td>${item.images.map(x => renderImage(x)).join('')}</td>
+            </tr>
+        </tbody>
+    <table>
+    `;
+}
+
+const app = new App();

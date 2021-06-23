@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+section header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+
+.language-toolbar {
+    font-size: 0;
+}
+
+.language-toolbar img {
+    cursor: pointer;
+    margin: 0 4px;
+}
+
+section main table {
+    width: 100%;
+    border: 1px solid #888;
+}
+
+section main table tr td:first-child {
+    width: 30%;
+    vertical-align: top;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+section main table tr td:last-child {
+    width: 70%;
+}
+
+section main table tr td:last-child a {
+    margin: 0 8px;
+}
