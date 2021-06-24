@@ -134,6 +134,90 @@ const birds = [
             "./img/8_4.jpg",
         ]
     },
+
+    {
+        id: "9",
+        description_hu: "(Pallidinó hordozók)",
+        description_en: "(potential color mutation: ino/pallid)",
+        sex_hu: "1 hím",
+        sex_en: "1 male",
+        color_hu: "zöld",
+        color_en: "green",
+        dnaTest: true,
+        price: 18000,
+        family: 6,
+        images: [
+            "./img/9_1.jpg",
+        ]
+    },
+
+    {
+        id: "10",
+        description_hu: "(Pallidinó hordozók)",
+        description_en: "(potential color mutation: ino/pallid)",
+        sex_hu: "3 hím",
+        sex_en: "3 male",
+        color_hu: "zöld",
+        color_en: "green",
+        price: 18000,
+        family: 7,
+        images: [
+            "./img/10_1.jpg",
+            "./img/10_2.jpg",
+            "./img/10_3.jpg",
+        ]
+    },
+
+    {
+        id: "11",
+        description_hu: "(kézzel nevelt)",
+        description_en: "(hand raised)",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "lutino",
+        color_en: "lutino",
+        price: 18000,
+        family: 6,
+        images: [
+            "./img/11_1.jpg",
+            "./img/11_2.jpg",
+        ]
+    },
+
+    {
+        id: "12",
+        description_hu: "(Pallid, türkiz hordozók)",
+        description_en: "Greywing (potential color mutation: turquoise, pallid)",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "zöld",
+        color_en: "green",
+        price: 18000,
+        family: 8,
+        images: [
+            "./img/12_1.jpg",
+            "./img/12_2.jpg",
+            "./img/12_3.jpg",
+            "./img/12_4.jpg",
+            "./img/12_5.jpg",
+        ]
+    },
+
+    {
+        id: "13",
+        description_hu: "(türkiz hordozók)",
+        description_en: "Greywing (potential color mutation: pallid)",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "sötétzöld",
+        color_en: "dark green",
+        price: 9000,
+        family: 8,
+        images: [
+            "./img/13_1.jpg",
+            "./img/13_2.jpg",
+        ]
+    },
 ]
 
 
@@ -174,6 +258,7 @@ const tr = {
         images: 'Képek:',
         price: 'Ár:',
         sex: 'Nem:',
+        dna: "DNS teszt:"
     },
     en: {
         color: 'Color:',
@@ -183,6 +268,7 @@ const tr = {
         images: 'Images:',
         price: 'Price:',
         sex: 'Sex:',
+        dna: "DNA teszt:"
     }
 }
 
@@ -211,8 +297,12 @@ const itemTemplate = (item, language) => {
                 <td>${item['color_'+language]}</td>
             </tr>
             <tr>
-                <td>${tr[language].description}</td>
+                <td>${tr[language].dna}</td>
                 <td>${item['description_'+language] || '-'}</td>
+            </tr>
+            <tr>
+                <td>${tr[language].description}</td>
+                <td>${item.dnaTest ? '&#x2713;' : '-'}</td>
             </tr>
             <tr>
                 <td>${tr[language].price}</td>
