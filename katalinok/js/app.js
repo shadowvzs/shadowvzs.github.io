@@ -137,12 +137,12 @@ const birds = [
 
     {
         id: "9",
-        description_hu: "(Pallidinó hordozók)",
+        description_hu: "",
         description_en: "(potential color mutation: ino/pallid)",
         sex_hu: "1 hím",
         sex_en: "1 male",
-        color_hu: "zöld",
-        color_en: "green",
+        color_hu: "zöld pallidinó",
+        color_en: "green pallidino",
         dnaTest: true,
         price: 18000,
         family: 6,
@@ -153,12 +153,12 @@ const birds = [
 
     {
         id: "10",
-        description_hu: "(Pallidinó hordozók)",
-        description_en: "(potential color mutation: ino/pallid)",
+        description_hu: "",
+        description_en: "",
         sex_hu: "3 hím",
         sex_en: "3 male",
-        color_hu: "zöld",
-        color_en: "green",
+        color_hu: "zöld pallidinó",
+        color_en: "green pallidino",
         price: 18000,
         family: 7,
         images: [
