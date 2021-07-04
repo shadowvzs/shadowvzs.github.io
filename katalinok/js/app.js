@@ -5,8 +5,8 @@ const birds = [
         description_en: "",
         color_hu: "cremino",
         color_en: "cremino",
-        sex_hu: "2 hím és 1 tojó",
-        sex_en: "2 male and 1 female",
+        sex_hu: "1 hím és 1 tojó",
+        sex_en: "1 male and 1 female",
         price: 14000,
         dnaTest: true,
         family: 1,
@@ -16,7 +16,7 @@ const birds = [
             "./img/1_3.jpg"
         ]
     },
-
+	/*
     {
         id: "2",
         description_hu: "Egyfaktoros szürkeszárnyú",
@@ -32,7 +32,7 @@ const birds = [
             "./img/2_1.jpg",
             "./img/2_2.jpg",
         ]
-    },
+    },*/
 
     {
         id: "3",
@@ -134,7 +134,7 @@ const birds = [
             "./img/8_4.jpg",
         ]
     },
-
+	/*
     {
         id: "9",
         description_hu: "",
@@ -150,7 +150,7 @@ const birds = [
             "./img/9_1.jpg",
         ]
     },
-
+	
     {
         id: "10",
         description_hu: "",
@@ -167,7 +167,7 @@ const birds = [
             "./img/10_3.jpg",
         ]
     },
-
+*/
     {
         id: "11",
         description_hu: "(kézzel nevelt)",
@@ -183,7 +183,7 @@ const birds = [
             "./img/11_2.jpg",
         ]
     },
-
+	/*
     {
         id: "12",
         description_hu: "(Pallid, türkiz hordozók)",
@@ -202,7 +202,7 @@ const birds = [
             "./img/12_5.jpg",
         ]
     },
-
+	*/
     {
         id: "13",
         description_hu: "(türkiz hordozók)",
@@ -318,3 +318,21 @@ const itemTemplate = (item, language) => {
 }
 
 const app = new App();
+
+// Check if a new cache is available on page load.
+window.addEventListener('load', function(e) {
+
+  window.applicationCache.addEventListener('updateready', function(e) {
+    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+      // Browser downloaded a new app cache.
+      // Swap it in and reload the page to get the new hotness.
+      window.applicationCache.swapCache();
+      if (confirm('A new version of this site is available. Load it?')) {
+        window.location.reload();
+      }
+    } else {
+      // Manifest didn't changed. Nothing new to server.
+    }
+  }, false);
+
+}, false);
