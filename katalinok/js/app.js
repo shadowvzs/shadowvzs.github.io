@@ -150,13 +150,13 @@ const birds = [
             "./img/9_1.jpg",
         ]
     },
-	
+	*/
     {
         id: "10",
         description_hu: "",
         description_en: "",
-        sex_hu: "3 hím",
-        sex_en: "3 male",
+        sex_hu: "2 hím",
+        sex_en: "2 male",
         color_hu: "zöld pallidinó",
         color_en: "green pallidino",
         price: 18000,
@@ -167,7 +167,7 @@ const birds = [
             "./img/10_3.jpg",
         ]
     },
-*/
+
     {
         id: "11",
         description_hu: "(kézzel nevelt)",
