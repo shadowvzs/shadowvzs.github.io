@@ -206,7 +206,7 @@ const birds = [
     {
         id: "13",
         description_hu: "(türkiz hordozók)",
-        description_en: "Greywing (potential color mutation: pallid)",
+        description_en: "turquoise bearer (potential color mutation: pallid)",
         sex_hu: "1 tojó",
         sex_en: "1 female",
         color_hu: "sötétzöld",
@@ -218,6 +218,120 @@ const birds = [
             "./img/13_2.jpg",
         ]
     },
+	
+	{    
+		id: "14",
+        description_hu: "türkiz hordozó (július 20-a után vihető)",
+        description_en: "turquoise bearer (after july 20th)",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "szürkeszárnyú lutino",
+        color_en: "greywings lutino",
+        price: 16000,
+        family: 8,
+        images: [
+            "./img/14_1.jpg",
+            "./img/14_2.jpg",
+            "./img/14_3.jpg",
+        ]
+    },
+	{
+		id: "15",
+        description_hu: "türkiz hordozó és lehetséges inó (július 20-a után vihető)",
+        description_en: "turquoise bearer and potentional ino bearer (after july 20th)",
+        sex_hu: "1 hím",
+        sex_en: "1 male",
+        color_hu: "egyfaktoros szürkeszárnyú zöld",
+        color_en: "single factor greywings green",
+        price: 10000,
+        family: 8,
+        images: [
+            "./img/15_1.jpg",
+            "./img/15_2.jpg",            
+        ]
+    },
+	{
+		id: "16",
+        description_hu: "lehetséges inó hordozó (július 20-a után vihető)",
+        description_en: "potentional ino bearer (after july 20th)",
+        sex_hu: "1 hím",
+        sex_en: "1 male",
+        color_hu: "egyfaktoros szürkeszárnyú kobalt",
+        color_en: "single factor greywings cobalt",
+        price: 12000,
+        family: 8,
+        images: [
+            "./img/16_1.jpg",
+            "./img/16_2.jpg",
+			"./img/16_3.jpg", 
+        ]
+    },
+	
+	{
+		id: "17",
+        description_hu: "türkiz hordozó - hobby madár (július 25-a után vihető)",
+        description_en: "turquoise bearer - hobby bird (after july 25th)",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "szürkeszárnyú zöld",
+        color_en: "greywings green",
+        price: 5000,
+        family: 9,
+        images: [
+            "./img/17_1.jpg",
+            "./img/17_2.jpg",
+        ]
+    },
+	
+	{
+		id: "18",
+        description_hu: "(július 25-a után vihető)",
+        description_en: "(after july 25th)",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "szürkeszárnyú türkiz",
+        color_en: "greywings turquoise",
+        price: 12000,
+        family: 9,
+        images: [
+            "./img/18_1.jpg",
+            "./img/18_2.jpg",
+			"./img/18_3.jpg",
+        ]
+    },	
+	
+	{
+		id: "19",
+        description_hu: "(július 25-a után vihető)",
+        description_en: "(after july 25th)",
+        sex_hu: "2 tojó",
+        sex_en: "2 female",
+        color_hu: "lutino",
+        color_en: "lution",
+        price: 12000,
+        family: 7,
+        images: [
+            "./img/19_1.jpg",
+            "./img/19_2.jpg",
+        ]
+    },
+	
+	{
+		id: "20",
+        description_hu: "(július 25-a után vihető)",
+        description_en: "(after july 25th)",
+        sex_hu: "1 hím",
+        sex_en: "1 male",
+        color_hu: "szürkeszárnyú pallidinó",
+        color_en: "greywings pallidino",
+        price: 18000,
+        family: 7,
+        images: [
+            "./img/20_1.jpg",
+            "http://www.eurostrada.net/wp-content/uploads/2015/04/Image-Coming-Soon1.png",
+			"http://www.eurostrada.net/wp-content/uploads/2015/04/Image-Coming-Soon1.png",
+        ]
+    },	
 ]
 
 
