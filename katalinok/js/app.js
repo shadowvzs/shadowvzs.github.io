@@ -1,8 +1,8 @@
 const birds = [
     {
         id: "1",
-        description_hu: "",
-        description_en: "",
+        description_hu: "fenntartva",
+        description_en: "reserved",
         color_hu: "cremino",
         color_en: "cremino",
         sex_hu: "1 hím és 1 tojó",
@@ -71,8 +71,8 @@ const birds = [
 
     {
         id: "5",
-        description_hu: "Egyfaktoros szürkeszárnyú (inó hordozó és lehetséges türkiz hordozó)",
-        description_en: "Single factor, greywing (potential color mutation: ino and turquoise)",
+        description_hu: "Fenntartva - Egyfaktoros szürkeszárnyú (inó hordozó és lehetséges türkiz hordozó)",
+        description_en: "Reserved - Single factor, greywing (potential color mutation: ino and turquoise)",
         sex_hu: "1 hím",
         sex_en: "1 male",
         color_hu: "zöld",
@@ -88,8 +88,8 @@ const birds = [
 
     {
         id: "6",
-        description_hu: "Lehetséges türkiz hordozó",
-        description_en: "Turquoise parents",
+        description_hu: "Fenntartva - Lehetséges türkiz hordozó",
+        description_en: "Reserved - Turquoise parents",
         sex_hu: "1 tojó",
         sex_en: "1 female",
         color_hu: "sötétzöld",
@@ -167,7 +167,7 @@ const birds = [
             "./img/10_3.jpg",
         ]
     },
-
+/*
     {
         id: "11",
         description_hu: "(kézzel nevelt)",
@@ -183,7 +183,6 @@ const birds = [
             "./img/11_2.jpg",
         ]
     },
-	/*
     {
         id: "12",
         description_hu: "(Pallid, türkiz hordozók)",
@@ -202,7 +201,7 @@ const birds = [
             "./img/12_5.jpg",
         ]
     },
-	*/
+	
     {
         id: "13",
         description_hu: "(türkiz hordozók)",
@@ -217,7 +216,7 @@ const birds = [
             "./img/13_1.jpg",
             "./img/13_2.jpg",
         ]
-    },
+    },*/
 	
 	{    
 		id: "14",
