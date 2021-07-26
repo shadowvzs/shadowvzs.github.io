@@ -326,6 +326,22 @@ const birds = [
             "./img/20_1.jpg",
             "./img/20_2.jpg",
         ]
+    },
+	
+	{
+		id: "21",
+        description_hu: "",
+        description_en: "",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "szürkeszárnyú kobalt",
+        color_en: "greywings cobalt",
+        price: 12000,
+        family: 7,
+        images: [
+            "./img/21_1.jpg",
+            "./img/21_2.jpg",
+        ]
     },	
 ]
 
@@ -405,14 +421,14 @@ const itemTemplate = (item, language) => {
                 <td>${tr[language].color}</td>
                 <td>${item['color_'+language]}</td>
             </tr>
-            <tr>
+            ${item['description_'+language] ? `<tr>
                 <td>${tr[language].dna}</td>
                 <td>${item['description_'+language] || '-'}</td>
-            </tr>
-            <tr>
+            </tr>` : ''}
+            ${item['description_'+language] ? `<tr>
                 <td>${tr[language].description}</td>
                 <td>${item.dnaTest ? '&#x2713;' : '-'}</td>
-            </tr>
+            </tr>` : '' }
             <tr>
                 <td>${tr[language].price}</td>
                 <td>${item.price + ' ' + tr[language].forint}</td>
