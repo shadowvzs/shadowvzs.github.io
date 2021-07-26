@@ -220,8 +220,8 @@ const birds = [
 	
 	{    
 		id: "14",
-        description_hu: "türkiz hordozó (július 20-a után vihető)",
-        description_en: "turquoise bearer (after july 20th)",
+        description_hu: "türkiz hordozó",
+        description_en: "turquoise bearer",
         sex_hu: "1 tojó",
         sex_en: "1 female",
         color_hu: "szürkeszárnyú lutino",
@@ -231,13 +231,12 @@ const birds = [
         images: [
             "./img/14_1.jpg",
             "./img/14_2.jpg",
-            "./img/14_3.jpg",
         ]
     },
 	{
 		id: "15",
-        description_hu: "türkiz hordozó és lehetséges inó (július 20-a után vihető)",
-        description_en: "turquoise bearer and potentional ino bearer (after july 20th)",
+        description_hu: "türkiz hordozó és lehetséges inó",
+        description_en: "turquoise bearer and potentional ino bearer ",
         sex_hu: "1 hím",
         sex_en: "1 male",
         color_hu: "egyfaktoros szürkeszárnyú zöld",
@@ -251,8 +250,8 @@ const birds = [
     },
 	{
 		id: "16",
-        description_hu: "lehetséges inó hordozó (július 20-a után vihető)",
-        description_en: "potentional ino bearer (after july 20th)",
+        description_hu: "lehetséges inó hordozó",
+        description_en: "potentional ino bearer",
         sex_hu: "1 hím",
         sex_en: "1 male",
         color_hu: "egyfaktoros szürkeszárnyú kobalt",
@@ -262,14 +261,13 @@ const birds = [
         images: [
             "./img/16_1.jpg",
             "./img/16_2.jpg",
-			"./img/16_3.jpg", 
         ]
     },
-	
+	/*
 	{
 		id: "17",
-        description_hu: "türkiz hordozó - hobby madár (július 25-a után vihető)",
-        description_en: "turquoise bearer - hobby bird (after july 25th)",
+        description_hu: "türkiz hordozó - hobby madár",
+        description_en: "turquoise bearer - hobby bird",
         sex_hu: "1 tojó",
         sex_en: "1 female",
         color_hu: "szürkeszárnyú zöld",
@@ -281,11 +279,11 @@ const birds = [
             "./img/17_2.jpg",
         ]
     },
-	
+	*/
 	{
 		id: "18",
-        description_hu: "(július 25-a után vihető)",
-        description_en: "(after july 25th)",
+        description_hu: "",
+        description_en: "",
         sex_hu: "1 tojó",
         sex_en: "1 female",
         color_hu: "szürkeszárnyú türkiz",
@@ -295,14 +293,13 @@ const birds = [
         images: [
             "./img/18_1.jpg",
             "./img/18_2.jpg",
-			"./img/18_3.jpg",
         ]
     },	
 	
 	{
 		id: "19",
-        description_hu: "(július 25-a után vihető)",
-        description_en: "(after july 25th)",
+        description_hu: "",
+        description_en: "",
         sex_hu: "2 tojó",
         sex_en: "2 female",
         color_hu: "lutino",
@@ -317,8 +314,8 @@ const birds = [
 	
 	{
 		id: "20",
-        description_hu: "(július 25-a után vihető)",
-        description_en: "(after july 25th)",
+        description_hu: "",
+        description_en: "",
         sex_hu: "1 hím",
         sex_en: "1 male",
         color_hu: "szürkeszárnyú pallidinó",
@@ -327,8 +324,7 @@ const birds = [
         family: 7,
         images: [
             "./img/20_1.jpg",
-            "http://www.eurostrada.net/wp-content/uploads/2015/04/Image-Coming-Soon1.png",
-			"http://www.eurostrada.net/wp-content/uploads/2015/04/Image-Coming-Soon1.png",
+            "./img/20_2.jpg",
         ]
     },	
 ]
