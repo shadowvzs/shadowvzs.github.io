@@ -289,7 +289,7 @@ const birds = [
         color_hu: "szürkeszárnyú türkiz",
         color_en: "greywings turquoise",
         price: 12000,
-        family: 9,
+        family: 8,
         images: [
             "./img/18_1.jpg",
             "./img/18_2.jpg",
@@ -337,7 +337,7 @@ const birds = [
         color_hu: "szürkeszárnyú kobalt",
         color_en: "greywings cobalt",
         price: 12000,
-        family: 7,
+        family: 8,
         images: [
             "./img/21_1.jpg",
             "./img/21_2.jpg",
