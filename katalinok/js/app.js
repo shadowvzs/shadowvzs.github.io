@@ -1,4 +1,5 @@
 const birds = [
+/*
     {
         id: "1",
         description_hu: "fenntartva",
@@ -16,7 +17,7 @@ const birds = [
             "./img/1_3.jpg"
         ]
     },
-	/*
+	
     {
         id: "2",
         description_hu: "Egyfaktoros szürkeszárnyú",
@@ -32,7 +33,7 @@ const birds = [
             "./img/2_1.jpg",
             "./img/2_2.jpg",
         ]
-    },*/
+    },
 
     {
         id: "3",
@@ -134,7 +135,7 @@ const birds = [
             "./img/8_4.jpg",
         ]
     },
-	/*
+	
     {
         id: "9",
         description_hu: "",
@@ -150,7 +151,7 @@ const birds = [
             "./img/9_1.jpg",
         ]
     },
-	*/
+	
     {
         id: "10",
         description_hu: "",
@@ -167,7 +168,7 @@ const birds = [
             "./img/10_3.jpg",
         ]
     },
-/*
+
     {
         id: "11",
         description_hu: "(kézzel nevelt)",
@@ -216,7 +217,7 @@ const birds = [
             "./img/13_1.jpg",
             "./img/13_2.jpg",
         ]
-    },*/
+    },
 	
 	{    
 		id: "14",
@@ -263,7 +264,7 @@ const birds = [
             "./img/16_2.jpg",
         ]
     },
-	/*
+
 	{
 		id: "17",
         description_hu: "türkiz hordozó - hobby madár",
@@ -279,7 +280,7 @@ const birds = [
             "./img/17_2.jpg",
         ]
     },
-	*/
+	
 	{
 		id: "18",
         description_hu: "",
@@ -342,7 +343,93 @@ const birds = [
             "./img/21_1.jpg",
             "./img/21_2.jpg",
         ]
-    },	
+    },
+	*/
+	{
+		id: "22",
+        description_hu: "",
+        description_en: "",
+        sex_hu: "1 hím",
+        sex_en: "1 male",
+        color_hu: "szürkeszárnyú türkiz pallidinó",
+        color_en: "greywings turquoise pallidino",
+        price: 999999,
+        family: 1,
+        images: [
+            "./img/22_1.jpg",
+        ]
+    },
+	{
+		id: "23",
+        description_hu: "",
+        description_en: "",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "cremino",
+        color_en: "cremino",
+        price: 999999,
+        family: 1,
+        images: [
+            "./img/23_1.jpg",
+        ]
+    },
+	{
+		id: "24",
+        description_hu: "",
+        description_en: "",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "olajzöld",
+        color_en: "olive green",
+        price: 999999,
+        family: 1,
+        images: [
+            "./img/24_1.jpg",
+        ]
+    },
+	{
+		id: "25",
+        description_hu: "türkiz hordozó",
+        description_en: "turquoise bearer",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "lutino",
+        color_en: "lutino ",
+        price: 999999,
+		dnaTest: true,
+        family: 1,
+        images: [
+            "./img/25_1.jpg",
+        ]
+    },
+	{
+		id: "26",
+        description_hu: "",
+        description_en: "",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "lutino",
+        color_en: "lutino ",
+        price: 999999,
+        family: 1,
+        images: [
+            "./img/26_1.jpg",
+        ]
+    },
+	{
+		id: "27",
+        description_hu: "",
+        description_en: "",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+        color_hu: "lutino",
+        color_en: "lutino ",
+        price: 999999,
+        family: 1,
+        images: [
+            "./img/27_1.jpg",
+        ]
+    },
 ]
 
 
