@@ -349,11 +349,11 @@ const itemTemplate = (item, language) => {
                 <td>${item['color_'+language]}</td>
             </tr>
             ${item['description_'+language] ? `<tr>
-                <td>${tr[language].dna}</td>
+                <td>${tr[language].description}</td>
                 <td>${item['description_'+language] || '-'}</td>
             </tr>` : ''}
-            ${item['description_'+language] ? `<tr>
-                <td>${tr[language].description}</td>
+            ${item['dna_'+language] ? `<tr>
+                <td>${tr[language].dna}</td>
                 <td>${item.dnaTest ? '&#x2713;' : '-'}</td>
             </tr>` : '' }
 			<tr>
