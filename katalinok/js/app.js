@@ -266,15 +266,6 @@ class App {
     constructor() {
         this.language = 'hu';
         this.rootElem = document.querySelector('#root');
-		try {
-			const urlParams = new URLSearchParams(window.location.search);
-			const lang = urlParams.get('lang');
-			if (['en','hu'].includes(lang)) {
-				this.lang = lang;
-			}
-		} catch (e) {
-			// nothin
-		}
 
         this.switchLanguage = this.switchLanguage.bind(this);
         this.render = this.render.bind(this);
@@ -285,6 +276,16 @@ class App {
         });
 
         this.render();
+		
+		try {
+			const urlParams = new URLSearchParams(window.location.search);
+			const lang = urlParams.get('lang');
+			if (['en','hu'].includes(lang)) {
+				this.switchLanguage(lang);
+			}
+		} catch (e) {
+			// nothin
+		}
     }
 
     switchLanguage(language) {
