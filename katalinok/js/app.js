@@ -118,8 +118,8 @@ const birds = [
 	
 	{
 		id: "8",
-        description_hu: "szürkeszárnyú",
-        description_en: "greywings",
+        description_hu: "",
+        description_en: "",
         sex_hu: "1 tojo",
         sex_en: "1 female",
         color_hu: "türkiz",
@@ -137,13 +137,13 @@ const birds = [
 		id: "9",
         description_hu: "",
         description_en: "",
-        sex_hu: "1 - dns tesztre eredmenyre var",
+        sex_hu: "1 - ivarvizsgáltan",
         sex_en: "1 - waiting for dna test",
         color_hu: "cremino",
         color_en: "cremino",
 		parents_hu: "Szürkeszárnyú türkiz (ino hordozó) hím + cremino tojó",
 		parents_en: "Greywings turquoise (ino bearer) male + cremino female",
-        price: 0,
+        price: 15000,
         family: 3,
         images: [
             ""
@@ -159,7 +159,7 @@ const birds = [
         color_en: "turquoise",
 		parents_hu: "Szürkeszárnyú türkiz (ino hordozó) hím + cremino tojó",
 		parents_en: "Greywings turquoise (ino bearer) male + cremino female",
-        price: 0,
+        price: 13000,
         family: 3,
         images: [
             ""
@@ -169,8 +169,8 @@ const birds = [
 		id: "11",
         description_hu: "",
         description_en: "",
-        sex_hu: "1 - him",
-        sex_en: "1 - male",
+        sex_hu: "1 - tojo",
+        sex_en: "1 - female",
         color_hu: "lutino",
         color_en: "lutino",
 		parents_hu: "Lutino him + zöld pallid tojó (1f szürkeszárnyú)",
@@ -207,7 +207,7 @@ const birds = [
         color_en: "lutino",
 		parents_hu: "zöld (Szürkeszárnyú türkiz hordozó) him + pallid tojó",
 		parents_en: "green (greywings, turquoise bearer) male + pallid female",
-        price: 0,
+        price: 10000,
         family: 6,
         images: [
             "./img/43_1.jpg",
@@ -225,7 +225,7 @@ const birds = [
         color_en: "olive green",
 		parents_hu: "Olaj zöld (Szürkeszárnyú ino/türkiz hordozó) him + D. türkiz pallid tojó",
 		parents_en: "Olive (greywings, ino/turquoise bearer) male + D. turquoise pallid female",
-        price: 0,
+        price: 10000,
         family: 7,
         images: [
             "./img/44_1.jpg",
