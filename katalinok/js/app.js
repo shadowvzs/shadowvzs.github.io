@@ -178,7 +178,7 @@ const birds = [
         price: 12000,
         family: 4,
         images: [
-            "./img/39_1.jpg"
+            "./img/42_1.jpg"
         ]
     },
 	{
