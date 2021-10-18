@@ -1,437 +1,283 @@
 const birds = [
-/*
-    {
-        id: "1",
-        description_hu: "fenntartva",
-        description_en: "reserved",
-        color_hu: "cremino",
-        color_en: "cremino",
-        sex_hu: "1 hím és 1 tojó",
-        sex_en: "1 male and 1 female",
-        price: 14000,
-        dnaTest: true,
+	{
+		id: "29",
+        description_hu: "meg nins kep - lehetséges türkiz hordozó",
+        description_en: "still no image - potentional turq. bearer",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
+		parents_hu: "Sötétzöld/türkiz+ino hím + szürkeszárnyú pallid/türkiz tojó",
+		parents_en: "Dark green (turq.+ino bearer) male + greywings pallid/turq. female",		
+        color_hu: "lutino",
+        color_en: "lutino",
+        price: 12000,
         family: 1,
         images: [
-            "./img/1_1.jpg",
-            "./img/1_2.jpg",
-            "./img/1_3.jpg"
+            "",
+        ]
+    },
+	{
+		id: "30",
+        description_hu: "foto: az egyik cremino a szulokkel",
+        description_en: "photo: one of the creminos with her parents",
+        sex_hu: "2 tojó",
+        sex_en: "2 female",
+        color_hu: "cremino",
+        color_en: "cremino",
+		parents_hu: "Sötétzöld/türkiz+ino hím + szürkeszárnyú pallid/türkiz tojó",
+		parents_en: "Dark green (turq.+ino bearer) male + greywings pallid/turq. female",
+        price: 12000,
+        family: 1,
+        images: [
+            "./img/28_1.jpg",
+        ]
+    },
+	{
+		id: "31",
+        description_hu: "szurkeszarnyu (lehetséges türkiz hordozó)",
+        description_en: "greywings (potentional turquoise brearer)",
+        sex_hu: "1 him",
+        sex_en: "1 male",
+        color_hu: "lutino",
+        color_en: "lutino",
+		parents_hu: "Sötétzöld/türkiz+ino hím + szürkeszárnyú pallid/türkiz tojó",
+		parents_en: "Dark green (turq.+ino bearer) male + greywings pallid/turq. female",
+        price: 16000,
+        family: 1,
+        images: [
+            "./img/31_1.jpg",
+        ]
+    },
+	{
+		id: "32",
+        description_hu: "foglalva - szürkeszárnyú (lehetséges türkiz hordozó)",
+        description_en: "reserverd - greywings (potentional turquoise brearer)",
+        sex_hu: "1 him",
+        sex_en: "1 male",
+        color_hu: "Sötétzöld",
+        color_en: "Dark green",
+		parents_hu: "Sötétzöld/türkiz+ino hím + szürkeszárnyú pallid/türkiz tojó",
+		parents_en: "Dark green (turq.+ino bearer) male + greywings pallid/turq. female",
+        price: 10000,
+        family: 1,
+        images: [
+            "./img/32_1.jpg",
+			"./img/32_2.jpg"
+        ]
+    },
+	{
+		id: "33",
+        description_hu: "szürkeszárnyú - 1f viola (ino hordozó)",
+        description_en: "greywings - 1f viola (ino bearer)",
+        sex_hu: "1 him",
+        sex_en: "1 male",
+        color_hu: "Kobalt",
+        color_en: "Cobalt",
+		parents_hu: "Szürkeszárnyú cremino (1f) hím + kobalt tojó (1f viola)",
+		parents_en: "Greywings cremino (1f) male + cobalt female (1f viola)",
+        price: 13000,
+        family: 2,
+        images: [
+            "./img/33_1.jpg",
+            "./img/33_2.jpg",
+            "./img/33_3.jpg"
+        ]
+    },
+	{
+		id: "34",
+        description_hu: "szürkeszárnyú (ino hordozó)",
+        description_en: "greywings (ino bearer)",
+        sex_hu: "1 him",
+        sex_en: "1 male",
+        color_hu: "Kobalt",
+        color_en: "Cobalt",
+		parents_hu: "Szürkeszárnyú cremino (1f) hím + kobalt tojó (1f viola)",
+		parents_en: "Greywings cremino (1f) male + cobalt female (1f viola)",
+        price: 13000,
+        family: 2,
+        images: [
+            "./img/34_1.jpg",
+            "./img/34_2.jpg",
+        ]
+    },	
+	{
+		id: "35",
+        description_hu: "szürkeszárnyú",
+        description_en: "greywings",
+        sex_hu: "1 him",
+        sex_en: "1 male",
+        color_hu: "cremino",
+        color_en: "cremino",
+		parents_hu: "Szürkeszárnyú cremino (1f) hím + kobalt tojó (1f viola)",
+		parents_en: "Greywings cremino (1f) male + cobalt female (1f viola)",
+        price: 16000,
+        family: 2,
+        images: [
+            "./img/35_1.jpg"
         ]
     },
 	
-    {
-        id: "2",
-        description_hu: "Egyfaktoros szürkeszárnyú",
-        description_en: "Single factor, greywing",
-        sex_hu: "1 hím",
-        sex_en: "1 male",
+	{
+		id: "36",
+        description_hu: "szürkeszárnyú",
+        description_en: "greywings",
+        sex_hu: "1 tojo",
+        sex_en: "1 female",
+        color_hu: "türkiz",
+        color_en: "turquoise",
+		parents_hu: "Szürkeszárnyú türkiz (ino hordozó) hím + cremino tojó",
+		parents_en: "Greywings turquoise (ino bearer) male + cremino female",
+        price: 13000,
+        family: 3,
+        images: [
+            "./img/36_1.jpg"
+        ]
+    },
+	
+	{
+		id: "37",
+        description_hu: "",
+        description_en: "",
+        sex_hu: "1 - dns tesztre eredmenyre var",
+        sex_en: "1 - waiting for dna test",
         color_hu: "cremino",
         color_en: "cremino",
-        price: 15000,
-        dnaTest: true,
-        family: 1,
+		parents_hu: "Szürkeszárnyú türkiz (ino hordozó) hím + cremino tojó",
+		parents_en: "Greywings turquoise (ino bearer) male + cremino female",
+        price: 0,
+        family: 3,
         images: [
-            "./img/2_1.jpg",
-            "./img/2_2.jpg",
+            ""
+        ]
+    },	
+	{
+		id: "38",
+        description_hu: "foglalva ha him",
+        description_en: "reserved if male",
+        sex_hu: "1 - dns tesztre eredmenyre var",
+        sex_en: "1 - waiting for dna test",
+        color_hu: "türkiz",
+        color_en: "turquoise",
+		parents_hu: "Szürkeszárnyú türkiz (ino hordozó) hím + cremino tojó",
+		parents_en: "Greywings turquoise (ino bearer) male + cremino female",
+        price: 0,
+        family: 3,
+        images: [
+            ""
         ]
     },
-
-    {
-        id: "3",
-        description_hu: "Türkiz hordozó",
-        description_en: "Potential color mutation: turquoise",
+	{
+		id: "42",
+        description_hu: "",
+        description_en: "",
+        sex_hu: "1 - him",
+        sex_en: "1 - male",
         color_hu: "lutino",
         color_en: "lutino",
-        sex_hu: "1 hím",
-        sex_en: "1 male",
-        price: 14000,
-        dnaTest: true,
-        family: 2,
-        images: [
-            "./img/3_1.jpg",
-            "./img/3_2.jpg",
-            "./img/3_3.jpg",
-        ]
-    },
-
-    {
-        id: "4",
-        description_hu: "Szürkeszárnyú (lehetséges türkiz hordozó)",
-        description_en: "greywing (potential color mutation: turquoise)",
-        sex_hu: "1 hím",
-        sex_en: "1 male",
-        color_hu: "lutino",
-        color_en: "lutino",
-        price: 17000,
-        dnaTest: true,
-        family: 3,
-        images: [
-            "./img/4_1.jpg",
-            "./img/4_2.jpg",
-        ]
-    },
-
-    {
-        id: "5",
-        description_hu: "Fenntartva - Egyfaktoros szürkeszárnyú (inó hordozó és lehetséges türkiz hordozó)",
-        description_en: "Reserved - Single factor, greywing (potential color mutation: ino and turquoise)",
-        sex_hu: "1 hím",
-        sex_en: "1 male",
-        color_hu: "zöld",
-        color_en: "green",
-        price: 9000,
-        family: 3,
-        images: [
-            "./img/5_1.jpg",
-            "./img/5_2.jpg",
-            "./img/5_3.jpg",
-        ]
-    },
-
-    {
-        id: "6",
-        description_hu: "Fenntartva - Lehetséges türkiz hordozó",
-        description_en: "Reserved - Turquoise parents",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "sötétzöld",
-        color_en: "dark green",
-        price: 8000,
-        family: 3,
-        images: [
-            "./img/6_1.jpg",
-            "./img/6_2.jpg",
-        ]
-    },
-
-    {
-        id: "7",
-        description_hu: "Nem ivarvizsgált (öröklődés alapján tudható a neme).",
-        description_en: "Doesn't have DNA test, but predictable.",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "cremino",
-        color_en: "cremino",
+		parents_hu: "Lutino him + zöld pallid tojó (1f szürkeszárnyú)",
+		parents_en: "Lutino male + green pallid female (1f greywings)",
         price: 12000,
         family: 4,
         images: [
-            "./img/7_1.jpg",
+            "./img/39_1.jpg"
         ]
     },
-
-    {
-        id: "8",
-        description_hu: "Egyfaktoros szürkeszárnyú (türkiz és inó/pallid hordozók)",
-        description_en: "Single factor, greywing, (potential color mutation: turquoise and ino/pallid)",
-        sex_hu: "2 hím",
-        sex_en: "2 male",
-        color_hu: "zöld",
-        color_en: "green",
-        price: 10000,
-        family: 5,
-        images: [
-            "./img/8_1.jpg",
-            "./img/8_2.jpg",
-            "./img/8_3.jpg",
-            "./img/8_4.jpg",
-        ]
-    },
-	
-    {
-        id: "9",
-        description_hu: "",
-        description_en: "(potential color mutation: ino/pallid)",
-        sex_hu: "1 hím",
-        sex_en: "1 male",
-        color_hu: "zöld pallidinó",
-        color_en: "green pallidino",
-        dnaTest: true,
-        price: 18000,
-        family: 6,
-        images: [
-            "./img/9_1.jpg",
-        ]
-    },
-	
-    {
-        id: "10",
-        description_hu: "",
-        description_en: "",
-        sex_hu: "2 hím",
-        sex_en: "2 male",
-        color_hu: "zöld pallidinó",
-        color_en: "green pallidino",
-        price: 18000,
-        family: 7,
-        images: [
-            "./img/10_1.jpg",
-            "./img/10_2.jpg",
-            "./img/10_3.jpg",
-        ]
-    },
-
-    {
-        id: "11",
-        description_hu: "(kézzel nevelt)",
-        description_en: "(hand raised)",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
+	{
+		id: "39",
+        description_hu: "türkiz hordozó",
+        description_en: "turquoise brearer",
+        sex_hu: "1 - tojo",
+        sex_en: "1 - female",
         color_hu: "lutino",
         color_en: "lutino",
-        price: 18000,
+		parents_hu: "Cremino him + lutino tojó",
+		parents_en: "Cremino male + lutino female",
+        price: 15000,
+        family: 5,
+        images: [
+            "./img/39_1.jpg"
+        ]
+    },
+	{
+		id: "40",
+        description_hu: "türkiz hordozó",
+        description_en: "turquoise brearer",
+        sex_hu: "1 - dns tesztre eredmenyre var",
+        sex_en: "1 - waiting for dna test",
+        color_hu: "lutino",
+        color_en: "lutino",
+		parents_hu: "Cremino him + lutino tojó",
+		parents_en: "Cremino male + lutino female",
+        price: 15000,
+        family: 5,
+        images: [
+            "./img/39_1.jpg"
+        ]
+    },
+	
+	{
+		id: "43",
+        description_hu: "greywing",
+        description_en: "greywings",
+        sex_hu: "1 tojo + 1 dns eredmenyt varva",
+        sex_en: "1 female + 1 waiting for dna",
+        color_hu: "lutino",
+        color_en: "lutino",
+		parents_hu: "zöld (Szürkeszárnyú türkiz hordozó) him + pallid tojó",
+		parents_en: "green (greywings, turquoise bearer) male + pallid female",
+        price: 0,
         family: 6,
         images: [
-            "./img/11_1.jpg",
-            "./img/11_2.jpg",
-        ]
-    },
-    {
-        id: "12",
-        description_hu: "(Pallid, türkiz hordozók)",
-        description_en: "Greywing (potential color mutation: turquoise, pallid)",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "zöld",
-        color_en: "green",
-        price: 18000,
-        family: 8,
-        images: [
-            "./img/12_1.jpg",
-            "./img/12_2.jpg",
-            "./img/12_3.jpg",
-            "./img/12_4.jpg",
-            "./img/12_5.jpg",
+            "./img/43_1.jpg",
+			"./img/43_2.jpg",
         ]
     },
 	
-    {
-        id: "13",
-        description_hu: "(türkiz hordozók)",
-        description_en: "turquoise bearer (potential color mutation: pallid)",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "sötétzöld",
-        color_en: "dark green",
-        price: 9000,
-        family: 8,
-        images: [
-            "./img/13_1.jpg",
-            "./img/13_2.jpg",
-        ]
-    },
-	
-	{    
-		id: "14",
+	{
+		id: "44",
         description_hu: "türkiz hordozó",
-        description_en: "turquoise bearer",
-        sex_hu: "1 tojó",
+        description_en: "turquoise brearer",
+        sex_hu: "1 tojo",
         sex_en: "1 female",
-        color_hu: "szürkeszárnyú lutino",
-        color_en: "greywings lutino",
-        price: 16000,
-        family: 8,
+        color_hu: "olajzöld",
+        color_en: "olive green",
+		parents_hu: "Olaj zöld (Szürkeszárnyú ino/türkiz hordozó) him + D. türkiz pallid tojó",
+		parents_en: "Olive (greywings, ino/turquoise bearer) male + D. turquoise pallid female",
+        price: 0,
+        family: 7,
         images: [
-            "./img/14_1.jpg",
-            "./img/14_2.jpg",
-        ]
-    },
-	{
-		id: "15",
-        description_hu: "türkiz hordozó és lehetséges inó",
-        description_en: "turquoise bearer and potentional ino bearer ",
-        sex_hu: "1 hím",
-        sex_en: "1 male",
-        color_hu: "egyfaktoros szürkeszárnyú zöld",
-        color_en: "single factor greywings green",
-        price: 10000,
-        family: 8,
-        images: [
-            "./img/15_1.jpg",
-            "./img/15_2.jpg",            
-        ]
-    },
-	{
-		id: "16",
-        description_hu: "lehetséges inó hordozó",
-        description_en: "potentional ino bearer",
-        sex_hu: "1 hím",
-        sex_en: "1 male",
-        color_hu: "egyfaktoros szürkeszárnyú kobalt",
-        color_en: "single factor greywings cobalt",
-        price: 12000,
-        family: 8,
-        images: [
-            "./img/16_1.jpg",
-            "./img/16_2.jpg",
-        ]
-    },
-
-	{
-		id: "17",
-        description_hu: "türkiz hordozó - hobby madár",
-        description_en: "turquoise bearer - hobby bird",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "szürkeszárnyú zöld",
-        color_en: "greywings green",
-        price: 5000,
-        family: 9,
-        images: [
-            "./img/17_1.jpg",
-            "./img/17_2.jpg",
+            "./img/44_1.jpg",
         ]
     },
 	
 	{
-		id: "18",
+		id: "45",
         description_hu: "",
         description_en: "",
-        sex_hu: "1 tojó",
+        sex_hu: "1 tojo",
         sex_en: "1 female",
-        color_hu: "szürkeszárnyú türkiz",
-        color_en: "greywings turquoise",
-        price: 12000,
-        family: 8,
-        images: [
-            "./img/18_1.jpg",
-            "./img/18_2.jpg",
-        ]
-    },	
-	
-	{
-		id: "19",
-        description_hu: "",
-        description_en: "",
-        sex_hu: "2 tojó",
-        sex_en: "2 female",
-        color_hu: "lutino",
-        color_en: "lution",
+        color_hu: "cremino",
+        color_en: "cremino",
         price: 12000,
         family: 7,
         images: [
-            "./img/19_1.jpg",
-            "./img/19_2.jpg",
+            "./img/45_1.jpg",
         ]
     },
-	
 	{
-		id: "20",
+		id: "46",
         description_hu: "",
         description_en: "",
-        sex_hu: "1 hím",
+        sex_hu: "1 him",
         sex_en: "1 male",
-        color_hu: "szürkeszárnyú pallidinó",
-        color_en: "greywings pallidino",
+        color_hu: "türkiz pallid",
+        color_en: "turquoise pallid",
         price: 18000,
         family: 7,
-        images: [
-            "./img/20_1.jpg",
-            "./img/20_2.jpg",
-        ]
-    },
-	
-	{
-		id: "21",
-        description_hu: "",
-        description_en: "",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "szürkeszárnyú kobalt",
-        color_en: "greywings cobalt",
-        price: 12000,
-        family: 8,
-        images: [
-            "./img/21_1.jpg",
-            "./img/21_2.jpg",
-        ]
-    },
-	*/
-	{
-		id: "22",
-        description_hu: "",
-        description_en: "",
-        sex_hu: "1 hím",
-        sex_en: "1 male",
-        color_hu: "szürkeszárnyú türkiz pallidinó",
-        color_en: "greywings turquoise pallidino",
-        price: 999999,
-        family: 1,
         images: [
             "./img/22_1.jpg",
         ]
     },
-	{
-		id: "23",
-        description_hu: "",
-        description_en: "",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "cremino",
-        color_en: "cremino",
-        price: 999999,
-        family: 1,
-        images: [
-            "./img/23_1.jpg",
-        ]
-    },
-	{
-		id: "24",
-        description_hu: "",
-        description_en: "",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "olajzöld",
-        color_en: "olive green",
-        price: 999999,
-        family: 1,
-        images: [
-            "./img/24_1.jpg",
-        ]
-    },
-	{
-		id: "25",
-        description_hu: "türkiz hordozó",
-        description_en: "turquoise bearer",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "lutino",
-        color_en: "lutino ",
-        price: 999999,
-		dnaTest: true,
-        family: 1,
-        images: [
-            "./img/25_1.jpg",
-        ]
-    },
-	{
-		id: "26",
-        description_hu: "",
-        description_en: "",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "lutino",
-        color_en: "lutino ",
-        price: 999999,
-        family: 1,
-        images: [
-            "./img/26_1.jpg",
-        ]
-    },
-	{
-		id: "27",
-        description_hu: "",
-        description_en: "",
-        sex_hu: "1 tojó",
-        sex_en: "1 female",
-        color_hu: "lutino",
-        color_en: "lutino ",
-        price: 999999,
-        family: 1,
-        images: [
-            "./img/27_1.jpg",
-        ]
-    },
 ]
-
 
 class App {
     constructor() {
@@ -470,7 +316,8 @@ const tr = {
         images: 'Képek:',
         price: 'Ár:',
         sex: 'Nem:',
-        dna: "DNS teszt:"
+        dna: "DNS teszt:",
+		parents: "Szulok"
     },
     en: {
         color: 'Color:',
@@ -480,7 +327,8 @@ const tr = {
         images: 'Images:',
         price: 'Price:',
         sex: 'Sex:',
-        dna: "DNA teszt:"
+        dna: "DNA teszt:",
+		parents: "Parents: "
     }
 }
 
@@ -516,6 +364,10 @@ const itemTemplate = (item, language) => {
                 <td>${tr[language].description}</td>
                 <td>${item.dnaTest ? '&#x2713;' : '-'}</td>
             </tr>` : '' }
+			<tr>
+                <td>${tr[language].parents}</td>
+                <td>${item['parents_'+language] || '-'}</td>
+            </tr>
             <tr>
                 <td>${tr[language].price}</td>
                 <td>${item.price + ' ' + tr[language].forint}</td>
