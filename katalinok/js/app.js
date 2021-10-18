@@ -309,7 +309,8 @@ const tr = {
         price: 'Ár:',
         sex: 'Nem:',
         dna: "DNS teszt:",
-		parents: "Szülők"
+		parents: "Szülők",
+		multiplier: 1
     },
     en: {
         color: 'Color:',
@@ -320,7 +321,8 @@ const tr = {
         price: 'Price:',
         sex: 'Sex:',
         dna: "DNA teszt:",
-		parents: "Parents: "
+		parents: "Parents: ",
+		multiplier: 0.014
     }
 }
 
@@ -362,7 +364,7 @@ const itemTemplate = (item, language) => {
             </tr>
             <tr>
                 <td>${tr[language].price}</td>
-                <td>${item.price + ' ' + tr[language].forint}</td>
+                <td>${item.price * tr[language].multiplier + ' ' + tr[language].forint}</td>
             </tr>
             <tr>               
                 <td>${tr[language].images}</td>
