@@ -266,6 +266,15 @@ class App {
     constructor() {
         this.language = 'hu';
         this.rootElem = document.querySelector('#root');
+		try {
+			const urlParams = new URLSearchParams(window.location.search);
+			const lang = urlParams.get('lang');
+			if (['en','hu'].includes(lang)) {
+				this.lang = lang;
+			}
+		} catch (e) {
+			// nothin
+		}
 
         this.switchLanguage = this.switchLanguage.bind(this);
         this.render = this.render.bind(this);
@@ -300,7 +309,7 @@ const tr = {
         price: 'Ár:',
         sex: 'Nem:',
         dna: "DNS teszt:",
-		parents: "Szulok"
+		parents: "Szülők"
     },
     en: {
         color: 'Color:',
@@ -349,7 +358,7 @@ const itemTemplate = (item, language) => {
             </tr>` : '' }
 			<tr>
                 <td>${tr[language].parents}</td>
-                <td>${item['parents_'+language] || '-'}</td>
+                <td style="color: #777;font-style:italic">${item['parents_'+language] || '-'}</td>
             </tr>
             <tr>
                 <td>${tr[language].price}</td>
