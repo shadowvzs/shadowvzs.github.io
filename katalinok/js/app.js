@@ -316,7 +316,7 @@ const tr = {
         color: 'Color:',
         description: 'Note:',
         family: 'Brood:',
-        forint: 'Huf',
+        forint: 'Ron',
         images: 'Images:',
         price: 'Price:',
         sex: 'Sex:',
