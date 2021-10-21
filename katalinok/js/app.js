@@ -66,8 +66,8 @@ const birds = [
     },
 	{
 		id: "5",
-        description_hu: "szürkeszárnyú - 1f viola (ino hordozó)",
-        description_en: "greywings - 1f viola (ino bearer)",
+        description_hu: "foglalva szürkeszárnyú - 1f viola (ino hordozó)",
+        description_en: "reserved greywings - 1f viola (ino bearer)",
         sex_hu: "1 him",
         sex_en: "1 male",
         color_hu: "Kobalt",
@@ -118,8 +118,8 @@ const birds = [
 	
 	{
 		id: "8",
-        description_hu: "",
-        description_en: "",
+        description_hu: "foglalva",
+        description_en: "reserved",
         sex_hu: "1 tojo",
         sex_en: "1 female",
         color_hu: "türkiz",
