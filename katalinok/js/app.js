@@ -12,15 +12,15 @@ const birds = [
         price: 12000,
         family: 1,
         images: [
-            "",
+             "./img/1_4.jpg",
         ]
     },
 	{
 		id: "2",
         description_hu: "foto: az egyik cremino a szulokkel",
         description_en: "photo: one of the creminos with her parents",
-        sex_hu: "2 tojó",
-        sex_en: "2 female",
+        sex_hu: "1 tojó",
+        sex_en: "1 female",
         color_hu: "cremino",
         color_en: "cremino",
 		parents_hu: "Sötétzöld/türkiz+ino hím + szürkeszárnyú pallid/türkiz tojó",
@@ -115,7 +115,8 @@ const birds = [
             "./img/37_1.jpg",
             "./img/37_2.jpg",
         ]
-    },	
+    },
+/*	
 	{
 		id: "7",
         description_hu: "szürkeszárnyú",
@@ -133,7 +134,7 @@ const birds = [
 			"./img/7_2.jpg"
         ]
     },
-	
+	*/
 	{
 		id: "8",
         description_hu: "foglalva",
@@ -165,6 +166,7 @@ const birds = [
         family: 3,
         images: [
              "./img/35_1.jpg",
+			 "./img/7_2.jpg"
         ]
     },	
 	{
