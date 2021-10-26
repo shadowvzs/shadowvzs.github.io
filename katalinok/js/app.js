@@ -84,8 +84,8 @@ const birds = [
     },
 	{
 		id: "6",
-        description_hu: "szürkeszárnyú (ino hordozó)",
-        description_en: "greywings (ino bearer)",
+        description_hu: "foglalva - szürkeszárnyú (ino hordozó)",
+        description_en: "reserved - greywings (ino bearer)",
         sex_hu: "1 him",
         sex_en: "1 male",
         color_hu: "Kobalt",
@@ -100,6 +100,23 @@ const birds = [
         ]
     },	
 	{
+		id: "17",
+        description_hu: "",
+        description_en: "",
+        sex_hu: "2 tojo",
+        sex_en: "2 female",
+        color_hu: "Kobalt",
+        color_en: "Cobalt",
+		parents_hu: "Szürkeszárnyú cremino (1f) hím + kobalt tojó (1f viola)",
+		parents_en: "Greywings cremino (1f) male + cobalt female (1f viola)",
+        price: 12000,
+        family: 2,
+        images: [
+            "./img/37_1.jpg",
+            "./img/37_2.jpg",
+        ]
+    },	
+	{
 		id: "7",
         description_hu: "szürkeszárnyú",
         description_en: "greywings",
@@ -107,12 +124,13 @@ const birds = [
         sex_en: "1 male",
         color_hu: "cremino",
         color_en: "cremino",
-		parents_hu: "Szürkeszárnyú cremino (1f) hím + kobalt tojó (1f viola)",
-		parents_en: "Greywings cremino (1f) male + cobalt female (1f viola)",
+		parents_hu: "cremino (1f) tojo + szürkeszárnyú türkiz/ino him",
+		parents_en: "cremino (1f) female + greywings turquoise/ino male",
         price: 16000,
         family: 2,
         images: [
-            "./img/35_1.jpg"
+            "./img/35_1.jpg",
+			"./img/7_2.jpg"
         ]
     },
 	
@@ -137,8 +155,8 @@ const birds = [
 		id: "9",
         description_hu: "",
         description_en: "",
-        sex_hu: "1 - ivarvizsgáltan",
-        sex_en: "1 - waiting for dna test",
+        sex_hu: "1 tojo",
+        sex_en: "1 female",
         color_hu: "cremino",
         color_en: "cremino",
 		parents_hu: "Szürkeszárnyú türkiz (ino hordozó) hím + cremino tojó",
@@ -146,7 +164,7 @@ const birds = [
         price: 15000,
         family: 3,
         images: [
-            ""
+             "./img/35_1.jpg",
         ]
     },	
 	{
@@ -185,8 +203,8 @@ const birds = [
 		id: "12",
         description_hu: "türkiz hordozó",
         description_en: "turquoise brearer",
-        sex_hu: "1 tojo + 1 dns tesztre eredmenyre var",
-        sex_en: "1 female + 1 waiting for dna test",
+        sex_hu: "1 tojo + 1 him",
+        sex_en: "1 female + 1 male",
         color_hu: "lutino",
         color_en: "lutino",
 		parents_hu: "Cremino him + lutino tojó",
@@ -201,8 +219,8 @@ const birds = [
 		id: "13",
         description_hu: "greywing",
         description_en: "greywings",
-        sex_hu: "1 tojo + 1 dns eredmenyt varva",
-        sex_en: "1 female + 1 waiting for dna",
+        sex_hu: "1 tojo + 1 him",
+        sex_en: "1 female + 1 male",
         color_hu: "zöld",
         color_en: "green",
 		parents_hu: "zöld (Szürkeszárnyú türkiz hordozó) him + pallid tojó",
@@ -217,8 +235,8 @@ const birds = [
 	
 	{
 		id: "14",
-        description_hu: "türkiz hordozó",
-        description_en: "turquoise brearer",
+        description_hu: "foglalva - türkiz hordozó",
+        description_en: "reserved - turquoise brearer",
         sex_hu: "1 tojo",
         sex_en: "1 female",
         color_hu: "olajzöld",
