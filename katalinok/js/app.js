@@ -1,8 +1,8 @@
 const birds = [
 	{
 		id: "1",
-        description_hu: "meg nins kep - lehetséges türkiz hordozó",
-        description_en: "still no image - potentional turq. bearer",
+        description_hu: "lehetséges türkiz hordozó",
+        description_en: "potentional turq. bearer",
         sex_hu: "1 tojó",
         sex_en: "1 female",
 		parents_hu: "Sötétzöld/türkiz+ino hím + szürkeszárnyú pallid/türkiz tojó",
@@ -100,13 +100,13 @@ const birds = [
         ]
     },	
 	{
-		id: "17",
+		id: "7",
         description_hu: "",
         description_en: "",
         sex_hu: "2 tojo",
         sex_en: "2 female",
-        color_hu: "Kobalt",
-        color_en: "Cobalt",
+        color_hu: "cremino",
+        color_en: "Cremino",
 		parents_hu: "Szürkeszárnyú cremino (1f) hím + kobalt tojó (1f viola)",
 		parents_en: "Greywings cremino (1f) male + cobalt female (1f viola)",
         price: 12000,
