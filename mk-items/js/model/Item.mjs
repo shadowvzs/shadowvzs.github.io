@@ -29,6 +29,7 @@ export class Item {
                 attribute.tags = attribute.tagsId.map(tagId => itemTags.valueMap[tagId]);
                 return attribute;
             }),
+            brutalityFor: x.brutalityFor,
             reqFusion: x.reqFusion,
             maxFusion: x.maxFusion,
         }))
@@ -54,11 +55,17 @@ export class Item {
         const rows = [];
         rows.push(this.name);
         this.states.forEach(state => {
-            const description = state.attributes.map(x => x.description.replace('%d', state.value));
+            let description = state.attributes.map(x => x.description.replace('%d', state.value));
+            if (state.onlyFor) {
+                description = description.replace('%s', itemTags.valueMap[state.onlyFor]);
+            }
             if (state.reqFusion) {
                 if (state.value) {
                     rows.push(`[Fusion ${romanNumbers[state.reqFusion]}] ${description.join(', ')}`);
                 }
+            } else if (state.brutalityFor) {
+                const name = itemTags.valueMap[state.brutalityFor].toUpperCase().replace('_', ' ');
+                rows.push(`[Brutality] [${name}] ${description.join(', ')}`);
             } else {
                 rows.push(...description);
             }

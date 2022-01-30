@@ -236,23 +236,18 @@ export const items = [
 	{
 		id: 2004,
 		name: "Elemental Stones",
-		d: `
-		30-50% Resistance to Slow and Stun.
-
-[Fusion Level X] 30% Opponent Critical Hit Chance reduction. 
-acc`,
         tagsId: [2, 5, 10],
 		images: ['Elemental_Stones.webp', 'Elemental_Stones.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [1, 2],				
+				initValue: 30,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [17],				
+				initValue: 30,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -262,21 +257,18 @@ acc`,
 	{
 		id: 2005,
 		name: "Executioner Axe",
-        tagsId: [2, 5, 10],
-		d: `15-35% Damage boost against Spec Ops Characters.
-
-		[Fusion Level X] 30% Basic attack damage boost.  weapon`,
+        tagsId: [2, 5, 8],
 		images: ['Executioner_Axe.webp', 'Executioner_Axe.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [18],				
+				initValue: 15,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [4],				
+				initValue: 30,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -287,21 +279,18 @@ acc`,
 	{
 		id: 2006,
 		name: "Gladiator Mask",
-        tagsId: [2, 5, 10],
-		d: `20-30% Toughness boost.
-
-		[Fusion Level X] 50% Resistance to Slow and Stun.  armor`,
+        tagsId: [2, 5, 9],
 		images: ['Gladiator_Mask.webp', 'Gladiator_Mask.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
+				attributeId: [3],				
+				initValue: 20,
 				step: 1,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [1, 2],				
+				initValue: 50,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -312,24 +301,18 @@ acc`,
 	{
 		id: 2007,
 		name: "Katana",
-        tagsId: [2, 5, 10],
-		d: `15-35% Damage boost against Outworld Characters.
-
-		[Fusion Level X] 15% Critical Hit Chance boost.
-			
-		Katana.jpg
-		 weapon`,
+        tagsId: [2, 5, 8],
 		images: ['Katana.webp', 'Katana.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [19],				
+				initValue: 15,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [10],				
+				initValue: 15,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -340,46 +323,39 @@ acc`,
 	{
 		id: 2008,
 		name: "Outworld Gear",
-        tagsId: [2, 5, 10],
-		d: `10-20% Max health boost.
-
-		[Fusion Level X] 50% Resistance to Poison and Bleed. `,
+        tagsId: [2, 5, 9],
 		images: ['Outworld_Gear.webp', 'Outworld_Gear.webp'],
-		d: ``,
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
+				attributeId: [8],				
+				initValue: 10,
 				step: 1,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [6, 7],				
+				initValue: 50,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
 			}				
 		]
 	},
-
 	{
 		id: 2009,
 		name: "Soul Elixir",
-		d: `20-30% Recovery boost.
-		[Fusion Level X] 15% Reduced Power cost on all Special Attacks.  acc`,
         tagsId: [2, 5, 10],
 		images: ['Soul_Elixir.webp', 'Soul_Elixir.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
+				attributeId: [5],				
+				initValue: 20,
 				step: 1,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [20],				
+				initValue: 15,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -390,23 +366,30 @@ acc`,
 	{
 		id: 2500,
 		name: "Bone Claw",
-        tagsId: [2, 5, 10],
-		d: `20-40% Basic attack damage boost.
-		20-160% Max health boost. Tower of Horror only.
-		10-80% Damage boost. Tower of Horror only.
-		[Fusion Level X] 50% Resistance to Poison and Bleed. 	
-		acc`,
+        tagsId: [2, 7, 10, 200],
 		images: ['BoneClaw_PostEvo.webp', 'BoneClaw_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [4],				
+				initValue: 20,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [22],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},						
+			{
+				attributeId: [6, 7],				
+				initValue: 50,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -417,22 +400,30 @@ acc`,
 	{
 		id: 2501,
 		name: "Demon Eye",
-        tagsId: [2, 5, 10],
-		d: `20-40% Recovery boost.
-		10-80% Damage boost. Tower of Horror only.
-		20-160% Max health boost. Tower of Horror only.
-		[Fusion Level X] 20% Power generation boost.  acc`,
+        tagsId: [2, 7, 10, 200],
 		images: ['DemonEye_PostEvo.webp', 'DemonEye_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [5],				
+				initValue: 20,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [22],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},	
+			{
+				attributeId: [15],				
+				initValue: 20,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -443,22 +434,30 @@ acc`,
 	{
 		id: 2502,
 		name: "Death Rattle",
-        tagsId: [2, 5, 10],
-		d: `20-40% Opponent Critical Hit Chance reduction.
-		20-160% Max health boost. Tower of Horror only.
-		10-80% Damage boost. Tower of Horror only.
-		[Fusion Level X] 50% Recovery boost.  acc`,
+        tagsId: [2, 7, 10, 200],
 		images: ['DeathRattle_PostEvo.webp', 'DeathRattle_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [17],				
+				initValue: 20,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [22],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [5],				
+				initValue: 50,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -468,51 +467,72 @@ acc`,
 
 	{
 		id: 2503,
-		name: "Kuai Liang's Bracers ",
-        tagsId: [2, 5, 10],
-		d: `20-40% Basic attack damage boost.
-		10-50% Damage boost. Lin Kuei Tower only.
-		20-100% Max Health Boost. Lin Kuei Tower only.
-		[SUB-ZERO] [SET] If this is equipped with another 1 card from Kuai Liang's set, Diamound Characters gain a 40% chance to perform a Special Combo Ender dealing massive damage. If it is the last opponent and they are under 25% health, Sub-Zero performs a Brutality instead, ending the fight Immediately.
-		[Fusion Level X] 20% Chance to apply Freeze when an opponent blocks Basic Attack.
-		acc`,
+		name: "Kuai Liang's Bracers",
+        tagsId: [2, 7, 10, 16, 201],
 		images: ['Kuailiangbracers_postevo.webp', 'Kuailiangbracers_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [4],				
+				initValue: 20,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
+				attributeId: [23],				
+				initValue: 10,
+				step: 4,
+				maxFusion: 10
+			},
+			{
+				attributeId: [24],				
+				initValue: 20,
+				step: 8,
+				maxFusion: 10
+			},
+			{
+				attributeId: [200],				
 				initValue: 8,
+				step: 0,
+				maxFusion: 0,
+				brutalityFor: 400,
+			},
+			{
+				attributeId: [100],				
+				initValue: 20,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
-			}				
+			}			
 		]
 	},
 
 	{
 		id: 2504,
 		name: "Ice Bomb",
-		d: `10-20% Power generation boost.
-		10-50% Damage boost. Lin Kuei Tower only.
-		20-100% Max Health Boost. Lin Kuei Tower only.
-		[Fusion Level X] 100% Chance to apply Freeze to the active enemy at the start of the match. acc`,
-        tagsId: [2, 5, 10],
+        tagsId: [2, 7, 10, 201],
 		images: ['Icebomb_postevo.webp', 'Icebomb_postevo.webp'],
 		states: [
 			{
 				attributeId: [15],				
-				initValue: 5,
+				initValue: 10,
 				step: 1,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [23],				
+				initValue: 10,
+				step: 4,
+				maxFusion: 10
+			},
+			{
+				attributeId: [24],				
+				initValue: 20,
+				step: 8,
+				maxFusion: 10
+			},
+			{
+				attributeId: [101],				
+				initValue: 100,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -522,25 +542,30 @@ acc`,
 	{
 		id: 2505,
 		name: "Frozen Mummy",
-        tagsId: [2, 5, 10],
-		d: `50-100% Resistance to Frostbite.
-
-		10-50% Damage boost. Lin Kuei Tower only.
-		
-		20-100% Max Health Boost. Lin Kuei Tower only.
-		
-		[Fusion Level X] 15% Reduced Power cost on all Special Attacks. acc`,
+        tagsId: [2, 7, 10, 201],
 		images: ['Frozenmummy_postevo.webp', 'Frozenmummy_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [102],				
+				initValue: 50,
+				step: 5,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [23],				
+				initValue: 10,
+				step: 4,
+				maxFusion: 10
+			},
+			{
+				attributeId: [24],				
+				initValue: 20,
+				step: 8,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [20],				
+				initValue: 15,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -550,23 +575,24 @@ acc`,
 	{
 		id: 2506,
 		name: "Black Dragon Sword",
-        tagsId: [2, 5, 10],
-		d: `20-50% Basic attack damage boost against enemies affected by Fire, Bleed, or Poison.
-
-		20-150% Damage boost. Black Dragon Tower only.
-		
-		[Fusion Level X] 20% Max Health boost. wea`,
+        tagsId: [2, 7, 8, 202],
 		images: ['BlackDragonSword_postEvo.webp', 'BlackDragonSword_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [4],				
+				initValue: 20,
+				step: 3,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [25],				
+				initValue: 20,
+				step: 13,
+				maxFusion: 10
+			},
+			{
+				attributeId: [8],				
+				initValue: 20,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -576,23 +602,24 @@ acc`,
 	{
 		id: 2507,
 		name: "Dragon Teeth",
-        tagsId: [2, 5, 10],
-		d: `20-80% Basic attack damage boost against opponent with less than 50% of health.
-
-		20-150% Damage boost. Black Dragon Tower only.
-		
-		[Fusion Level X] 75% Critical Hit damage boost. weap`,
+        tagsId: [2, 7, 8, 202],
 		images: ['DragonTeeth_postEvo.webp', 'DragonTeeth_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [4],				
+				initValue: 20,
+				step: 6,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [25],				
+				initValue: 20,
+				step: 13,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [103],				
+				initValue: 75,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -602,21 +629,24 @@ acc`,
 	{
 		id: 2508,
 		name: "Kobra's Boxing Gloves",
-        tagsId: [2, 5, 10],
-		d: `30-80% Resistance to Slow and Stun.
-		20-150% Damage boost. Black Dragon Tower only.		
-		[Fusion Level X] 50% Basic attack damage boost.  weap`,
+        tagsId: [2, 7, 8, 202],
 		images: ['KobrasBoxingGloves_postEvo.webp', 'KobrasBoxingGloves_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [1, 2],				
+				initValue: 30,
+				step: 5,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [25],				
+				initValue: 20,
+				step: 13,
+				maxFusion: 10
+			},		
+			{
+				attributeId: [4],				
+				initValue: 50,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -626,22 +656,30 @@ acc`,
 	{
 		id: 2509,
 		name: "Fire Garden Bell",
-        tagsId: [2, 5, 10],
-		d: `10-20% Critical Hit Chance boost.
-		10-80% Damage boost. Shirai Ryu Tower only.		
-		20-160% Max health boost. Shirai Ryu Tower only.		
-		[Fusion Level X] 100% Basic attack damage boost against enemies affected by Fire. acc`,
+        tagsId: [2, 7, 10, 203],
 		images: ['Srt_fire_garden_bell_PostEvo.webp', 'Srt_fire_garden_bell_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
+				attributeId: [10],				
+				initValue: 10,
 				step: 1,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [27],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [28],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},				
+			{
+				attributeId: [104],				
+				initValue: 100,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -651,22 +689,30 @@ acc`,
 	{
 		id: 2510,
 		name: "Survivor Memories",
-        tagsId: [2, 5, 10],
-		d: `30-100% Resistance to Fire.
-		10-80% Damage boost. Shirai Ryu Tower only.		
-		20-160% Max health boost. Shirai Ryu Tower only.		
-		[Fusion Level X] 50% Basic attack damage boost. acc`,
+        tagsId: [2, 7, 10, 203],
 		images: ['Srt_survivor_memories_PostEvo.webp', 'Srt_survivor_memories_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [105],				
+				initValue: 30,
+				step: 7,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [27],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [28],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},	
+			{
+				attributeId: [4],				
+				initValue: 50,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -676,22 +722,30 @@ acc`,
 	{
 		id: 2511,
 		name: "Secret Scrolls",
-		d: `20-30% Toughness boost.
-		10-80% Damage boost. Shirai Ryu Tower only.		
-		20-160% Max health boost. Shirai Ryu Tower only.		
-		[Fusion Level X] User recovers health from Fire DOT instead of taking damage. acc`,
-        tagsId: [2, 5, 10],
+        tagsId: [2, 7, 10, 203],
 		images: ['Srt_secret_scrolls_PostEvo.webp', 'Srt_secret_scrolls_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
+				attributeId: [3],				
+				initValue: 20,
 				step: 1,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [27],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [28],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [106],				
+				initValue: 100,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -701,71 +755,97 @@ acc`,
 	{
 		id: 2512,
 		name: "Trophy Collection",
-        tagsId: [2, 5, 10],
-		d: `30-100% Resistance to Bleed.
-		10-80% Damage boost. Nightmare Tower only.		
-		20-160% Max health boost. Nightmare Tower only.
-		[Fusion Level X] [JASON VOORHEES] After being defeated, Jason resurrects and gains Strengthen and 1 Bar of Power.  acc`,
+        tagsId: [2, 7, 10, 204],
 		images: ['Nt_trophy_collection_post.webp', 'Nt_trophy_collection_post.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [7],				
+				initValue: 30,
+				step: 7,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
+				attributeId: [29],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [30],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [107],				
 				initValue: 8,
 				step: 0,
 				maxFusion: 10,
-				reqFusion: 10
+				reqFusion: 10,
+				onlyFor: [401]
 			}				
 		]
 	},
 	{
 		id: 2513,
 		name: "Jump Rope Song",
-        tagsId: [2, 5, 10],
-		d: `20-50% Critical Hit damage boost.
-		10-80% Damage boost. Nightmare Tower only.		
-		20-160% Max health boost. Nightmare Tower only.
-		[Fusion Level X] [FREDDY KRUEGER] 30% Chance to Stun on Special Attack 1.  acc`,
+        tagsId: [2, 7, 10, 204],
 		images: ['Nt_jump_rope_song_post.webp', 'Nt_jump_rope_song_post.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [103],				
+				initValue: 20,
+				step: 3,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [29],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [30],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [108],				
+				initValue: 30,
 				step: 0,
 				maxFusion: 10,
-				reqFusion: 10
+				reqFusion: 10,
+				onlyFor: [402]
 			}				
 		]
 	},
 	{
 		id: 2514,
 		name: "Family Tools",
-        tagsId: [2, 5, 10],
-		d: `35-75% Resistance to Stun.
-		10-80% Damage boost. Nightmare Tower only.		
-		20-160% Max health boost. Nightmare Tower only.
-		[Fusion Level X] [LEATHERFACE] Gain permanent Enrage when reduced below 20% health.  acc`,
+        tagsId: [2, 7, 10, 204],
 		images: ['Nt_family_tools_post.webp', 'Nt_family_tools_post.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [2],				
+				initValue: 35,
+				step: 4,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
+				attributeId: [29],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [30],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [109],				
 				initValue: 8,
 				step: 0,
 				maxFusion: 10,
@@ -776,22 +856,30 @@ acc`,
 	{
 		id: 2515,
 		name: "Bayonet",
-        tagsId: [2, 5, 10],
-		d: `10-40% Critical Hit damage boost.
-		10-80% Damage boost. Kold War Tower only.		
-		20-160% Max health boost. Kold War Tower only.		
-		[Fusion Level X] 20% Critical Hit Chance boost.  acc`,
+        tagsId: [2, 7, 10, 205],
 		images: ['Kw_bayonet_postevo.webp', 'Kw_bayonet_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [103],				
+				initValue: 10,
+				step: 3,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [31],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [32],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [10],				
+				initValue: 20,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -801,22 +889,30 @@ acc`,
 	{
 		id: 2516,
 		name: "Deadly Icicles",
-        tagsId: [2, 5, 10],
-		d: `20-40% Basic attack damage boost.
-		10-80% Damage boost. Kold War Tower only.		
-		20-160% Max health boost. Kold War Tower only.		
-		[Fusion Level X] 100% Chance to apply Frostbite on Special Attack 2.  acc`,
+        tagsId: [2, 7, 10, 205],
 		images: ['Kw_deadly_icicle_postevo.webp', 'Kw_deadly_icicle_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [4],				
+				initValue: 20,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [31],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [32],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [110],				
+				initValue: 100,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -826,22 +922,30 @@ acc`,
 	{
 		id: 2517,
 		name: "Ushanka",
-        tagsId: [2, 5, 10],
-		d: `10-30% Resistance to Freeze.
-		10-80% Damage boost. Kold War Tower only.		
-		20-160% Max health boost. Kold War Tower only.		
-		[Fusion Level X] 25% Chance to convert 50% damage to Health on Special Attack 1.  acc`,
+        tagsId: [2, 7, 10, 205],
 		images: ['Kw_ushanka_postevo.webp', 'Kw_ushanka_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [111],				
+				initValue: 10,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [31],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [32],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [112],				
+				initValue: 25,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -851,22 +955,30 @@ acc`,
 	{
 		id: 2518,
 		name: "Ouroboros Ring",
-        tagsId: [2, 5, 10],
-		d: `40-100% Recovery boost.
-		10-80% Damage boost. Sorcerer's Tower only.		
-		20-160% Max health boost. Sorcerer's Tower only.
-		[Fusion Level X] Gain 75% more Power whenever hit by an opponent.  acc`,
+        tagsId: [2, 7, 10, 206],
 		images: ['Ouroboros_Ring_postEvo.webp', 'Ouroboros_Ring_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [5],				
+				initValue: 40,
+				step: 6,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [33],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [34],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [113],				
+				initValue: 75,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -876,7 +988,7 @@ acc`,
 	{
 		id: 2519,
 		name: "Salamander Gloves",
-        tagsId: [2, 5, 10],
+        tagsId: [2, 7, 10, 206],
 		d: `30-100% Combo Ender damage boost.
 		10-80% Damage boost. Sorcerer's Tower only.		
 		20-160% Max health boost. Sorcerer's Tower only.
@@ -884,14 +996,26 @@ acc`,
 		images: ['Salamander_Gloves_postEvo.webp', 'Salamander_Gloves_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [114],				
+				initValue: 30,
+				step: 7,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [33],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [34],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [115],				
+				initValue: 25,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -901,22 +1025,30 @@ acc`,
 	{
 		id: 2520,
 		name: "Snake Fang",
-        tagsId: [2, 5, 10],
-		d: `10-30% Chance to apply Poison on Special Attack 2.
-		10-80% Damage boost. Sorcerer's Tower only.		
-		20-160% Max health boost. Sorcerer's Tower only.
-		[Fusion Level X] Poison lasts 35% longer. acc`,
+        tagsId: [2, 7, 10, 206],
 		images: ['SnakeFang_postEvo.webp', 'SnakeFang_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [116],				
+				initValue: 10,
+				step: 2,
 				maxFusion: 10
 			},
 			{
+				attributeId: [33],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [34],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
 				attributeId: [16],				
-				initValue: 8,
+				initValue: 35,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -926,22 +1058,30 @@ acc`,
 	{
 		id: 2521,
 		name: "Edenian Pie",
-        tagsId: [2, 5, 10],
-		d: `10-15% Power Generation boost.
-		10-80% Damage boost. Edenian Tower only.		
-		20-160% Max health boost. Edenian Tower only.		
-		[Fusion Level X] 25% Incoming Damage reduction when user is below 50% of Health. acc`,
+        tagsId: [2, 7, 10, 207],
 		images: ['EdenianPie_postEvo.webp', 'EdenianPie_postEvo.webp'],
 		states: [
 			{
 				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				initValue: 10,
+				step: 0.5,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [35],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [36],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [118],				
+				initValue: 25,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -951,22 +1091,30 @@ acc`,
 	{
 		id: 2522,
 		name: "Royal Wine",
-		d: `10-30% Chance to gain Luck on Combo Ender.
-		10-80% Damage boost. Edenian Tower only.		
-		20-160% Max health boost. Edenian Tower only.		
-		[Fusion Level X] 20% Basic attacks unblockable chance.  acc`,
-        tagsId: [2, 5, 10],
+        tagsId: [2, 7, 10, 207],
 		images: ['Royal_Wine_postEvo.webp', 'Royal_Wine_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [119],				
+				initValue: 10,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [35],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [36],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [9],				
+				initValue: 20,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -976,22 +1124,30 @@ acc`,
 	{
 		id: 2523,
 		name: "Traitor's Wreath",
-        tagsId: [2, 5, 10],
-		d: `40-100% Recovery boost.
-		10-80% Damage boost. Edenian Tower only.		
-		20-160% Max health boost. Edenian Tower only.		
-		[Fusion Level X] 40% Resistance to Fire and Power Drain.  acc`,
+        tagsId: [2, 7, 10, 207],
 		images: ['Traitors_Wreath_postEvo.webp', 'Traitors_Wreath_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [5],				
+				initValue: 40,
+				step: 6,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [35],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [36],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},
+			{
+				attributeId: [120],				
+				initValue: 40,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -1001,22 +1157,30 @@ acc`,
 	{
 		id: 2524,
 		name: "Cyberpack 2007",
-        tagsId: [2, 5, 10],
-		d: `10-30% Special Attack 1 and Special Attack 2 Critical Hit chance boost.
-		10-80% Damage boost. Earthrealm Tower only.		
-		20-160% Max health boost. Earthrealm Tower only.		
-		[Fusion Level X] 0.5 Bar of starting Power.  acc`,
+        tagsId: [2, 7, 10, 208],
 		images: ['Earth_cyberpack_2007_PostEvo.webp', 'Earth_cyberpack_2007_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [121],				
+				initValue: 10,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [37],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [38],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [122],				
+				initValue: 0.5,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -1026,22 +1190,30 @@ acc`,
 	{
 		id: 2525,
 		name: "Jiaozi",
-        tagsId: [2, 5, 10],
-		d: `10-40% Critical Hit damage boost.
-		10-80% Damage boost. Earthrealm Tower only.		
-		20-160% Max health boost. Earthrealm Tower only.		
-		[Fusion Level X] 10% Chance to remove al active DOTs from the user when dealing a Critical Hit. DOTs from Fight Modifiers are not affected.  acc`,
+        tagsId: [2, 7, 10, 208],
 		images: ['Earth_jiaozi_PostEvo.webp', 'Earth_jiaozi_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [103],				
+				initValue: 10,
+				step: 3,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [37],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [38],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},	
+			{
+				attributeId: [123],				
+				initValue: 10,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -1051,22 +1223,30 @@ acc`,
 	{
 		id: 2526,
 		name: "Peaceful Mind",
-        tagsId: [2, 5, 10],
-		d: `20-40% Opponent Critical Hit Chance reduction.
-		10-80% Damage boost. Earthrealm Tower only.		
-		20-160% Max health boost. Earthrealm Tower only.		
-		[Fusion Level X] 15% Reduced power cost on all Special Attacks.  acc`,
+        tagsId: [2, 7, 10, 208],
 		images: ['Earth_peaceful_mind_PostEvo.webp', 'Earth_peaceful_mind_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [17],				
+				initValue: 20,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [37],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [38],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [20],				
+				initValue: 15,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -1076,22 +1256,30 @@ acc`,
 	{
 		id: 2527,
 		name: "Bloody Mary",
-        tagsId: [2, 5, 10],
-		d: `10-20% All Special Attack damage boost.
-		10-80% Damage boost. Dark Queen's Tower only.		
-		20-160% Max health boost. Dark Queen's Tower only.		
-		[Fusion Level X] Heal the weakest teammate for 20% of the damage dealt. acc`,
+        tagsId: [2, 7, 10, 209],
 		images: ['Dq_bloody_mary_PostEvo.webp', 'Dq_bloody_mary_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
+				attributeId: [124],				
+				initValue: 10,
 				step: 1,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [39],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [40],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [125],				
+				initValue: 20,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -1101,7 +1289,7 @@ acc`,
 	{
 		id: 2528,
 		name: "Tiara of the Damned",
-        tagsId: [2, 5, 10],
+        tagsId: [2, 7, 10, 209],
 		d: `Take 20-30% less damage from all attacks when blocking.
 		10-80% Damage boost. Dark Queen's Tower only.		
 		20-160% Max health boost. Dark Queen's Tower only.		
@@ -1109,14 +1297,26 @@ acc`,
 		images: ['Dq_tiara_of_the_damned_PostEvo.webp', 'Dq_tiara_of_the_damned_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
+				attributeId: [126],				
+				initValue: 20,
 				step: 1,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [39],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [40],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},			
+			{
+				attributeId: [127],				
+				initValue: 40,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
@@ -1126,22 +1326,30 @@ acc`,
 	{
 		id: 2529,
 		name: "Toxic Fruit",
-        tagsId: [2, 5, 10],
-		d: `10-30% Chance to apply and Weaken on successful Special Attack 1.
-		10-80% Damage boost. Dark Queen's Tower only.		
-		20-160% Max health boost. Dark Queen's Tower only.		
-		[Fusion Level X] 50% Basic Attack damage boost against enemies affected by Weaken.  acc`,
+        tagsId: [2, 7, 10, 209],
 		images: ['Dq_toxic_fruit_PostEvo.webp', 'Dq_toxic_fruit_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: 5,
-				step: 1,
+				attributeId: [128],				
+				initValue: 10,
+				step: 2,
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: 8,
+				attributeId: [39],				
+				initValue: 10,
+				step: 7,
+				maxFusion: 10
+			},
+			{
+				attributeId: [40],				
+				initValue: 20,
+				step: 14,
+				maxFusion: 10
+			},	
+			{
+				attributeId: [129],				
+				initValue: 50,
 				step: 0,
 				maxFusion: 10,
 				reqFusion: 10
