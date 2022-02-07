@@ -18,7 +18,7 @@ export class Store {
         this.maxEquipmentSlot = 4;
         this.equippedItems = new Array(this.maxEquipmentSlot).fill(null);
 
-        this.viewMode = 'normal';
+        this.viewMode = 'overlay';
     }
 
     equipItem(itemId, index) {
@@ -42,7 +42,8 @@ export class Store {
     }
 
     getEquipmentInfo() {
-        return this.equippedItems.filter(Boolean).map(x => x.getInfo().slice(1, -1)).flat(2);
+        // return this.equippedItems.filter(Boolean).map(x => x.getInfo().slice(1, -1)).flat(2); with labels
+        return this.equippedItems.filter(Boolean).map(x => x.getInfo().slice(1)).flat(2);
     }
 
     setViewMode(viewMode) {

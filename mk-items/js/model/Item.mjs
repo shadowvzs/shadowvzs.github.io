@@ -16,20 +16,28 @@ export class Item {
    
     setTags(_tagsId) {
         this._tagsId = [..._tagsId];
-        this.tags = _tagsId.map(tagId => itemTags.valueMap[tagId]);
-        const stateTags = this.states.map(state => state.attributes.map(x => x.tagsId));
+        const stateTags = this.states.map(state => {
+            const tags = state.attributes.map(x => x.tagsId);
+            if (state.onlyFor) { tags.push(state.onlyFor); }
+            return tags;
+        });
         this._tagsId.push(...stateTags.flat(3));
+        this.tags = this._tagsId.map(tagId => itemTags.valueMap[tagId]);
     }   
     
     setStates(_states) {
         this._states = _states;
         this.states = _states.map(x => ({
             attributes: x.attributeId.map(id => {
+                console.log(id, x)
                 const attribute = itemAttributes.valueMap[id];
                 attribute.tags = attribute.tagsId.map(tagId => itemTags.valueMap[tagId]);
                 return attribute;
             }),
-            brutalityFor: x.brutalityFor,
+            initValue: x.initValue,
+            step: x.step,
+            forTower: x.forTower,
+            onlyFor: x.onlyFor,
             reqFusion: x.reqFusion,
             maxFusion: x.maxFusion,
         }))
@@ -39,13 +47,11 @@ export class Item {
         if (fusion < 0 || fusion > 10) { return; }
         this.fusion = fusion;
         this.states.forEach((state, idx) => {
-            if (state.reqFusion && state.reqFusion > fusion) {
-                state.value = 0;
-            } else {
-                const stateOptions = this._states[idx];
-                const step = stateOptions.step || 0;
-                state.value = stateOptions.initValue + step * fusion;
-            }
+            state.value = state.initValue.map((val, vIdx) => {
+                if (state.reqFusion && state.reqFusion > fusion) { return 0; }
+                const step = state.step[vIdx] || 0;
+                return val + step * fusion;
+            });
         });
 
         this.imageUrl = './img/eq/' + this.images[Number(fusion === 10)];
@@ -55,22 +61,36 @@ export class Item {
         const rows = [];
         rows.push(this.name);
         this.states.forEach(state => {
-            let description = state.attributes.map(x => x.description.replace('%d', state.value));
-            if (state.onlyFor) {
-                description = description.replace('%s', itemTags.valueMap[state.onlyFor]);
-            }
-            if (state.reqFusion) {
-                if (state.value) {
-                    rows.push(`[Fusion ${romanNumbers[state.reqFusion]}] ${description.join(', ')}`);
+            state.attributes.map(x => {
+                let rawDesc = x.description;
+                if (state.onlyFor) { 
+                    const characters = state.onlyFor.map(x => itemTags.valueMap[x].toUpperCase().replace('_', ' ')).join(', ');
+                    rawDesc.replace('%s', characters);
+                    rawDesc = `[${characters}] ` + rawDesc;
                 }
-            } else if (state.brutalityFor) {
-                const name = itemTags.valueMap[state.brutalityFor].toUpperCase().replace('_', ' ');
-                rows.push(`[Brutality] [${name}] ${description.join(', ')}`);
-            } else {
-                rows.push(...description);
-            }
+                if (state.forTower) { 
+                    const towers = state.forTower.map(x => itemTags.valueMap[x].toUpperCase().replace('_', ' ')).join(', ');
+                    rawDesc.replace('%s', towers);
+                    rawDesc = `[${towers}] ` + rawDesc;
+                }
+                state.value.forEach(v => {
+                    rawDesc = rawDesc.replace('%d', v);
+                })
+                return rawDesc;
+            }).forEach(desc => {
+                if (state.reqFusion) {
+                    if (state.value) {
+                        rows.push(`[Fusion ${romanNumbers[state.reqFusion]}] ${desc}`);
+                    }
+                } else if (state.brutalityFor) {
+                    rows.push(`[Brutality] ${desc}`);
+                } else {
+                    rows.push(desc);
+                }
+
+            })
+
         });
-        rows.push(`Labels: ${this.tags.join(', ')}`);
         return rows;
     }
 

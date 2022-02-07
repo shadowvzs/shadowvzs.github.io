@@ -28,6 +28,7 @@ export const itemCmp = (app, item, options = {}) => {
         attributes: { 
             className: 'item',
             draggable: true,
+            title: item.tags.join(', '),
             onDragStart: (ev) => ev.dataTransfer.setData("itemId", item.id)
         }, 
         children: [
