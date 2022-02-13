@@ -96,6 +96,7 @@ aside.main-aside .filter-toggle.collapsed {
 }
 
 aside.main-aside .filter-toggle svg {
+    fill: var(--primary-font-color);
     cursor: pointer;
 }
 
@@ -130,6 +131,7 @@ li.item {
     cursor: pointer;
     user-select: none;
     margin: 0;
+    margin-top: 4px;
 }
 
 li.item img {
@@ -156,6 +158,7 @@ li.item .fusion-select {
 .equipment-area {
     position: relative;
     text-align: center;
+    display: none;
 }
 
 li.item.empty-slot {
@@ -321,5 +324,9 @@ li.item .overlay li:last-child {
 
     li.item {
         margin: 4px;
+    }
+
+    .equipment-area {
+        display: block;
     }
 }
