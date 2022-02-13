@@ -178,7 +178,7 @@ export const itemAttributes = [
 		id: 107,
 		name: 'Jason ressurect',
 		description: "After being defeated, Jason resurrects and gains Strengthen and 1 Bar of Power.",
-		tagsId: [47, 48, 49, 401]
+		tagsId: [47, 48, 49, 107, 401]
 	},
 	{
 		id: 108,
@@ -196,7 +196,7 @@ export const itemAttributes = [
 		id: 110,
 		name: 'Chance for Frostbite on Sp2',
 		description: "%d% Chance to apply Frostbite on Special Attack 2",
-		tagsId: [50, 38, 55, 67]
+		tagsId: [50, 38, 55, 67, 51]
 	},	
 	{
 		id: 111,
@@ -250,7 +250,7 @@ export const itemAttributes = [
 		id: 119,
 		name: 'Luck on combo ender',
 		description: "%d% Chance to gain Luck on Combo Ender",
-		tagsId: [59, 24, 82]
+		tagsId: [60, 102, 82]
 	},
 	{
 		id: 120,
@@ -340,7 +340,7 @@ export const itemAttributes = [
 		id: 134,
 		name: 'Bleed at start of the match',
 		description: "%d% Chance to apply Bleed to the active enemy at the start of the match",
-		tagsId: [12, 25, 67]
+		tagsId: [12, 25, 67, 51]
 	},
 	{
 		id: 135,
@@ -448,7 +448,7 @@ export const itemAttributes = [
 		id: 152,
 		name: 'Heal on Fatal/X-Ray - Regen',
 		description: "%d% Health Regen over %d% sec after X-Ray/Fatal Blow attacks",
-		tagsId: [40, 50, 56, 74]
+		tagsId: [40, 50, 56, 74, 82]
 	},
 	{
 		id: 153,
@@ -526,7 +526,7 @@ export const itemAttributes = [
 		id: 165,
 		name: 'Bleed on combo ender',
 		description: "%d% Chance to apply Bleed on Combo Ender",
-		tagsId: [40, 25, 67]
+		tagsId: [40, 25, 67, 51]
 	},
 	{
 		id: 166,
@@ -562,7 +562,7 @@ export const itemAttributes = [
 		id: 171,
 		name: 'Chance for Frostbite on Sp1',
 		description: "%d% Chance to apply Frostbite on Special Attack 1",
-		tagsId: [50, 38, 54, 67]
+		tagsId: [50, 38, 54, 67, 51]
 	},	
 	{
 		id: 172,
@@ -658,7 +658,7 @@ export const itemAttributes = [
 		id: 187,
 		name: 'HP based damage on non boss target',
 		description: "Deal %d% of non-boss opponents' health as additional damage on Stun",
-		tagsId: [86, 23, 87]
+		tagsId: [86, 23, 86]
 	},
 	{
 		id: 188,
@@ -670,7 +670,7 @@ export const itemAttributes = [
 		id: 189,
 		name: 'Poison on combo Ender',
 		description: "%d% Chance to apply Poison on Combo Ender",
-		tagsId: [60, 24]
+		tagsId: [60, 24, 67, 51]
 	},
 	{
 		id: 190,
@@ -700,7 +700,7 @@ export const itemAttributes = [
 		id: 194,
 		name: 'Stun on Basic Attack Critical Hit',
 		description: "%d% Chance to Stun an opponent for %d seconds when dealing a Critical Hit on Basic Attacks",
-		tagsId: [23, 31, 63]
+		tagsId: [23, 31, 63, 67]
 	},
 	{
 		id: 195,
@@ -808,7 +808,7 @@ export const itemAttributes = [
 		id: 212,
 		name: 'Incurability on Sp1',
 		description: "%d% Chance to apply Incurability debuff to the whole team for %dsec on Sp 1",
-		tagsId: [94, 54, 50, 67]
+		tagsId: [94, 54, 50, 67, 110]
 	},
 	{
 		id: 213,
@@ -838,13 +838,13 @@ export const itemAttributes = [
 		id: 217,
 		name: 'Bleed on Sp',
 		description: "%d% Chance to apply Bleed to an opponent on any successful SP",
-		tagsId: [50, 54, 55, 25, 67]
+		tagsId: [50, 54, 55, 25, 67, 51]
 	},
 	{
 		id: 218,
-		name: 'Incurability on Sp1',
-		description: "%d% Chance to apply Incurability debuff to the whole team for %dsec on Sp 1",
-		tagsId: [94, 50, 54, 67]
+		name: 'Incurability on Combo Ender',
+		description: "%d% Chance to apply Incurability debuff to the whole team for %d sec on Combo Ender",
+		tagsId: [94, 60, 67, 110]
 	},
 	{
 		id: 219,
@@ -862,7 +862,7 @@ export const itemAttributes = [
 		id: 221,
 		name: 'Silence on Sp1',
 		description: "%d% Chance to apply Silence debuff to he whole opponent team on successful Sp 1",
-		tagsId: [67, 50, 54, 98]
+		tagsId: [67, 50, 54, 98, 110]
 	},
 	{
 		id: 222,
@@ -880,7 +880,7 @@ export const itemAttributes = [
 		id: 224,
 		name: 'Power steal',
 		description: "%d% Chance to steal %d% of the enemy's Power at the start of the match",
-		tagsId: [12, 61]
+		tagsId: [12, 112]
 	},
 	{
 		id: 225,
@@ -892,7 +892,7 @@ export const itemAttributes = [
 		id: 226,
 		name: 'Fire at start of the match',
 		description: "%d% Chance to apply Fire to the active enemy at the start of the match",
-		tagsId: [12, 26, 67]
+		tagsId: [12, 26, 67, 51]
 	},
 	{
 		id: 227,
@@ -904,7 +904,7 @@ export const itemAttributes = [
 		id: 228,
 		name: 'Faction War - Lethal Blow',
 		description: "%d% Lethal Blow chance: +%d% damage. Faction Wars Only",
-		tagsId: [12, 61]
+		tagsId: [30, 73]
 	},
 	{
 		id: 229,
@@ -946,13 +946,13 @@ export const itemAttributes = [
 		id: 235,
 		name: 'Blind at start of match',
 		description: "%d% Chance to Apply Blind on enemy team at the Start of the match",
-		tagsId: [12, 89, 67]
+		tagsId: [12, 89, 67, 110]
 	},
 	{
 		id: 236,
 		name: 'When defeat an opponent reduce hp',
 		description: "When the wearer defeats a Character, the entire opponent team loses %d% of their current health. Faction Wars Only",
-		tagsId: [103, 104]
+		tagsId: [103, 86, 110]
 	},
 	{
 		id: 237,
@@ -965,6 +965,577 @@ export const itemAttributes = [
 		name: 'Shorter Quest duration',
 		description: "%d% Shorter Quest duration",
 		tagsId: [106]
+	},
+	{
+		id: 239,
+		name: 'Sp with Fire damage boost on opponent with fire',
+		description: "Special Attacks that apply Fire deal %d% bonus damage against opponents already affected by Fire",
+		tagsId: [50, 54, 55, 26, 29]
+	},
+	{
+		id: 240,
+		name: 'Tag-in fire to both side',
+		description: "On Tag-in, apply Fire to both the wearer and the opponent for %ds",
+		tagsId: [13, 26, 67, 82, 51]
+	},
+	{
+		id: 241,
+		name: 'Fire and Power Drain',
+		description: "%d% Chance to drain %d% Power on Fire attacks",
+		tagsId: [26, 61]
+	},
+	{
+		id: 242,
+		name: 'Tag-in Power Drain - flat',
+		description: "On Tag-in, Power Drain %d bars of opponent's Power",
+		tagsId: [13, 61]
+	},
+	{
+		id: 243,
+		name: 'Tag-in Power Steal - %',
+		description: "Steal %d% of Power Drained on tag-in",
+		tagsId: [13, 61, 112]
+	},
+	{
+		id: 244,
+		name: 'Ressurect and gain Invulnerability and Unblockable',
+		description: "Once per match, resurrect after being defeated, and gain Invulnerability and %d% Unblockable chance on basic attacks for %ds",
+		tagsId: [76, 47, 28, 107, 82]
+	},
+	{
+		id: 245,
+		name: 'Apply Bleed when Ressurect',
+		description: "Apply Bleed to opponent when resurrecting",
+		tagsId: [25, 47, 107, 67, 51]
+	},
+	{
+		id: 246,
+		name: 'Curse on combo ender - Chance',
+		description: "%d% Chance to apply Curse on Combo Ender",
+		tagsId: [109, 60, 67]
+	},
+	{
+		id: 247,
+		name: 'Frostbite after opponent defeat',
+		description: "After defeating an opponent apply Frostbite on their teammates for %ds",
+		tagsId: [38, 103, 67, 110, 51]
+	},
+	{
+		id: 248,
+		name: 'Apply frostbite at start of match',
+		description: "%d% Chance to apply Frostbite on enemy team at the start of the match",
+		tagsId: [38, 12, 67, 110, 51]
+	},
+	{
+		id: 249,
+		name: 'Save from death and Frostbite',
+		description: "Once per fight spawn an Ice Clone that will save the wearer from a knockout blow. There is %d% chance the Ice Clone will explode and apply Frostbite to the opponent",
+		tagsId: [108, 47, 38, 67, 25]
+	},
+	{
+		id: 250,
+		name: 'Frostbite and stun immune',
+		description: "Immune to Frostbite and Stun",
+		tagsId: [38, 23, 20]
+	},
+	{
+		id: 251,
+		name: 'Ice Armor after opponent defeated',
+		description: "%d% Chance to apply Ice Armor after defeating an opponent",
+		tagsId: [103, 80, 82]
+	},
+	{
+		id: 252,
+		name: 'Drain Power for defeated opponent',
+		description: "Every time an owner defeats an opponent, each surviving opponent get %d bar of their Power drained",
+		tagsId: [61, 103, 110]
+	},
+	{
+		id: 253,
+		name: 'Lethal chance vs freeze',
+		description: "%d% Lethal Blow chance against enemies affected by Freeze: +%d% damage",
+		tagsId: [73, 36]
+	},
+	{
+		id: 254,
+		name: 'Bleed on freeze',
+		description: "%d% Chance to apply Bleed when hitting an opponent affected by Freeze",
+		tagsId: [25, 36, 67]
+	},
+	{
+		id: 255,
+		name: 'Speed after Crit',
+		description: "%d% Chance to gain Speed after a successful critical hit",
+		tagsId: [63, 32, 82]
+	},
+	{
+		id: 256,
+		name: 'Defated Ally - Power Gain',
+		description: "Gain %d Bars of Power after a teammate is defeated",
+		tagsId: [108, 49]
+	},
+	{
+		id: 257,
+		name: 'Tag-in basic attack damage',
+		description: "On tag-in, Psych Bomb is tossed, dealing %d% of the basic attack damage",
+		tagsId: [13, 86]
+	},
+	{
+		id: 258,
+		name: 'Tag-in stun',
+		description: "On tag-in, Psych Bomb is tossed, having a %d% chance to apply stun for %d seconds",
+		tagsId: [13, 23, 67]
+	},
+	{
+		id: 259,
+		name: 'Cripple on stun',
+		description: "%d% Chance to apply Cripple when stunning an opponent",
+		tagsId: [13, 23, 67]
+	},
+	{
+		id: 260,
+		name: 'Power Bar regen - flat',
+		description: "Regenerates %d bars of Power over %d seconds below %d% Health",
+		tagsId: [21, 49, 82]
+	},
+	{
+		id: 261,
+		name: 'Luck on Sp1',
+		description: "%d% Chance to gain Luck after Sp 1",
+		tagsId: [102, 50, 54, 82]
+	},
+	{
+		id: 262,
+		name: 'Stacking Damage on Sp1',
+		description: "Sp1 deals %d% more damage after each use, stacks up to %d times",
+		tagsId: [92, 50, 54, 29]
+	},
+	{
+		id: 263,
+		name: 'Tag out - Dispel',
+		description: "On tag-out, gain Dispel",
+		tagsId: [84, 62]
+	},
+	{
+		id: 264,
+		name: 'Fire on Sp',
+		description: "%d% Chance to apply Fire on Special Attacks %d times per battle",
+		tagsId: [50, 54, 55, 26, 67, 51]
+	},
+	{
+		id: 265,
+		name: 'Fire when opponent blocking',
+		description: "%d% Chance to apply Fire when blocking an enemy attack",
+		tagsId: [26, 51, 67, 15]
+	},
+	{
+		id: 266,
+		name: 'Wearer explode',
+		description: "Wearer explodes into flames when defeated, dealing massive damage and applying Fire to all opponents",
+		tagsId: [108, 26, 110, 86, 51]
+	},
+	{
+		id: 267,
+		name: 'Apply Fire on Basic Attack',
+		description: "Chance to apply Fire on basic attacks",
+		tagsId: [31, 26, 51]
+	},
+	{
+		id: 268,
+		name: 'Liu Kang Fire Assist',
+		description: "When a teammate tags in, Liu Kang throws Dragon Fire from the sidelines, dealing %d% of his basic attack damage with %d% chance to apply Fire",
+		tagsId: [13, 86, 26, 51]
+	},
+	{
+		id: 269,
+		name: 'Jade - Avoid Death',
+		description: "Once per match, Jade avoids death by automatically tagging out before the killing blow. This effect does not trigger if the killing blow is a Brutality",
+		tagsId: [108, 84]
+	},
+	{
+		id: 270,
+		name: 'Blinded Sp have chance to miss',
+		description: "Opponents affected by Blind have a %d% chance to also miss during Special Attacks",
+		tagsId: [89, 50, 51, 52, 68]
+	},
+	{
+		id: 271,
+		name: 'Lethal Blow',
+		description: "%d% Lethal Blow chance",
+		tagsId: [73]
+	},
+	{
+		id: 272,
+		name: 'Gain Power Bar if ally or summon defeated',
+		description: "Gain %d Bar of Power after any teammate or ally Summon is defeated",
+		tagsId: [108, 49]
+	},
+	{
+		id: 273,
+		name: 'Bat - counter attack - sp',
+		description: "After performing any Special Attack, a demon bat also attacks the victim, dealing additional damage and applying Bleed while dying in the process. Demon Bat respawns every %d seconds",
+		tagsId: [50, 54, 55, 86, 25, 67, 51, 69]
+	},
+	{
+		id: 274,
+		name: 'Bat - Heal',
+		description: "When Demon Bat attacks an opponent affected by Bleed, user heals for %d% of the victim's max health",
+		tagsId: [40, 25]
+	},
+	{
+		id: 275,
+		name: 'Dispel after Sp',
+		description: "%d% Chance to gain Dispel after performing a Special Attack",
+		tagsId: [50, 54, 55, 62]
+	},
+	{
+		id: 276,
+		name: 'Chain Lighnting on Basic Attack',
+		description: "%d% Chance lightning will strike the opponent on basic attack, dealing additional Damage",
+		tagsId: [31, 86]
+	},
+	{
+		id: 277,
+		name: 'Gain Shield when receive Lethal',
+		description: "%d% Chance to gain Shield after suffering from a Lethal Blow",
+		tagsId: [91, 80, 82]
+	},
+	{
+		id: 278,
+		name: 'Shield at start of the match',
+		description: "Gain Shield at the start of the match",
+		tagsId: [12, 80, 82]
+	},
+	{
+		id: 279,
+		name: 'Increase Bleed duration',
+		description: "Bleed lasts %d% longer",
+		tagsId: [25, 75]
+	},
+	{
+		id: 280,
+		name: 'Immunity to all DOT & Dark Magic',
+		description: "Immunity to all DOTs including Dark Magic",
+		tagsId: [90, 24, 25, 26, 20]
+	},
+	{
+		id: 281,
+		name: 'Shield Break o Sp1',
+		description: "%d% Chance to apply Shield Break on Sp1",
+		tagsId: [50, 54, 78]
+	},
+	{
+		id: 282,
+		name: 'Missile - Counter Attack',
+		description: "%d% Chance a missile counter-attacks whenever hit by an opponent",
+		tagsId: [69]
+	},
+	{
+		id: 283,
+		name: 'Missile - Stun',
+		description: "Missile bombing applies Stun to an opponent for %d seconds",
+		tagsId: [23]
+	},
+	{
+		id: 284,
+		name: 'Weather Warfare - Frozen',
+		description: "Frozen opponents remain frozen up for %n successive hit",
+		tagsId: [36]
+	},
+	{
+		id: 285,
+		name: 'Frostbite on Freeze',
+		description: "%d Chance to also apply Frostbite when freezing an opponent",
+		tagsId: [36, 38]
+	},
+	{
+		id: 286,
+		name: 'Freeze Tag-in',
+		description: "A gust of wind Freezes tagged-in opponent",
+		tagsId: [36, 14]
+	},
+	{
+		id: 287,
+		name: 'Gain power when apply poison or bleed',
+		description: "%d% Chance to gain %d% max Power for all teammates after the user successfully applies Poison or Bleed to an opponent",
+		tagsId: [21, 24, 25, 110]
+	},
+	{
+		id: 288,
+		name: 'Basic attack heal on Poison',
+		description: "Basic attacks heal for %d% of damage done to opponents affected by Poison",
+		tagsId: [31, 24, 40]
+	},
+	{
+		id: 289,
+		name: 'Reflect Power Drain - Turn into Steal',
+		description: "Power Drain applied to the owner is reflected onto an opponent and is turned into Power Steal that grants %d% of draining Power",
+		tagsId: [41, 112, 61]
+	},
+	{
+		id: 290,
+		name: 'Critical Hit Chance vs Low HP',
+		description: "%d% Critical Damage boost when user is below %d% Health",
+		tagsId: [32, 52]
+	},
+	{
+		id: 291,
+		name: 'Speed boost on combo ender',
+		description: "%d% Chance to gain Speed increased for %ds after performing a Combo Ender",
+		tagsId: [60, 83, 82]
+	},
+	{
+		id: 292,
+		name: 'Crit Vampirism vs Low HP',
+		description: "Critical Hits have %d% chance to Vampire the damage when below %d% Health",
+		tagsId: [63, 96, 52]
+	},
+	{
+		id: 293,
+		name: 'Curse on Crit Hit',
+		description: "%d% Chance to apply Curse on Critical Hit",
+		tagsId: [109, 63, 67]
+	},
+	{
+		id: 294,
+		name: 'Damage boost Vs Cripple',
+		description: "%d% Damage boost against enemies affected by Cripple",
+		tagsId: [29, 66]
+	},
+	{
+		id: 295,
+		name: 'Defeated opponent power distributed in your team',
+		description: "When Shang Tsung defeat an opponent, he and his teammates gain the defeated opponents remaining Power, distributing it equally among them",
+		tagsId: [103, 110, 61]
+	},
+	{
+		id: 296,
+		name: 'Curse can stack',
+		description: "Curse debuffs can stack up %d times",
+		tagsId: [109, 92]
+	},
+	{
+		id: 297,
+		name: 'Chance to dodge Sp1, Sp2',
+		description: "%d% Chance opponent's Basic Attack Critical Hit heal for %d% of incoming damage instead of dealing damage",
+		tagsId: [87, 50, 54, 55]
+	},
+	{
+		id: 298,
+		name: 'Opponent crited Basic Attack Heal',
+		description: "%d% Chance opponent's Basic Attack Critical Hit heal for 20-50% of incoming damage instead of dealing damage",
+		tagsId: [31, 63, 40]
+	},
+	{
+		id: 299,
+		name: 'Damage from Special Attacks Reduced',
+		description: "Damage from Special Attacks is reduced by %d%",
+		tagsId: [64, 54, 55]
+	},
+	{
+		id: 300,
+		name: 'Apply random effects vs opponent who do block breaker, 3 stack',
+		description: "%d% Chance to apply random negative effects to an opponent who performed a Block Breaker attack against user. Max %d negative effects on the opponent simultaneously",
+		tagsId: [97, 67, 92]
+	},
+	{
+		id: 301,
+		name: 'Team soak',
+		description: "Whenever Rain applies Soaked there is %d% chance it spreads to the whole opponent team",
+		tagsId: [104, 110, 67]
+	},
+	{
+		id: 302,
+		name: 'Invulnerability when negative effect',
+		description: "%d% Chance to gain Invulnerability for %dsec whenever affected by a negative effect",
+		tagsId: [80, 76, 82, 67]
+	},
+	{
+		id: 303,
+		name: 'Power Drain, Weaken and Shield Break more effective',
+		description: "Power Drain, Weaken and Shield Break effects applied to the opponent are %d% more effective",
+		tagsId: [65, 61, 80]
+	},
+	{
+		id: 304,
+		name: 'Power Regen after receive Sp',
+		description: "After a Special Attack performed against Kitana, she gains 50% Power generation boost",
+		tagsId: [50, 54, 55, 21, 82]
+	},
+	{
+		id: 305,
+		name: 'Free Sp1',
+		description: "%d% Chance perform Sp 1 with zero Power cost.",
+		tagsId: [50, 54, 37]
+	},
+	{
+		id: 306,
+		name: 'Snare on Sp',
+		description: "%d% Chance to apply Snare on any Special Attack",
+		tagsId: [50, 54, 55, 77, 67]
+	},
+	{
+		id: 307,
+		name: 'Basic Attack - additional lightning damage',
+		description: "%d% Chance Basic Attacks cause Lightning strike that deals %d% max Health damage to the opponent",
+		tagsId: [17, 31, 86]
+	},
+	{
+		id: 308,
+		name: 'Incurability on Sp2',
+		description: "Sp2 applies Incurability debuff to whole opponent team for %dsec. Incurability cancels opponent's healing effects. Any healing, including Recovery, is also restricted while Incurability is active",
+		tagsId: [94, 55, 50, 67, 110]
+	},
+
+	{
+		id: 309,
+		name: 'Damage boost on next hit after lethal',
+		description: "When user applies Lethal Blow, next hit base damage is %d% higher",
+		tagsId: [29, 91]
+	},
+	{
+		id: 310,
+		name: 'Blind when receive Sp',
+		description: "%d% Chance to apply Blind to an opponent for using a Special Attack against the user",
+		tagsId: [89, 50, 54, 55, 67]
+	},
+	{
+		id: 311,
+		name: 'Power Regen after Sp',
+		description: "%d% Power generation boost after performing a successful Special Attack. Stackes up to %d times",
+		tagsId: [50, 54, 55, 21, 92, 82]
+	},
+	{
+		id: 312,
+		name: 'Shield when lower HP',
+		description: "Gain Energy Shield when below %d% Health. Energy Shield reduced all incoming damage when user loses health. The more Health is lost, the higher is Energy Shield damage reduction. Maximum reduction - %d% at %d% Health and below",
+		tagsId: [52, 80, 82]
+	},
+	{
+		id: 313,
+		name: 'Weaken, Shield Break or Curse on Crit Hit',
+		description: "%d% Chance to apply Weaken, Shield Break or Curse on a Critical Hit",
+		tagsId: [63, 65, 78, 109, 67]
+	},
+	{
+		id: 314,
+		name: 'Prevent Death and Recovery',
+		description: "Once per match, avoid death by automatically tagging out before the killing blow. After tag-out user gains %d% Recovery for %dsec. This effect does not trigger if the killing blow is a Brutality",
+		tagsId: [108, 19, 82, 47]
+	},
+	{
+		id: 315,
+		name: 'Fire, Bleed or Poison on Combo Ender',
+		description: "%d% Chance to apply Fire, Bleed or Poison on Combo Ender",
+		tagsId: [60, 24, 25, 26, 67]
+	},
+	{
+		id: 316,
+		name: 'Reflect debuff - Except team debuffs',
+		description: "%d% Chance to reflect any debuff back to an opponent. Team debuffs are not affected",
+		tagsId: [41, 67]
+	},
+	{
+		id: 317,
+		name: 'Debuff boost',
+		description: "Debuffs applied to an opponent are %d% more powerful. This applies to Bleed, Fire, Poison, Blind, Weaken, Curse, Shield Break, Vampire, Power Drain, and Power Steal",
+		tagsId: [111, 25, 26, 24, 89, 65, 109, 78, 96, 61, 112]
+	},
+	{
+		id: 318,
+		name: 'Basic Attack damage all opponent',
+		description: "%d% Chance Basic Attacks deal %d% of damage to all opponents",
+		tagsId: [31, 86, 110]
+	},
+	{
+		id: 319,
+		name: 'Tag-in damage boost',
+		description: "%d% Damage boost after tag-in for %d seconds. All following damage boosts gained from this Equipment is %d% more powerful. Max %d% damage boost",
+		tagsId: [13, 29, 92, 82]
+	},
+	{
+		id: 320,
+		name: 'Using Sp gain stackable Crit',
+		description: "Whenever opponent uses a Special Attack, gain %d% Critical Hit chance boost till the end of the match. Can stack up to %d times",
+		tagsId: [50, 54, 55, 32, 92, 82]
+	},
+	{
+		id: 321,
+		name: 'Using Sp2 apply Silence to whole team',
+		description: "Successful Sp2 Attacks apply Silence debuff for %15 seconds to the opposing team. Silence prevents the affected Characters from using Sp 1 and reduces their Power generation by %d%",
+		tagsId: [50, 55, 98, 67]
+	},
+	{
+		id: 322,
+		name: 'Curse on combo ender - Duration',
+		description: "Apply Curse on Combo Ender for %dsec",
+		tagsId: [109, 60, 67]
+	},
+	{
+		id: 323,
+		name: 'Cursed opponent Sp should be reflected',
+		description: "When an opponent affected by Curse performs a Special Attack, there is a %d% chance to reflect the damage and distribute it evenly to the whole enemy team",
+		tagsId: [109, 110, 50, 54, 55, 41]
+	},
+	{
+		id: 324,
+		name: 'Death Mark on Sp',
+		description: "%d% Chance to apply Death Mark on any Sp",
+		tagsId: [50, 54, 55, 71, 67]
+	},
+	{
+		id: 325,
+		name: 'Vampire on Death Marked enemy',
+		description: "The user Vampires %d% of the damage dealt on all attacks for each active Death Mark on an opponent",
+		tagsId: [71, 96]
+	},
+	{
+		id: 326,
+		name: '3 Death mark - Chance to Stun on Combo Ender',
+		description: "When an opponent is affected by %d Death Marks at once, there is %d% chance to apply Stun on Combo Ender",
+		tagsId: [71, 60, 23, 67]
+	},
+	{
+		id: 327,
+		name: 'Blind on Tag-in',
+		description: "%d% Chance to apply Blind to an opponent after their tag-in",
+		tagsId: [13, 89, 67]
+	},
+	{
+		id: 328,
+		name: 'Speed on Blind',
+		description: "Gain Speed for %dsec upon applying Blind to an opponent",
+		tagsId: [13, 89, 82]
+	},
+	{
+		id: 329,
+		name: 'Negative effect - Power Gain',
+		description: "%d% Chance any negative effect successfully applied by an opponent to Mileena will grant her %d Bar of power",
+		tagsId: [67, 49]
+	},
+	{
+		id: 330,
+		name: 'Reduce Max HP vs new opponent',
+		description: "When in a fight against new opponent, reduce their max Health by %d% (%d% for Bosses) and increase the user's max Health by the same amount until the end of the match. Summoned characters are not affected",
+		tagsId: [17, 72]
+	},
+	{
+		id: 331,
+		name: 'Luck on Block Breaker',
+		description: "%d% Chance to gain Luck on Block Breaker attack",
+		tagsId: [97, 102, 82]
+	},
+	{
+		id: 332,
+		name: 'JAX revive',
+		description: "Once per match, resurrect, instantly restore %d% Health, and gain %d% damage boost with a %d% chance to Power Steal on Basic Attacks for %d sec. This effects does not trigger if the killing blow is a Brutality",
+		tagsId: [108, 40, 47, 29, 112, 31, 82]
+	},
+	{
+		id: 333,
+		name: 'Critical on Basic Attack, deal damage and exhaust 10% power',
+		description: "%d% Chance Critical Hit on Basic Attacks deals additional %d% max Health damage and inevitable exhausts %d% of opponent's max Power",
+		tagsId: [31, 32, 86, 113]
 	},
 	{
 		id: 1000,

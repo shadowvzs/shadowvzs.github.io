@@ -29,7 +29,6 @@ export class Item {
         this._states = _states;
         this.states = _states.map(x => ({
             attributes: x.attributeId.map(id => {
-                console.log(id, x)
                 const attribute = itemAttributes.valueMap[id];
                 attribute.tags = attribute.tagsId.map(tagId => itemTags.valueMap[tagId]);
                 return attribute;
@@ -64,17 +63,19 @@ export class Item {
             state.attributes.map(x => {
                 let rawDesc = x.description;
                 if (state.onlyFor) { 
-                    const characters = state.onlyFor.map(x => itemTags.valueMap[x].toUpperCase().replace('_', ' ')).join(', ');
+                    const characters = state.onlyFor.map(x => itemTags.valueMap[x].toUpperCase().replace(/_/g, ' ')).join(', ');
                     rawDesc.replace('%s', characters);
                     rawDesc = `[${characters}] ` + rawDesc;
                 }
                 if (state.forTower) { 
-                    const towers = state.forTower.map(x => itemTags.valueMap[x].toUpperCase().replace('_', ' ')).join(', ');
+                    const towers = state.forTower.map(x => itemTags.valueMap[x].toUpperCase().replace(/_/g, ' ')).join(', ');
                     rawDesc.replace('%s', towers);
                     rawDesc = `[${towers}] ` + rawDesc;
                 }
                 state.value.forEach(v => {
-                    rawDesc = rawDesc.replace('%d', v);
+                    rawDesc = rawDesc
+                        .replace('%d', v)
+                        .replace('%n', Math.floor(v));
                 })
                 return rawDesc;
             }).forEach(desc => {

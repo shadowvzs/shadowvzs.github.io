@@ -1,8 +1,8 @@
 import { BaseComponent } from "./core/BaseComponent.mjs";
-import { mainHeaderCmp } from "./components/mainHeaderCmp.mjs";
-import { mainContentCmp } from "./components/mainContentCmp.mjs";
-import { mainFooterCmp } from "./components/mainFooterCmp.mjs";
-import { mainAsideCmp } from "./components/mainAsideCmp.mjs";
+import { mainHeaderCmp } from "./components/layout/mainHeaderCmp.mjs";
+import { mainContentCmp } from "./components/layout/mainContentCmp.mjs";
+import { mainFooterCmp } from "./components/layout/mainFooterCmp.mjs";
+import { mainAsideCmp } from "./components/layout/mainAsideCmp.mjs";
 
 export class MainPage extends BaseComponent {
     

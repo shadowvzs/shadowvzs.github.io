@@ -15,13 +15,23 @@ export const tagGroups = [
 		render: 'select'
 	},
 	{
-		id: 4, //
-		name: 'Combat',
-	},
-	{
 		id: 5, //
 		name: 'Tower',
 		render: 'select'
+	},
+	{
+		id: 9, //
+		name: 'Chars',
+		render: 'select'
+	},
+	{
+		id: 11, //-
+		name: 'When triggering',
+		render: 'select'
+	},
+	{
+		id: 4, //
+		name: 'Combat',
 	},
 	{
 		id: 6, // 
@@ -36,14 +46,12 @@ export const tagGroups = [
 		name: 'State & Support',
 	},
 	{
-		id: 9, //
-		name: 'Chars',
-		render: 'select'
+		id: 10, //-
+		name: 'Power',
 	},
 	{
-		id: 10, //-
-		name: 'When triggering',
-		render: 'select'
+		id: 12, //-
+		name: 'Other',
 	}
 
 ];
@@ -64,33 +72,33 @@ export const itemTags = [
 	{ id: 9, name: 'armor', group: 3 },
 	{ id: 10, name: 'accessory', group: 3 },
 
-	{ id: 11, name: 'passive', group: 10 },
-	{ id: 12, name: 'at_start', group: 10 },
-	{ id: 13, name: 'tag_in', group: 10 },
-	{ id: 14, name: 'tagged_in', group: 10 },
-	{ id: 15, name: 'while_blocking', group: 10 },
+	{ id: 11, name: 'passive', group: 11 },
+	{ id: 12, name: 'at_start', group: 11 },
+	{ id: 13, name: 'tag_in', group: 11 },
+	{ id: 14, name: 'tagged_in', group: 11 },
+	{ id: 15, name: 'while_blocking', group: 11 },
 	{ id: 16, name: 'brutality', group: 4 },
 	{ id: 17, name: 'max_health', group: 8 },
 	{ id: 18, name: 'toughness', group: 8 },
 	{ id: 19, name: 'recovery', group: 8 },
 	{ id: 20, name: 'resistance', group: 8 },
-	{ id: 21, name: 'power_generation', group: 8 },
+	{ id: 21, name: 'power_generation', group: 10 },
 	{ id: 22, name: 'slow', group: 6 },
 	{ id: 23, name: 'stun', group: 6 },
 	{ id: 24, name: 'poison', group: 6 },
 	{ id: 25, name: 'bleed', group: 6 },
 	{ id: 26, name: 'fire', group: 6 },
-	{ id: 27, name: 'while_opponent_blocking', group: 10 },
+	{ id: 27, name: 'while_opponent_blocking', group: 11 },
 	{ id: 28, name: 'block_breaker', group: 4 },
 	{ id: 29, name: 'damage_boost', group: 4 },
-	{ id: 30, name: 'faction_war', group: 10 },
+	{ id: 30, name: 'faction_war', group: 11 },
 	{ id: 31, name: 'basic_attack', group: 4 },
 	{ id: 32, name: 'critical_chance', group: 4 },
 	{ id: 33, name: 'critical_chance_reduction', group: 8 },
 	{ id: 34, name: 'damage_boost_tower', group: 8 },
 	{ id: 35, name: 'max_health_tower', group: 8 },
 	{ id: 36, name: 'freeze', group: 6 },
-	{ id: 37, name: 'reduce_power_cost', group: 8 },
+	{ id: 37, name: 'reduce_power_cost', group: 10 },
 	{ id: 38, name: 'frostbite', group: 6 },
 	{ id: 39, name: 'critical_damage' },
 	{ id: 40, name: 'heal', group: 8 },
@@ -102,10 +110,10 @@ export const itemTags = [
 	{ id: 46, name: 'elder_god', group: 7 },
 	{ id: 47, name: 'resurrect', group: 8 },
 	{ id: 48, name: 'strengthen', group: 6 },
-	{ id: 49, name: 'power_bar', group: 8 },
-	{ id: 50, name: 'effect_on_sp', group: 10 },
+	{ id: 49, name: 'power_bar', group: 10 },
+	{ id: 50, name: 'effect_on_sp', group: 11 },
 	{ id: 51, name: 'apply_dot', group: 4 },
-	{ id: 52, name: 'when_low_hp', group: 10 },
+	{ id: 52, name: 'when_low_hp', group: 11 },
 	{ id: 53, name: 'enrage', group: 4 },
 	{ id: 54, name: 'sp1', group: 4 },
 	{ id: 55, name: 'sp2', group: 4 },
@@ -113,16 +121,16 @@ export const itemTags = [
 	{ id: 57, name: 'power_while_attacked', group: 10 },
 	{ id: 58, name: 'combo_ender', group: 4 },
 	{ id: 59, name: 'improve_dot', group: 8 },
-	{ id: 60, name: 'on_combo_ender', group: 10 },
-	{ id: 61, name: 'power_drain', group: 8 },
+	{ id: 60, name: 'on_combo_ender', group: 11 },
+	{ id: 61, name: 'power_drain', group: 10 },
 	{ id: 62, name: 'dispel', group: 8 },
-	{ id: 63, name: 'when_critical', group: 10 },
+	{ id: 63, name: 'when_critical', group: 11 },
 	{ id: 64, name: 'damage_reduction', group: 8 },
 	{ id: 65, name: 'weaken', group: 6 },
 	{ id: 66, name: 'cripple', group: 6 },
 	{ id: 67, name: 'debuff', group: 8 },
 	{ id: 68, name: 'miss', group: 6 },
-	{ id: 69, name: 'counter_attack', group: 10 },
+	{ id: 69, name: 'counter_attack', group: 11 },
 	{ id: 70, name: 'nightmare', group: 6 },
 	{ id: 71, name: 'death_mark', group: 6 },
 	{ id: 72, name: 'reduction', group: 8 },
@@ -136,36 +144,37 @@ export const itemTags = [
 	{ id: 80, name: 'shield', group: 8 },
 	{ id: 82, name: 'buff', group: 8 },
 	{ id: 83, name: 'speed', group: 6 },
-	{ id: 84, name: 'tag_out', group: 10 },
+	{ id: 84, name: 'tag_out', group: 11 },
 	{ id: 85, name: 'pull_back', group: 6 },
-	{ id: 86, name: 'hp_based_damage', group: 4 },
-	{ id: 87, name: 'bonus_damage', group: 4 },
+	{ id: 86, name: 'deal_damage', group: 4 },
+	{ id: 87, name: 'dodge', group: 4 },
 	{ id: 88, name: 'purge', group: 6 },
 	{ id: 89, name: 'blind', group: 6 },
 	{ id: 90, name: 'dark_magic', group: 4 },
-	{ id: 91, name: 'when_lethal', group: 10 },
+	{ id: 91, name: 'when_lethal', group: 11 },
 	{ id: 92, name: 'stack', group: 8 },
 	{ id: 93, name: 'attack_power', group: 8 },
 	{ id: 94, name: 'incurability', group: 6 },
 	{ id: 95, name: 'avoid', group: 4 },
 	{ id: 96, name: 'vampirism', group: 6 },
-	{ id: 97, name: 'on_block_breaker', group: 10 },
+	{ id: 97, name: 'on_block_breaker', group: 11 },
 	{ id: 98, name: 'silence', group: 6 },
-	{ id: 99, name: 'same_class', group: 10 },
+	{ id: 99, name: 'same_class', group: 11 },
 	{ id: 100, name: 'fw_rate', group: 8 },
 	{ id: 101, name: 'copy_buff', group: 8 },
 	{ id: 102, name: 'luck', group: 6 },
-	{ id: 103, name: 'defeat_opponent', group: 10 },
-	{ id: 104, name: 'hp_based_damage', group: 4 },
-	{ id: 105, name: 'loot_boost', group: 8 },
-	{ id: 106, name: 'shorter_quest', group: 8 },
-	{ id: 107, name: '-' },
-	{ id: 108, name: '-' },
-	{ id: 109, name: '-' },
-	{ id: 110, name: '-' },
-	{ id: 111, name: '-' },
-	{ id: 112, name: '-' },
-	{ id: 113, name: '-' },
+	{ id: 103, name: 'on_opponent_ko', group: 11 },
+	{ id: 104, name: 'soak', group: 4 },
+	{ id: 105, name: 'loot_boost', group: 12 },
+	{ id: 106, name: 'shorter_quest', group: 12 },
+	{ id: 107, name: 'on_ressurect', group: 11 },
+	{ id: 108, name: 'on_ko', group: 11 },
+	{ id: 109, name: 'curse', group: 6 },
+	{ id: 110, name: 'whole_team', group: 12 },
+	{ id: 111, name: 'debuff_boost', group: 8 },
+	{ id: 112, name: 'power_steal', group: 10 },
+	{ id: 113, name: 'exhaust_power', group: 10 },
+	{ id: 114, name: '-' },
 
 	{ id: 200, name: 'tower_of_horror', group: 5 },
 	{ id: 201, name: 'lin_kuei_tower', group: 5 },
@@ -226,8 +235,11 @@ export const itemTags = [
 ];
 
 itemTags.valueMap = itemTags.reduce((obj, x) => (obj[x.id] = x.name, obj), {});
-tagGroups.valueMap = tagGroups.reduce((obj, x) => {
-	obj[x.id] = x;
-	x.items = itemTags.filter(x => x.group === x.id).map(x => x.id);
-	return obj;
-}, {});
+tagGroups.valueMap = tagGroups.reduce((obj, x) => (obj[x.id] = x, x.items = [], obj), {});
+itemTags
+	.filter(tag => tagGroups.valueMap[tag.group])
+	.forEach(tag => tagGroups.valueMap[tag.group].items.push(tag));
+
+tagGroups.forEach(tagGroup => {
+	tagGroup.currentTagId = 0;
+});

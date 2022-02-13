@@ -3779,12 +3779,6 @@ export const items = [
 		id: 3528,
 		name: "Wicked Sister's Festive mask",
         tagsId: [3, 1002, 10, 209],
-		d: `30-50% Chance to apply Bleed to an opponent on any successful Special Attack.
-		20-40% Chance to apply Incurability debuff to the whole team for 10 sec on Combo Ender.
-		10-150% Damage boost. Dark Queen's Tower only.
-		20-300% Max health boost. Dark Queen's Tower only.
-		[MILEENA] [SET] If this is equipped alongside Wicked Sister's Sultry Gown, any DIAMOND Mileena gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] Bleed stacks up to 3 times. The user Vampires 33% damage from up to 3 last Bleed DOTs.  acc`,
 		images: ['Dq_wicked_sisters_festive_mask_PostEvo.webp', 'Dq_wicked_sisters_festive_mask_PostEvo.webp'],
 		states: [
 			{
@@ -3795,7 +3789,7 @@ export const items = [
 			},
 			{
 				attributeId: [218],				
-				initValue: [20],
+				initValue: [20, 10],
 				step: [2],
 				maxFusion: 10
 			},
@@ -4248,22 +4242,37 @@ export const items = [
 		id: 4500,
 		name: "Hellfire Blade",
         tagsId: [4, 1002, 8, 200],
-		d: `Special Attacks that apply Fire deal 20-80% bonus damage against opponents already affected by Fire.
-		200-700% Damage boost. Tower of Horror only.
-		100-500% Max Health boost. Tower of Horror only.
-		On Tag-in, apply Fire to both the wearer and the opponent for 2-7s.
-		[Fusion Level X] 100% Chance to drain 33% Power on Fire attacks. w`,
 		images: ['Hellfire_Blade.webp', 'Hellfire_Blade.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [239],				
+				initValue: [20],
+				step: [6],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [21],				
+				initValue: [200],
+				step: [50],
+				maxFusion: 10,
+				forTower: [200]
+			},
+			{
+				attributeId: [22],				
+				initValue: [100],
+				step: [40],
+				maxFusion: 10,
+				forTower: [200]
+			},
+			{
+				attributeId: [240],				
+				initValue: [2],
+				step: [0.5],
+				maxFusion: 10
+			},
+			{
+				attributeId: [241],				
+				initValue: [100, 33],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4274,22 +4283,37 @@ export const items = [
 		id: 4501,
 		name: "Wailing Spirit",
         tagsId: [4, 1002, 10, 200],
-		d: `On Tag-in, Power Drain 0.5-2 bars of opponent’s Power.
-		30-100% Chance to steal 50% of the enemy’s Power at the start of the match when equipped on a starting character.
-		75-225% Damage boost. Tower of Horror only.
-		100-450% Max Health boost. Tower of Horror only.
-		[Fusion Level X] Steal 50% of Power Drained on tag-in.  acc`,
 		images: ['WailingSpirit_PostEvo.webp', 'WailingSpirit_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [242],				
+				initValue: [0.5],
+				step: [0.15],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [224],				
+				initValue: [30, 50],
+				step: [7],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [200]
+			},
+			{
+				attributeId: [22],				
+				initValue: [100],
+				step: [35],
+				maxFusion: 10,
+				forTower: [200]
+			},
+			{
+				attributeId: [243],				
+				initValue: [50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4299,23 +4323,38 @@ export const items = [
     {
 		id: 4502,
 		name: "Living Dead",
-		d: `Once per match, resurrect after being defeated, and gain Invulnerability and 100% Unblockable chance on basic attacks for 2-7s.
-		200-700% Damage boost. Tower of Horror only.		
-		100-500% Max Health boost. Tower of Horror only.
-		30-50% Self heal at the end of Special Attack 3 or X-Ray/Fatal Blow attack.
-		[Fusion Level X] Apply Bleed to opponent when resurrecting.  ar`,
         tagsId: [4, 1002, 9, 200],
 		images: ['LivingDead_PostEvo.webp', 'LivingDead_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [244],				
+				initValue: [100, 2],
+				step: [0, 0.5],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [21],				
+				initValue: [200],
+				step: [50],
+				maxFusion: 10,
+				forTower: [200]
+			},
+			{
+				attributeId: [22],				
+				initValue: [100],
+				step: [40],
+				maxFusion: 10,
+				forTower: [200]
+			},
+			{
+				attributeId: [141],				
+				initValue: [30],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [245],				
+				initValue: [1],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4326,22 +4365,37 @@ export const items = [
 		id: 4503,
 		name: "Reaper's End",
         tagsId: [4, 1002, 8, 200],
-		d: `25-75% Chance to apply Curse on Combo Ender.
-		200-700% Damage boost. Tower of Horror only.		
-		100-500% Max Health boost. Tower of Horror only.		
-		30-50% Unblockable chance on basic attacks.		
-		[Fusion Level X] 30% Critical Hit Chance boost.  w`,
 		images: ['Reapersend_postevo.webp', 'Reapersend_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [246],				
+				initValue: [25],
+				step: [5],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [21],				
+				initValue: [200],
+				step: [50],
+				maxFusion: 10,
+				forTower: [200]
+			},
+			{
+				attributeId: [22],				
+				initValue: [100],
+				step: [40],
+				maxFusion: 10,
+				forTower: [200]
+			},
+			{
+				attributeId: [9],				
+				initValue: [30],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [10],				
+				initValue: [30],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4351,23 +4405,38 @@ export const items = [
     {
 		id: 4504,
 		name: "Frost Mask",
-		d: `35-55% Max health boost.
-		After defeating an opponent apply Frostbite on their teammates for 5-15s.
-		200-1000% Max Health boost. Lin Kuei Tower only.
-		[SUB-ZERO] 50-100% Chance to apply Frostbite on enemy team at the start of the match.
-		[Fusion Level X] 50% Opponent unblockable attack chance reduction. `,
         tagsId: [4, 1002, 9, 201],
 		images: ['Frostmask_postevo.webp', 'Frostmask_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
+				attributeId: [8],				
+				initValue: [35],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [247],				
 				initValue: [5],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [22],				
+				initValue: [200],
+				step: [80],
+				maxFusion: 10,
+				forTower: [201]
+			},
+			{
+				attributeId: [248],				
+				initValue: [50],
+				step: [5],
+				maxFusion: 10,
+				onlyFor: [400]
+			},
+			{
+				attributeId: [210],				
+				initValue: [50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4378,22 +4447,37 @@ export const items = [
 		id: 4505,
 		name: "Frost Orb",
         tagsId: [4, 1002, 10, 201],
-		d: `10-15% Reduced Power cost on all Special Attacks.
-		Once per fight spawn an Ice Clone that will save the wearer from a knockout blow. There is 10-50% chance the Ice Clone will explode and apply Frostbite to the opponent.
-		45-250% Damage boost. Lin Kuei Tower only.		
-		100-300% Max Health boost. Lin Kuei Tower only.		
-		[Fusion Level X] Immune to Frostbite and Stun. acc`,
 		images: ['Frostorb_postevo.webp', 'Frostorb_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [20],				
+				initValue: [10],
+				step: [0.5],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [249],				
+				initValue: [10],
+				step: [4],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [45],
+				step: [20.5],
+				maxFusion: 10,
+				forTower: [201]
+			},
+			{
+				attributeId: [22],				
+				initValue: [100],
+				step: [20],
+				maxFusion: 10,
+				forTower: [201]
+			},
+			{
+				attributeId: [250],				
+				initValue: [1],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4404,21 +4488,31 @@ export const items = [
 		id: 4506,
 		name: "Kori Blade",
         tagsId: [4, 1002, 8, 201],
-		d: `15-25% Attack boost.
-		50-100% Chance to apply Ice Armor after defeating an opponent.
-		100-500% Damage boost. Lin Kuei Tower only.		
-		[Fusion Level X] Every time an owner defeats an opponent, each surviving opponent get 1 bar of their Power drained.  w`,
 		images: ['Kori_Blade.webp', 'Kori_Blade.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
+				attributeId: [206],				
+				initValue: [15],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [251],				
+				initValue: [50],
+				step: [5],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [100],
+				step: [40],
+				maxFusion: 10,
+				forTower: [201]
+			},
+
+			{
+				attributeId: [252],				
+				initValue: [1],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4428,23 +4522,39 @@ export const items = [
     {
 		id: 4507,
 		name: "Kuai Liang's Scepter",
-		d: `0.5-1.5% Bar of starting Power.
-		50-100% Lethal Blow chance against enemies affected by Freeze: +300% damage.		
-		100-500% Damage boost. Lin Kuei Tower only.		
-		[SUB-ZERO] [SET] If this is equipped with another 1 card from Kuai Liang’s set, Diamond Character gain a 40% chance to perform a Special Combo Ender dealing massive damage. If it is the last opponent and they are under 25% health, Sub-Zero performs a Brutality instead, ending the fight immediately.		
-		[Fusion Level X] 100% Chance to apply Bleed when hitting an opponent affected by Freeze.  w`,
         tagsId: [4, 1002, 8, 201],
 		images: ['Kuai_Liangs_Scepter.webp', 'Kuai_Liangs_Scepter.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [122],				
+				initValue: [0.5],
+				step: [0.1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [253],				
+				initValue: [50, 300],
+				step: [5],
+				maxFusion: 10,
+				forTower: [201]
+			},
+			{
+				attributeId: [22],				
+				initValue: [100],
+				step: [40],
+				maxFusion: 10,
+				forTower: [201]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [400]
+			},
+			{
+				attributeId: [254],				
+				initValue: [100],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4455,22 +4565,37 @@ export const items = [
 		id: 4508,
 		name: "Nomad's Buzz Saw",
         tagsId: [4, 1002, 8, 202],
-		d: `20-50% Chance to gain Speed after a successful critical hit.
-		Poison applies to the enemy lasts 60-120% longer.		
-		150-600% Damage boost. Black Dragon Tower only.		
-		[KABAL] [SET] If this is equipped along with Nomad's Deadly Vapors, Diamond Character gains a 40% chance to perform a Special Combo Ender dealing massive damage. If it is the last opponent and they are under 25% health, Character performs a Brutality instead, ending the fight immediately.
-		[Fusion Level X] Gain 2 Bars of Power after a teammate is defeated. w`,
 		images: ['Nomads_Buzz_Saw.webp', 'Nomads_Buzz_Saw.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [255],				
+				initValue: [20],
+				step: [3],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [117],				
+				initValue: [60],
+				step: [6],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [202]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [426]
+			},
+			{
+				attributeId: [256],				
+				initValue: [2],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4481,23 +4606,43 @@ export const items = [
 		id: 4509,
 		name: "Psych Bomb",
         tagsId: [4, 1002, 10, 202],
-		d: `On tag-in, Psych Bomb is tossed, dealing 200-400% of the basic attack damage.
-		On tag-in, Psych Bomb is tossed, having a 30-80% chance to apply stun for 3 seconds.		
-		75-225% Damage boost. Black Dragon Tower only.		
-		150-450% Max health boost. Black Dragon Tower only.		
-		20-40% Chance to apply Cripple when stunning an opponent.		
-		[Fusion Level X] 50% Reduced power cost on Special Attack 2. acc`,
 		images: ['Psych_Bomb.webp', 'Psych_Bomb.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [257],				
+				initValue: [200],
+				step: [20],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [258, 3],				
+				initValue: [30],
+				step: [5],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [202]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [30],
+				maxFusion: 10,
+				forTower: [202]
+			},
+			{
+				attributeId: [259],				
+				initValue: [20],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [155],				
+				initValue: [50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4507,27 +4652,39 @@ export const items = [
     {
 		id: 4510,
 		name: "Scoundrel's Cybernetic Heart",
-		d: `Regenerates 3 bars of Power over 15 seconds below 30-60% Health.
-
-		300-1200% Max health boost. Black Dragon Tower only.
-		
-		[KANO] 20-40% Damage boost against enemies affected by Bleed.
-		
-		[KANO] [SET] If this is equipped with another 1 card from Scoundrel's set, Diamond Character gains a 40% chance to perform a Special Combo Ender dealing massive damage. If it is the last opponent and they are under 25% health, Kano performs a Brutality instead, ending the fight immediately.
-		
-		[Fusion Level X] 40% Max Health boost. ar`,
         tagsId: [4, 1002, 9, 202],
 		images: ['CyberneticHeart_postEvo.webp', 'CyberneticHeart_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [260],				
+				initValue: [3, 15, 30],
+				step: [0, 0, 3],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [22],				
+				initValue: [300],
+				step: [90],
+				maxFusion: 10,
+				forTower: [202]
+			},
+			{
+				attributeId: [139],				
+				initValue: [20],
+				step: [2],
+				maxFusion: 10,
+				onlyFor: [411]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [411]
+			},
+			{
+				attributeId: [8],				
+				initValue: [40],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4538,26 +4695,37 @@ export const items = [
 		id: 4511,
 		name: "Smuggler's Luck",
         tagsId: [4, 1002, 10, 202],
-		d: `30-60% Chance to gain Luck after Special Attack 1.
-
-		Special Attack 1 deals 10-20% more damage after each use, stacks up to 5 times.
-		
-		75-225% Damage boost. Black Dragon Tower only.
-		
-		150-450% Max health boost. Black Dragon Tower only.
-		
-		[Fusion Level X] On tag-out, gain Dispel. acc`,
 		images: ['SmugglerLuck_postEvo.webp', 'SmugglerLuck_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
+				attributeId: [261],				
+				initValue: [30],
+				step: [3],
+				maxFusion: 10
+			},
+			{
+				attributeId: [262],				
+				initValue: [10, 5],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [202]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [30],
+				maxFusion: 10,
+				forTower: [202]
+			},
+			{
+				attributeId: [263],				
+				initValue: [1],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4568,22 +4736,38 @@ export const items = [
 		id: 4512,
 		name: "Specter's Burning Vengeance",
         tagsId: [4, 1002, 9, 203],
-		d: `100% Chance to apply Fire on Special Attacks 2-7 times per battle.
-		20-40% Chance to apply Fire when blocking an enemy attack.		
-		300-1200% Max health Boost. Shirai Ryu Tower only.		
-		[SCORPION] [SET] If this is equipped alongside Specter's Infernal Chains, any DIAMOND Scorpion gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.		
-		[Fusion Level X] Wearer explodes into flames when defeated, dealing massive damage and applying Fire to all opponents. arm`,
 		images: ['Srt_specters_burning_vengeance_PostEvo.webp', 'Srt_specters_burning_vengeance_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [264],				
+				initValue: [100, 2],
+				step: [0, 0.5],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [265],				
+				initValue: [20],
+				step: [2],
+				maxFusion: 10,
+				forTower: [203]
+			},
+			{
+				attributeId: [22],				
+				initValue: [300],
+				step: [90],
+				maxFusion: 10,
+				forTower: [203]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [434]
+			},
+			{
+				attributeId: [266],				
+				initValue: [1],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4594,22 +4778,38 @@ export const items = [
 		id: 4513,
 		name: "Champion's Nunchaku",
         tagsId: [4, 1002, 8, 203],
-		d: `10-40% Chance to apply Fire on basic attacks.
-		30-100% Damage boost against Outworld Characters.		
-		150-600% Damage boost. Shirai Ryu Tower only.		
-		[LIU KANG] [SET] If this is equipped alongside Champion's Leather Bracers, any DIAMOND Liu Kang gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.		
-		[Fusion Level X] [LIU KANG] When a teammate tags in, Liu Kang throws Dragon Fire from the sidelines, dealing 500% of his basic attack damage with 50% chance to apply Fire. wea`,
 		images: ['Srt_champions_nunchaku_PostEvo.webp', 'Srt_champions_nunchaku_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [267],				
+				initValue: [10],
+				step: [3],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [21],				
+				initValue: [30],
+				step: [7],
+				maxFusion: 10,
+				forTower: [203]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [203]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [425]
+			},
+			{
+				attributeId: [268],				
+				initValue: [500, 50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4620,31 +4820,48 @@ export const items = [
 		id: 4514,
 		name: "Edenian Bracelets",
         tagsId: [4, 1002, 10, 203],
-		d: `25-50% Special Attack 2 Damage boost.
-
-		20-40% Power generation boost.
-		
-		75-225% Damage boost. Shirai Ryu Tower only.
-		
-		150-450% Max health boost. Shirai Ryu Tower only.
-		
-		[JADE] [SET] If this is equipped alongside Edenian Force Rejection Field, any DIAMOND Jade gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		
-		[Fusion Level X] [JADE] Once per match, Jade avoids death by automatically tagging out before the killing blow. This effect does not trigger if the killing blow is a Brutality. acc`,
 		images: ['Srt_edenian_bracelets_PostEvo.webp', 'Srt_edenian_bracelets_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [131],				
+				initValue: [25],
+				step: [2.5],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
+				attributeId: [15],				
+				initValue: [20],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [203]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [30],
+				maxFusion: 10,
+				forTower: [203]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [409]
+			},
+			{
+				attributeId: [269],				
 				initValue: [8],
 				step: [],
 				maxFusion: 10,
-				reqFusion: 10
+				reqFusion: 10,
+				onlyFor: [409]
 			}				
 		]
 	},	
@@ -4652,22 +4869,37 @@ export const items = [
 		id: 4515,
 		name: "Edenian Force Rejection Field",
         tagsId: [4, 1002, 9, 203],
-		d: `25-45% Max health boost.
-		Opponents affected by Blind have a 30-60% chance to also miss during Special Attacks.		
-		300-1200% Max health boost. Shirai Ryu Tower only.		
-		[JADE] [SET] If this is equipped alongside Edenian Bracelets, any DIAMOND Jade gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] 50% Resistance to all Debuffs. ar`,
 		images: ['Srt_edenian_force_rejection_field_PostEvo.webp', 'Srt_edenian_force_rejection_field_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [8],				
+				initValue: [25],
+				step: [2],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [270],				
+				initValue: [30],
+				step: [3],
+				maxFusion: 10
+			},
+			{
+				attributeId: [22],				
+				initValue: [300],
+				step: [90],
+				maxFusion: 10,
+				forTower: [203]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [409]
+			},
+			{
+				attributeId: [136],				
+				initValue: [50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4678,25 +4910,41 @@ export const items = [
 		id: 4516,
 		name: "Bi-Han's Tormentor",
         tagsId: [4, 1002, 8, 204],
-		d: `5-15% Lethal Blow chance.
-		10-20% Reduced Power cost on all Special Attacks.
-		150-600% Damage boost. Nightmare Tower only.
-		[NOOB SAIBOT] [SET] If this is equipped alongside Bi-Han's Visage, any Diamond Noob Saibot gain 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.		
-		[Fusion Level X] [NOOB SAIBOT] Gain 1 Bar of Power after any teammate or ally Summon is defeated. w`,
 		images: ['Nt_bihans_tormentor_post.webp', 'Nt_bihans_tormentor_post.webp'],
 		states: [
 			{
-				attributeId: [15],				
+				attributeId: [271],				
 				initValue: [5],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [20],				
+				initValue: [10],
+				step: [1],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [204]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [417]
+			},
+			{
+				attributeId: [272],				
+				initValue: [1],
 				step: [],
 				maxFusion: 10,
-				reqFusion: 10
+				reqFusion: 10,
+				onlyFor: [417]
 			}				
 		]
 	},	
@@ -4704,22 +4952,37 @@ export const items = [
 		id: 4517,
 		name: "Demon Bat",
         tagsId: [4, 1002, 10, 204],
-		d: `After performing any Special Attack, a demon bat also attacks the victim, dealing additional damage and applying Bleed while dying in the process. Demon Bat respawns every 30-10 seconds.
-		20-30% Power generation boost.
-		75-225% Damage boost. Nightmare Tower only.		
-		150-450% Max health boost. Nightmare Tower only.
-		[Fusion Level X] When Demon Bat attacks an opponent affected by Bleed, user heals for 20% of the victim's max health.  acc`,
 		images: ['Nt_demon_bat_post.webp', 'Nt_demon_bat_post.webp'],
 		states: [
 			{
+				attributeId: [273],				
+				initValue: [30],
+				step: [-2],
+				maxFusion: 10
+			},
+			{
 				attributeId: [15],				
-				initValue: [5],
+				initValue: [20],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [204]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [30],
+				maxFusion: 10,
+				forTower: [204]
+			},
+			{
+				attributeId: [274],				
+				initValue: [20],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4730,23 +4993,44 @@ export const items = [
 		id: 4518,
 		name: "Thunder Lord's Stormweaver",
         tagsId: [4, 1002, 8, 204],
-		d: `15-25% Attack boost.
-		30-100% Chance to gain Dispel after performing a Special Attack.
-		150-600% Damage boost. Nightmare Tower only.
-		[RAIDEN] 10-30% Chance lightning will strike the opponent on basic attack, dealing additional Damage.
-		[RAIDEN] [SET] If this equipped alongside Thunder Lord's Sigil, any DIAMOND Raiden gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] 1.5 Bar of starting Power.  we`,
 		images: ['Nt_thunder_lords_stormweaver_post.webp', 'Nt_thunder_lords_stormweaver_post.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
+				attributeId: [206],				
+				initValue: [15],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [275],				
+				initValue: [30],
+				step: [7],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [204]
+			},
+			{
+				attributeId: [276],				
+				initValue: [10],
+				step: [2],
+				maxFusion: 10,
+				onlyFor: [437]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [437]
+			},
+			{
+				attributeId: [122],				
+				initValue: [1.5],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4757,21 +5041,30 @@ export const items = [
 		id: 4519,
 		name: "Killer Jacket",
         tagsId: [4, 1002, 9, 204],
-		d: `10-60% Toughness boost.
-		30-100% Chance to gain Shield after suffering from a Lethal Blow.
-		300-1200% Max health boost. Nightmare Tower only.	
-		[Fusion Level X] Gain Shield at the start of the match.  ar`,
 		images: ['Nt_killer_jacket_post.webp', 'Nt_killer_jacket_post.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [3],				
+				initValue: [10],
+				step: [5],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [277],				
+				initValue: [30],
+				step: [7],
+				maxFusion: 10
+			},
+			{
+				attributeId: [22],				
+				initValue: [300],
+				step: [90],
+				maxFusion: 10,
+				forTower: [204]
+			},
+			{
+				attributeId: [278],				
+				initValue: [1],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4781,24 +5074,45 @@ export const items = [
     {
 		id: 4520,
 		name: "Bloodmaster's Iron Curtain",
-		d: `20-50% Max health boost.
-		Bleed lasts 10-50% longer.
-		300-1200% Max health boost. Kold War Tower only.
-		[SKARLET] 15-25% Chance to convert 50% damage to Health on Special Attack 1.
-		[SKARLET] [SET] If this is equipped alongside Bloodmaster's Bloody Finka, any DIAMOND Skarlet gains 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] Immunity to all DOTs including Dark Magic.  ar`,
         tagsId: [4, 1002, 9, 205],
 		images: ['Kw_bloodmasters_iron_curtain_postevo.webp', 'Kw_bloodmasters_iron_curtain_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [8],				
+				initValue: [20],
+				step: [3],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [279],				
+				initValue: [10],
+				step: [4],
+				maxFusion: 10
+			},
+			{
+				attributeId: [22],				
+				initValue: [300],
+				step: [90],
+				maxFusion: 10,
+				forTower: [205]
+			},
+			{
+				attributeId: [112],				
+				initValue: [15],
+				step: [1],
+				maxFusion: 10,
+				onlyFor: [443]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [443]
+			},
+			{
+				attributeId: [280],				
+				initValue: [1],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4809,23 +5123,44 @@ export const items = [
 		id: 4521,
 		name: "General's Father Gun",
         tagsId: [4, 1002, 8, 205],
-		d: `30-60% Damage boost against enemies affected by Stun.
-		30-50% Unblockable chance on basic attacks.
-		150-600% Damage boost. Kold War Tower only.
-		[SONYA BLADE] 10-30% Unblockable chance on all Special Attacks.
-		[SONYA BLADE] [SET] If this is equipped alongside General's Knockout Gloves, any DIAMOND Sonya Blade gains 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] 50% Chance to apply Shield Break on Special Attack 1.  w`,
 		images: ['Kw_generals_father_gun_postevo.webp', 'Kw_generals_father_gun_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [12],				
+				initValue: [30],
+				step: [3],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [9],				
+				initValue: [30],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [205]
+			},
+			{
+				attributeId: [148],				
+				initValue: [10],
+				step: [2],
+				maxFusion: 10,
+				onlyFor: [443]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [443]
+			},
+			{
+				attributeId: [281],				
+				initValue: [50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4836,21 +5171,30 @@ export const items = [
 		id: 4522,
 		name: "Missile Gap",
         tagsId: [4, 1002, 8, 205],
-		d: `30-70% Critical Hit Chance boost.
-		3-13% Chance a missile counter-attacks whenever hit by an opponent.
-		150-600% Damage boost. Kold War Tower only.
-		[Fusion Level X] Missile bombing applies Stun to an opponent for 3 seconds.  w`,
 		images: ['Kw_missile_gap_postevo.webp', 'Kw_missile_gap_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
+				attributeId: [10],				
+				initValue: [30],
+				step: [4],
+				maxFusion: 10
+			},
+			{
+				attributeId: [282],				
+				initValue: [3],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [205]
+			},
+			{
+				attributeId: [283],				
+				initValue: [3],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4861,28 +5205,37 @@ export const items = [
 		id: 4523,
 		name: "Weather Warfare",
         tagsId: [4, 1002, 10, 205],
-		d: `Frozen opponents remain frozen up for 2-4 successive hit.
-
-
-		50-100% Chance to also apply Frostbite when freezing an opponent.
-		
-		
-		75-225% Damage boost. Kold War Tower only.
-		
-		150-450% Max Health boost. Kold War Tower only.
-		
-		[Fusion Level X] A gust of wind Freezes tagged-in opponent.  acc`,
 		images: ['Kw_weather_warfare_postevo.webp', 'Kw_weather_warfare_postevo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [284],				
+				initValue: [2],
+				step: [0.2],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [285],				
+				initValue: [50],
+				step: [5],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [205]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [30],
+				maxFusion: 10,
+				forTower: [205]
+			},
+			{
+				attributeId: [286],				
+				initValue: [1],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4893,24 +5246,51 @@ export const items = [
 		id: 4524,
 		name: "Acid Dragon's Deathly Vial",
         tagsId: [4, 1002, 10, 206],
-		d: `10-20% Power generation boost.
-		40-70% Chance to gain 7% max Power for all teammates after the user successfully applies Poison or Bleed to an opponent.
-		75-225% Damage boost. Sorcerer's Tower only.
-		150-450% Max Health boost. Sorcerer's Tower only.
-		[REPTILE] Basic attacks heal for 20-50% of damage done to opponents affected by Poison.
-		[REPTILE] [SET] If this is equipped alongside Acid Dragon's Tekko-Kagi, any DIAMOND Reptile gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] Power Drain applied to the owner is reflected onto an opponent and is turned into Power Steal that grants 50% of draining Power. acc`,
 		images: ['St_acid_dragons_deathly_vial_postEvo.webp', 'St_acid_dragons_deathly_vial_postEvo.webp'],
 		states: [
 			{
 				attributeId: [15],				
-				initValue: [5],
+				initValue: [10],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [287],				
+				initValue: [40, 7],
+				step: [3],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [206]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [30],
+				maxFusion: 10,
+				forTower: [206]
+			},
+			{
+				attributeId: [288],				
+				initValue: [20],
+				step: [3],
+				maxFusion: 10,
+				onlyFor: [429]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [429]
+			},
+			{
+				attributeId: [289],				
+				initValue: [50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4921,21 +5301,44 @@ export const items = [
 		id: 4525,
 		name: "Serpent Kusarigama",
         tagsId: [4, 1002, 8, 206],
-		d: `50-100% Critical Hit Chance boost when below 40% Health.
-		30-50% Chance to gain Speed increased for 5s after performing a Combo Ender.
-		150-600% Damage boost. Sorcerer's Tower only.
-		[Fusion Level X] Critical Hits have 70% chance to Vampire the damage when below 40% Health.  we`,
 		images: ['SerpentKusarigama_postEvo.webp', 'SerpentKusarigama_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [290],				
+				initValue: [50, 40],
+				step: [5],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [291],				
+				initValue: [30, 5],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [206]
+			},
+			{
+				attributeId: [288],				
+				initValue: [20],
+				step: [3],
+				maxFusion: 10,
+				onlyFor: [429]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [429]
+			},
+			{
+				attributeId: [292],				
+				initValue: [70, 40],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4946,23 +5349,45 @@ export const items = [
 		id: 4526,
 		name: "Soul Reaver's Servant",
         tagsId: [4, 1002, 8, 206],
-		d: `10-20% Chance to apply Curse on Critical Hit.
-		15-35% Damage boost against enemies affected by Cripple.
-		150-600% Damage boost. Sorcerer's Tower only.
-		[SHANG TSUNG] When Shang Tsung defeat an opponent, he and his teammates gain the defeated opponents remaining Power, distributing it equally among them.
-		[SHANG TSUNG] [SET] If this is equipped alongside Soul Reaver's King Kobra Belt, any DIAMOND Shang Tsung gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] Curse debuffs can stack up 2 times. w`,
 		images: ['SoulReaversServant_proEvo.webp', 'SoulReaversServant_proEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
+				attributeId: [293],				
+				initValue: [10],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [294],				
+				initValue: [15],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [206]
+			},
+
+			{
+				attributeId: [295],				
+				initValue: [1],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [435]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [435]
+			},
+			{
+				attributeId: [296],				
+				initValue: [2],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4973,21 +5398,31 @@ export const items = [
 		id: 4527,
 		name: "Varan Jacket",
         tagsId: [4, 1002, 9, 206],
-		d: `15-35% Chance to dodge a Special Attack.
-		40% Chance opponent's Basic Attack Critical Hit heal for 20-50% of incoming damage instead of dealing damage.
-		300-1200% Max Health boost. Sorcerer's Tower only.
-		[Fusion Level X] Damage from Special Attacks is reduced by 50%.  arm`,
 		images: ['Varan_Jacket_postEvo.webp', 'Varan_Jacket_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [297],				
+				initValue: [15, 20],
+				step: [0, 3],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [298],				
+				initValue: [40],
+				step: [50],
+				maxFusion: 10,
+				forTower: [206]
+			},
+			{
+				attributeId: [22],				
+				initValue: [300],
+				step: [90],
+				maxFusion: 10,
+				forTower: [206]
+			},
+			{
+				attributeId: [299],				
+				initValue: [50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -4998,23 +5433,44 @@ export const items = [
 		id: 4528,
 		name: "Divine Argus Cloak",
         tagsId: [4, 1002, 9, 207],
-		d: `25-55% Max Health boost.
-		70-100% Chance to apply random negative effects to an opponent who performed a Block Breaker attack against user. Max 3 negative effects on the opponent simultaneously.
-		300-1200% Max Health boost. Edenian Tower only.
-		[RAIN] Whenever Rain applies Soaked there is 20-50% chance it spreads to the whole opponent team.
-		[RAIN] [SET] If this is equipped alongside Divine Tornadic Pauldron, any DIAMOND Rain gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] 15% Chance to gain Invulnerability for 5sec whenever affected by a negative effect. arm`,
 		images: ['Divine_Argus_Cloak_postEvo.webp', 'Divine_Argus_Cloak_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [8],				
+				initValue: [25],
+				step: [3],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [300],				
+				initValue: [70, 3],
+				step: [3],
+				maxFusion: 10,
+			},
+			{
+				attributeId: [22],				
+				initValue: [300],
+				step: [90],
+				maxFusion: 10,
+				forTower: [207]
+			},
+			{
+				attributeId: [301],				
+				initValue: [20],
+				step: [3],
+				maxFusion: 10,
+				onlyFor: [441]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [441]
+			},
+			{
+				attributeId: [302],				
+				initValue: [15],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5025,24 +5481,51 @@ export const items = [
 		id: 4529,
 		name: "Dynasty Mask of Madness",
         tagsId: [4, 1002, 10, 207],
-		d: `20-40% Resistance to all debuffs.
-		Power Drain, Weaken and Shield Break effects applied to the opponent are 15-35% more effective.
-		75-225% Damage boost. Edenian Tower only.
-		150-450% Max Health boost. Edenian Tower only.
-		[KITANA] After a Special Attack performed against Kitana, she gains 50% Power generation boost.
-		[KITANA] [SET] If this is equipped alongside Dynasty Parade Uniform, any DIAMOND Kitana gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] 30% Chance perform Special Attack 1 with zero Power cost.  acc`,
 		images: ['DynastyMaskofMadness_postEvo.webp', 'DynastyMaskofMadness_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [136],				
+				initValue: [20],
+				step: [2],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [303],				
+				initValue: [15],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [207]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [30],
+				maxFusion: 10,
+				forTower: [207]
+			},
+			{
+				attributeId: [304],				
+				initValue: [50],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [404]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [404]
+			},
+			{
+				attributeId: [305],				
+				initValue: [30],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5053,21 +5536,30 @@ export const items = [
 		id: 4530,
 		name: "King Jerrod's Spear",
         tagsId: [4, 1002, 8, 207],
-		d: `0.5-1.5 Bar of starting Power.
-		25-50% Chance to apply Snare on any Special Attack.
-		150-600% Damage boost. Edenian Tower only.
-		[Fusion Level X] 10% Chance Basic Attacks cause Lightning strike that deals 5% max Health damage to the opponent. wea`,
 		images: ['King_Jerrod_s_Spear_postEvo.webp', 'King_Jerrod_s_Spear_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [222],				
+				initValue: [0.5],
+				step: [0.2],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [306],				
+				initValue: [25],
+				step: [2.5],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [207]
+			},
+			{
+				attributeId: [307],				
+				initValue: [10, 5],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5078,21 +5570,30 @@ export const items = [
 		id: 4531,
 		name: "Princess Guard",
         tagsId: [4, 1002, 8, 207],
-		d: `5-15% Lethal Blow Chance boost.
-		Special Attack 2 applies Incurability debuff to whole opponent team for 5-15sec. Incurability cancels opponent's healing effects. Any healing, including Recovery, is also restricted while Incurability is active.
-		150-600% Damage boost. Edenian Tower only.
-		[Fusion Level X] When user applies Lethal Blow, next hit base damage is 150% higher. wea`,
 		images: ['Princess_Guard_postEvo.webp', 'Princess_Guard_postEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
+				attributeId: [271],				
 				initValue: [5],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [308],				
+				initValue: [5],
+				step: [1],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [207]
+			},
+			{
+				attributeId: [309],				
+				initValue: [150],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5103,23 +5604,44 @@ export const items = [
 		id: 4532,
 		name: "Famous Fashion Dominator",
         tagsId: [4, 1002, 9, 208],
-		d: `35-55% Max Health boost.
-		40-70% Chance to apply Blind to an opponent for using a Special Attack against the user.
-		300-1200% Max Health boost. Earthrealm Tower only.
-		[JOHNNY CAGE] [SET] If this is equipped alongside Famous Dashing Smile, any DIAMOND Johnny Cage gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[JOHNNY CAGE] 5-10% Power generation boost after performing a successful Special Attack. Stackes up to 5 times.
-		[Fusion Level X] Gain Energy Shield when below 80% Health. Energy Shield reduced all incoming damage when user loses health. The more Health is lost, the higher is Energy Shield damage reduction. Maximum reduction - 50% at 20% Health and below. ar`,
 		images: ['Earth_famous_fashion_dominator_PostEvo.webp', 'Earth_famous_fashion_dominator_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [8],				
+				initValue: [35],
+				step: [2],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [310],				
+				initValue: [40],
+				step: [3],
+				maxFusion: 10
+			},
+			{
+				attributeId: [22],				
+				initValue: [300],
+				step: [900],
+				maxFusion: 10,
+				forTower: [208]
+			},
+			{
+				attributeId: [311],				
+				initValue: [5],
+				step: [0.5],
+				maxFusion: 10,
+				onlyFor: [438]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [438]
+			},
+			{
+				attributeId: [312],				
+				initValue: [80, 50, 20],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5130,22 +5652,37 @@ export const items = [
 		id: 4533,
 		name: "Jinsei Hat",
         tagsId: [4, 1002, 10, 208],
-		d: `30-50% Critical Hit chance boost.
-		20% Chance to apply Weaken, Shield Break or Curse on a Critical Hit.
-		75-225% Damage boost. Earthrealm Tower only.
-		150-450% Max Health boost. Earthrealm Tower only.
-		[Fusion Level X] Once per match, avoid death by automatically tagging out before the killing blow. After tag-out user gains 1000% Recovery for 7sec. This effect does not trigger if the killing blow is a Brutality.  acc`,
 		images: ['Earth_jinsei_hat_PostEvo.webp', 'Earth_jinsei_hat_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [10],				
+				initValue: [30],
+				step: [2],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [313],				
+				initValue: [20],
+				step: [],
+				maxFusion: 0
+			},
+			{
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [208]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [30],
+				maxFusion: 10,
+				forTower: [208]
+			},
+			{
+				attributeId: [314],				
+				initValue: [1000, 7],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5156,21 +5693,37 @@ export const items = [
 		id: 4534,
 		name: "The Torturer",
         tagsId: [4, 1002, 8, 208],
-		d: `Debuffs applied to an opponent are 10-30% more powerful. This applies to Bleed, Fire, Poison, Blind, Weaken, Curse, Shield Break, Vampire, Power Drain, and Power Steal.
-		50% Chance to apply Fire, Bleed or Poison on Combo Ender.
-		150-600% Damage boost. Earthrealm Tower only.
-		[Fusion Level X] 50% Chance to reflect any debuff back to an opponent. Team debuffs are not affected.  we`,
 		images: ['Earth_the_torturer_PostEvo.webp', 'Earth_the_torturer_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [317],				
+				initValue: [10],
+				step: [2],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [315],				
+				initValue: [50],
+				step: [],
+				maxFusion: 0
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [208]
+			},
+			{
+				attributeId: [22],				
+				initValue: [100],
+				step: [40],
+				maxFusion: 10,
+				forTower: [208]
+			},
+			{
+				attributeId: [316],				
+				initValue: [50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5181,23 +5734,44 @@ export const items = [
 		id: 4535,
 		name: "Wushu Master's Guandao Blade",
         tagsId: [4, 1002, 8, 208],
-		d: `50% Chance Basic Attacks deal 30-50% of damage to all opponents.
-		10-30% Damage boost after tag-in for 15 seconds. All following damage boosts gained from this Equipment is 15% more powerful. Max 75% damage boost.
-		150-600% Damage boost. Earthrealm Tower only.
-		[KUNG LAO] Whenever opponent uses a Special Attack, gain 10-20% Critical Hit chance boost till the end of the match. Can stack up to 5 times.
-		[KUNG LAO] [SET] If this is equipped alongside Wushu Master's True Weapon, any DIAMOND Kung Lao gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] Successful Special 2 Attacks apply Silence debuff for 15 seconds to the opposing team. Silence prevents the affected Characters from using Special Attack 1 and reduces their Power generation by 60%.  we`,
 		images: ['Earth_wushu_masters_guandao_blade_PostEvo.webp', 'Earth_wushu_masters_guandao_blade_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [318],				
+				initValue: [50, 30],
+				step: [0, 2],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [319],				
+				initValue: [10, 15, 15, 75],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [15],
+				step: [45],
+				maxFusion: 10,
+				forTower: [208]
+			},
+			{
+				attributeId: [320],				
+				initValue: [10, 5],
+				step: [1],
+				maxFusion: 10,
+				onlyFor: [405]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [405]
+			},
+			{
+				attributeId: [321],				
+				initValue: [15, 60],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5208,21 +5782,30 @@ export const items = [
 		id: 4536,
 		name: "Jinxed Whip",
         tagsId: [4, 1002, 8, 209],
-		d: `25-45% Critical Hit chance boost.
-		Apply Curse on Combo Ender for 10-20sec.
-		150-600% Damage boost. Dark Queen's Tower only.
-		[Fusion Level X] When an opponent affected by Curse performs a Special Attack, there is a 50% chance to reflect the damage and distribute it evenly to the whole enemy team.  we`,
 		images: ['Dq_jinxed_whip_PostEvo.webp', 'Dq_jinxed_whip_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
+				attributeId: [10],				
+				initValue: [25],
+				step: [2],
+				maxFusion: 10
+			},
+			{
+				attributeId: [322],				
+				initValue: [10],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [209]
+			},
+			{
+				attributeId: [323],				
+				initValue: [50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5233,21 +5816,30 @@ export const items = [
 		id: 4537,
 		name: "The Soul Seeker",
         tagsId: [4, 1002, 8, 209],
-		d: `30-50% Chance to apply Death Mark on any Special Attack.
-		The user Vampires 5-10% of the damage dealt on all attacks for each active Death Mark on an opponent.
-		150-600% Damage boost. Dark Queen's Tower only.
-		[Fusion Level X] When an opponent is affected by 3 Death Marks at once, there is a 50% chance to apply Stun on Combo Ender.  wea`,
 		images: ['Dq_the_soul_seeker_PostEvo.webp', 'Dq_the_soul_seeker_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
-				step: [1],
+				attributeId: [324],				
+				initValue: [30],
+				step: [2],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [325],				
+				initValue: [5],
+				step: [0.5],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [150],
+				step: [45],
+				maxFusion: 10,
+				forTower: [209]
+			},
+			{
+				attributeId: [326],				
+				initValue: [3, 50],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5258,23 +5850,44 @@ export const items = [
 		id: 4538,
 		name: "Wicked Sister's Sultry Gown",
         tagsId: [4, 1002, 9, 209],
-		d: `40-100% Chance to apply Blind to an opponent after their tag-in.
-		Gain Speed for 5-15sec upon applying Blind to an opponent.
-		300-1200% Max health boost. Dark Queen's Tower only.
-		[MILEENA] 20-40% Chance any negative effect successfully applied by an opponent to Mileena will grant her 0.5 Bar of power.
-		[MILEENA] [SET] If this is equipped alongside Wicked Sister's Festive Mask, any DIAMOND Mileena gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] When in a fight against new opponent, reduce their max Health by 10% (5% for Bosses) and increase the user's max Health by the same amount until the end of the match. Summoned characters are not affected.  arm`,
 		images: ['Dq_wicked_sisters_sultry_gown_PostEvo.webp', 'Dq_wicked_sisters_sultry_gown_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
+				attributeId: [327],				
+				initValue: [40],
+				step: [6],
+				maxFusion: 10
+			},
+			{
+				attributeId: [328],				
 				initValue: [5],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [22],				
+				initValue: [300],
+				step: [90],
+				maxFusion: 10,
+				forTower: [209]
+			},
+			{
+				attributeId: [329],				
+				initValue: [20, 0.5],
+				step: [2],
+				maxFusion: 10,
+				onlyFor: [424]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [424]
+			},
+			{
+				attributeId: [330],				
+				initValue: [10, 5],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
@@ -5284,25 +5897,52 @@ export const items = [
     {
 		id: 4539,
 		name: "Wrestling Star's Last Puff",
-		d: `30-40% Basic Attacks unblockable chance.
-		50-100% Chance to gain Luck on Block Breaker attack.
-		75-225% Damage boost. Dark Queen's Tower only.
-		150-450% Max health boost. Dark Queen's Tower only.
-		[JAX BRIGGS] Once per match, resurrect, instantly restore 50% Health, and gain 100-200% damage boost with a 30% chance to Power Steal on Basic Attacks for 20 sec. This effects does not trigger if the killing blow is a Brutality.
-		[JAX BRIGGS] [SET] If this is equipped alongside Wrestling Star's Jaxophone, any DIAMOND Jax Briggs gains a 40% chance to perform a Special Combo Ender dealing massive damage. If the last opponent is under 25% health, a Brutality is performed instead of the Special Combo Ender, ending the fight immediately.
-		[Fusion Level X] 50% Chance Critical Hit on Basic Attacks deals additional 1% max Health damage and inevitable exhausts 10% of opponent's max Power.  acc`,
         tagsId: [4, 1002, 10, 209],
 		images: ['Dq_wrestling_stars_last_puff_PostEvo.webp', 'Dq_wrestling_stars_last_puff_PostEvo.webp'],
 		states: [
 			{
-				attributeId: [15],				
-				initValue: [5],
+				attributeId: [9],				
+				initValue: [30],
 				step: [1],
 				maxFusion: 10
 			},
 			{
-				attributeId: [16],				
-				initValue: [8],
+				attributeId: [331],				
+				initValue: [50],
+				step: [5],
+				maxFusion: 10
+			},
+			{
+				attributeId: [21],				
+				initValue: [75],
+				step: [15],
+				maxFusion: 10,
+				forTower: [209]
+			},
+			{
+				attributeId: [22],				
+				initValue: [150],
+				step: [30],
+				maxFusion: 10,
+				forTower: [209]
+			},
+			{
+				attributeId: [332],				
+				initValue: [50, 100, 30, 20],
+				step: [0, 10],
+				maxFusion: 10,
+				onlyFor: [413]
+			},
+			{
+				attributeId: [1000],				
+				initValue: [40, 25],
+				step: [],
+				maxFusion: 0,
+				onlyFor: [413]
+			},
+			{
+				attributeId: [333],				
+				initValue: [50, 1, 10],
 				step: [],
 				maxFusion: 10,
 				reqFusion: 10
