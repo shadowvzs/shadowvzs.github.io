@@ -1,17 +1,17 @@
 import { tagItemCmp } from "./tagItemCmp.mjs";
 
-export const tagListCmp = ({ app, name, items, onChange }) => {
+export const tagListCmp = ({ filter, name, items, onChange }) => {
 
-    return { 
-        tagName: 'div', 
-        attributes: { className: 'tag-list' }, 
+    return {
+        tagName: 'div',
+        attributes: { className: 'tag-list' },
         children: [
             {
                 tagName: 'p',
-                children: [ name + ': ' ]
+                children: [name + ': ']
             },
-            ...items.map(tag => tagItemCmp({ 
-                app, 
+            ...items.map(tag => tagItemCmp({
+                filter,
                 onChange: onChange,
                 tag: tag.id,
             }))

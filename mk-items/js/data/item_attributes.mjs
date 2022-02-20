@@ -40,7 +40,7 @@ export const itemAttributes = [
 		name: 'Bleeding Resistance',
 		description: "%d% RESISTANCE to bleeding",
 		tagsId: [25, 20, 11]
-	},	
+	},
 	{
 		id: 8,
 		name: 'Max Health',
@@ -82,14 +82,14 @@ export const itemAttributes = [
 		name: 'Reflect Basic Attack When Blocking',
 		description: "%d% Chance to reflect %d% basic attack damage when blocking",
 		tagsId: [41, 31, 15]
-    },	
-    {
+	},
+	{
 		id: 15,
 		name: 'Power generation boost',
 		description: "%d% power generation boost",
 		tagsId: [21, 11]
-    },
-    {
+	},
+	{
 		id: 16,
 		name: 'Faction War damage boost',
 		description: "%d% Damage boost (Faction Wars Only)",
@@ -185,7 +185,7 @@ export const itemAttributes = [
 		name: 'Stun on Sp1',
 		description: "%d% Chance to Stun on Special Attack 1",
 		tagsId: [23, 50, 402, 54, 67]
-	},	
+	},
 	{
 		id: 109,
 		name: 'Enrage below 20% Hp',
@@ -197,7 +197,7 @@ export const itemAttributes = [
 		name: 'Chance for Frostbite on Sp2',
 		description: "%d% Chance to apply Frostbite on Special Attack 2",
 		tagsId: [50, 38, 55, 67, 51]
-	},	
+	},
 	{
 		id: 111,
 		name: 'Freeze Resistance',
@@ -267,7 +267,7 @@ export const itemAttributes = [
 	{
 		id: 122,
 		name: 'Start with Power',
-		description: "%d% Bar of starting Power",
+		description: "%d Bar of starting Power",
 		tagsId: [12, 49]
 	},
 	{
@@ -389,49 +389,49 @@ export const itemAttributes = [
 		name: 'Reflect Special Attacks When Blocking',
 		description: "%d% Chance to reflect %d% Special Attack damage when blocking",
 		tagsId: [41, 54, 55, 56]
-    },
+	},
 	{
 		id: 143,
 		name: 'Increase counter-attack',
-		description: "%d% Additional counter-attack for Sindel",
+		description: "%d Additional counter-attack for Sindel",
 		tagsId: [69]
-    },	
+	},
 	{
 		id: 144,
 		name: 'Opponent into Nightmare',
 		description: "%d% Chance to enter a 2nd Opponent into a Nightmare",
 		tagsId: [70]
-    },	
+	},
 	{
 		id: 145,
 		name: 'Increase Death Mark duration',
 		description: "Death Mark lasts %ds longer",
 		tagsId: [71, 67]
-    },	
+	},
 	{
 		id: 146,
 		name: 'Increase Crit Chance on Bleed',
 		description: "%d% Critical Hit Chance boost against enemies affected by Bleed",
 		tagsId: [32, 25]
-    },	
+	},
 	{
 		id: 147,
 		name: 'Increase Crit Chance on Freeze',
 		description: "%d% Critical Hit Chance boost against enemies affected by Freeze",
 		tagsId: [32, 36]
-    },
+	},
 	{
 		id: 148,
 		name: 'Sp1, Sp2 unblockable',
 		description: "%d% Special Attack 1 and 2 unblockable chance",
 		tagsId: [54, 55, 28]
-    },
+	},
 	{
 		id: 149,
 		name: 'Kintaro bleed',
 		description: "%d% Chance to apply Bleed DOT on basic attacks that does 11.5% damage",
 		tagsId: [31, 25, 67]
-    },
+	},
 	{
 		id: 150,
 		name: 'Damage boost on Blind',
@@ -563,37 +563,37 @@ export const itemAttributes = [
 		name: 'Chance for Frostbite on Sp1',
 		description: "%d% Chance to apply Frostbite on Special Attack 1",
 		tagsId: [50, 38, 54, 67, 51]
-	},	
+	},
 	{
 		id: 172,
 		name: 'Apply Strengthen after opponent Freeze',
 		description: "%d% Chance to apply Strengthen to the owner after Freezing an opponent",
 		tagsId: [48, 36, 82]
-	},	
+	},
 	{
 		id: 173,
 		name: 'Apply Poison at start',
-		description: "%d% Chance to apply Poison for %d% seconds to the active enemy at the start of the match when equipped on active fighter",
+		description: "%d% Chance to apply Poison for %d seconds to the active enemy at the start of the match when equipped on active fighter",
 		tagsId: [51, 12, 24, 67]
-	},	
+	},
 	{
 		id: 174,
 		name: 'Apply Poison enemy after get Speed buff',
 		description: "%d% Chance to apply Poison to the enemy after gaining Speed",
 		tagsId: [51, 24, 83, 67]
-	},	
+	},
 	{
 		id: 175,
 		name: 'Apply Bleed when Cripple or Weaken',
 		description: "%d% Chance to apply Bleed when Cripple or Weaken is applied",
 		tagsId: [51, 25, 66, 65, 67]
-	},	
+	},
 	{
 		id: 176,
 		name: 'Basic damage boost vs low HP',
 		description: "%d% Basic damage boost against opponents with less than %d% Health",
 		tagsId: [31, 52]
-	},	
+	},
 	{
 		id: 177,
 		name: 'Critical Damage vs Low HP',
@@ -765,7 +765,7 @@ export const itemAttributes = [
 	{
 		id: 205,
 		name: 'Strengthen stack',
-		description: "Strengthen buffs can stack %3% times",
+		description: "Strengthen buffs can stack %d times",
 		tagsId: [48, 82]
 	},
 	{
@@ -783,7 +783,7 @@ export const itemAttributes = [
 	{
 		id: 208,
 		name: 'Regen on Sp2',
-		description: "Apply Dispel and Regeneration for %ds on Sp2",
+		description: "%d% Chance apply Dispel and Regeneration for %ds on Sp2",
 		tagsId: [50, 55, 74]
 	},
 	{
@@ -866,9 +866,9 @@ export const itemAttributes = [
 	},
 	{
 		id: 222,
-		name: 'Power bar on start',
-		description: "%d% Bar of starting Power",
-		tagsId: [12, 49]
+		name: '-',
+		description: "-",
+		tagsId: []
 	},
 	{
 		id: 223,
@@ -885,7 +885,7 @@ export const itemAttributes = [
 	{
 		id: 225,
 		name: 'Damage and HP if opponent team have same members',
-		description: "If the opposing team shares the same class, receive %d% Health and %d% Damage boost, as well as %d% bar of Power",
+		description: "If the opposing team shares the same class, receive %d% Health and %d% Damage boost, as well as %d bar of Power",
 		tagsId: [17, 99, 49]
 	},
 	{
@@ -1137,7 +1137,7 @@ export const itemAttributes = [
 	{
 		id: 267,
 		name: 'Apply Fire on Basic Attack',
-		description: "Chance to apply Fire on basic attacks",
+		description: "%d% Chance to apply Fire on basic attacks",
 		tagsId: [31, 26, 51]
 	},
 	{
@@ -1317,13 +1317,13 @@ export const itemAttributes = [
 	{
 		id: 297,
 		name: 'Chance to dodge Sp1, Sp2',
-		description: "%d% Chance opponent's Basic Attack Critical Hit heal for %d% of incoming damage instead of dealing damage",
+		description: "%d% to dodge Special Attacks",
 		tagsId: [87, 50, 54, 55]
 	},
 	{
 		id: 298,
 		name: 'Opponent crited Basic Attack Heal',
-		description: "%d% Chance opponent's Basic Attack Critical Hit heal for 20-50% of incoming damage instead of dealing damage",
+		description: "%d% Chance opponent's Basic Attack Critical Hit heal for %d% of incoming damage instead of dealing damage",
 		tagsId: [31, 63, 40]
 	},
 	{
@@ -1462,7 +1462,7 @@ export const itemAttributes = [
 	{
 		id: 321,
 		name: 'Using Sp2 apply Silence to whole team',
-		description: "Successful Sp2 Attacks apply Silence debuff for %15 seconds to the opposing team. Silence prevents the affected Characters from using Sp 1 and reduces their Power generation by %d%",
+		description: "Successful Sp2 Attacks apply Silence debuff for %d% seconds to the opposing team. Silence prevents the affected Characters from using Sp 1 and reduces their Power generation by %d%",
 		tagsId: [50, 55, 98, 67]
 	},
 	{
@@ -1540,7 +1540,7 @@ export const itemAttributes = [
 	{
 		id: 1000,
 		name: 'Brutality general',
-		description: "If this is equipped with another 1 card from the set, Diamound Characters gain a %d% chance to perform a Special Combo Ender dealing massive damage. If it is the last opponent and they are under %d% health, %s performs a Brutality instead, ending the fight Immediately.",
+		description: "If this is equipped with another 1 card from the set, Diamound Characters gain a %d% chance to perform a Special Combo Ender dealing massive damage. If it is the last opponent and they are under %d% health, performs a Brutality instead, ending the fight Immediately.",
 		tagsId: [16]
 	},
 ];

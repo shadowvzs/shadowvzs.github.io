@@ -1,6 +1,7 @@
 import { itemTags } from '../data/item_tags.mjs';
 import { itemAttributes } from '../data/item_attributes.mjs';
 import { romanNumbers } from '../data/other.mjs';
+import { makeObservable, reRender } from '../util/observable.mjs';
 
 export class Item {
 
@@ -13,7 +14,7 @@ export class Item {
             }
         })
     }
-   
+
     setTags(_tagsId) {
         this._tagsId = [..._tagsId];
         const stateTags = this.states.map(state => {
@@ -22,15 +23,15 @@ export class Item {
             return tags;
         });
         this._tagsId.push(...stateTags.flat(3));
-        this.tags = this._tagsId.map(tagId => itemTags.valueMap[tagId]);
-    }   
-    
+        this.tags = this._tagsId.map(tagId => itemTags.valueMap[tagId].name);
+    }
+
     setStates(_states) {
         this._states = _states;
         this.states = _states.map(x => ({
             attributes: x.attributeId.map(id => {
                 const attribute = itemAttributes.valueMap[id];
-                attribute.tags = attribute.tagsId.map(tagId => itemTags.valueMap[tagId]);
+                attribute.tags = attribute.tagsId.map(tagId => itemTags.valueMap[tagId].name);
                 return attribute;
             }),
             initValue: x.initValue,
@@ -39,12 +40,11 @@ export class Item {
             onlyFor: x.onlyFor,
             reqFusion: x.reqFusion,
             maxFusion: x.maxFusion,
-        }))
-    }
-    
+        }));
+    };
+
     setFusion(fusion) {
         if (fusion < 0 || fusion > 10) { return; }
-        this.fusion = fusion;
         this.states.forEach((state, idx) => {
             state.value = state.initValue.map((val, vIdx) => {
                 if (state.reqFusion && state.reqFusion > fusion) { return 0; }
@@ -54,42 +54,45 @@ export class Item {
         });
 
         this.imageUrl = './img/eq/' + this.images[Number(fusion === 10)];
+        this.fusion = fusion;
     }
 
     getInfo() {
         const rows = [];
         rows.push(this.name);
         this.states.forEach(state => {
-            state.attributes.map(x => {
-                let rawDesc = x.description;
-                if (state.onlyFor) { 
-                    const characters = state.onlyFor.map(x => itemTags.valueMap[x].toUpperCase().replace(/_/g, ' ')).join(', ');
-                    rawDesc.replace('%s', characters);
-                    rawDesc = `[${characters}] ` + rawDesc;
-                }
-                if (state.forTower) { 
-                    const towers = state.forTower.map(x => itemTags.valueMap[x].toUpperCase().replace(/_/g, ' ')).join(', ');
-                    rawDesc.replace('%s', towers);
-                    rawDesc = `[${towers}] ` + rawDesc;
-                }
-                state.value.forEach(v => {
-                    rawDesc = rawDesc
-                        .replace('%d', v)
-                        .replace('%n', Math.floor(v));
-                })
-                return rawDesc;
-            }).forEach(desc => {
-                if (state.reqFusion) {
-                    if (state.value) {
-                        rows.push(`[Fusion ${romanNumbers[state.reqFusion]}] ${desc}`);
+            state.attributes
+                .map(x => {
+                    let rawDesc = x.description;
+                    if (state.onlyFor) {
+                        const characters = state.onlyFor.map(x => itemTags.valueMap[x].name.toUpperCase().replace(/_/g, ' ')).join(', ');
+                        rawDesc.replace('%s', characters);
+                        rawDesc = `[${characters}] ` + rawDesc;
                     }
-                } else if (state.brutalityFor) {
-                    rows.push(`[Brutality] ${desc}`);
-                } else {
-                    rows.push(desc);
-                }
+                    if (state.forTower) {
+                        const towers = state.forTower.map(x => itemTags.valueMap[x].name.toUpperCase().replace(/_/g, ' ')).join(', ');
+                        rawDesc.replace('%s', towers);
+                        rawDesc = `[${towers}] ` + rawDesc;
+                    }
+                    state.value.forEach(v => {
+                        rawDesc = rawDesc
+                            .replace('%d', v)
+                            .replace('%n', Math.floor(v));
+                    })
+                    return rawDesc;
+                })
+                .forEach(desc => {
+                    if (state.reqFusion) {
+                        if (state.value) {
+                            rows.push(`[Fusion ${romanNumbers[state.reqFusion]}] ${desc}`);
+                        }
+                    } else if (state.brutalityFor) {
+                        rows.push(`[Brutality] ${desc}`);
+                    } else {
+                        rows.push(desc);
+                    }
 
-            })
+                });
 
         });
         return rows;
@@ -99,8 +102,8 @@ export class Item {
         if (data) {
             // original data
             this._states = data.states;
-            
-            // other data
+
+            // other data 
             this.id = data.id;
             this.name = data.name;
             this.images = data.images;
@@ -112,3 +115,9 @@ export class Item {
         }
     }
 }
+
+const WrappedItem = makeObservable(Item, {
+    fusion: reRender
+});
+
+export default WrappedItem;

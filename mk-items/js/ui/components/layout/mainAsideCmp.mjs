@@ -12,14 +12,14 @@ const svgExpandLessIcon = `
     </svg>
 `;
 
-export const mainAsideCmp = (app) => {
+export const mainAsideCmp = (store) => {
 
-    const isCollapsed = app.asideCollapsed;
+    const isCollapsed = store.asideCollapseState;
     const icon = isCollapsed ? svgExpandMoreIcon : svgExpandLessIcon;
 
-    return { 
-        tagName: 'aside', 
-        attributes: { className: 'main-aside' }, 
+    return {
+        tagName: 'aside',
+        attributes: { className: 'main-aside' },
         children: [
             {
                 tagName: 'div',
@@ -28,21 +28,21 @@ export const mainAsideCmp = (app) => {
                     {
                         tagName: 'p',
                         attributes: { className: '' },
-                        children: [ 'Filters' ]
+                        children: ['Filters']
                     },
                     {
                         tagName: 'span',
-                        attributes: { 
+                        attributes: {
                             innerHTML: icon,
-                            onClick: () => app.toggleAsideCollapsible()
+                            onClick: () => store.toggleAsideCollapsible()
                         },
                         children: []
                     }
                 ]
-            }, 
-            !app.asideCollapsed &&  ({
+            },
+            !isCollapsed && ({
                 tagName: 'div',
-                children: app.store.tagGroups.map(tagGroup => tagGroupCmp({ app, tagGroup })),
+                children: store.tagGroups.map(tagGroup => tagGroupCmp({ store, filter: store.deck.filter, tagGroup })),
             })
         ].filter(Boolean)
     };

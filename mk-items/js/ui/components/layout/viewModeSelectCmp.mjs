@@ -1,7 +1,6 @@
 import { radioWithLabelCmp } from '../common/radioWithLabelCmp.mjs';
 
-export const viewModeSelectCmp = (app) => {
-    const { store } = app;
+export const viewModeSelectCmp = (store) => {
     return {
         tagName: 'fieldset',
         attributes: { className: 'view-mode-select-wrapper' },

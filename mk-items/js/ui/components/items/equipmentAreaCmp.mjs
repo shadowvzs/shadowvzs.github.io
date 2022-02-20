@@ -7,24 +7,23 @@ const equipmentSlot = [
     'Special Slot'
 ]
 
-export const emptySlotCmp = (app, item, options = {}) => {
-    const { store } = app;
+export const emptySlotCmp = ({ store, item, options = {} }) => {
     const { index } = options;
 
-    const cmp = { 
-        tagName: 'li', 
-        attributes: { 
+    const cmp = {
+        tagName: 'li',
+        attributes: {
             className: 'item empty-slot',
             onDragOver: (ev) => ev.preventDefault(),
             onDrop: (ev) => {
                 ev.preventDefault();
                 const itemId = ev.dataTransfer.getData('itemId');
-                store.equipItem(+itemId, index);
+                store.inventory.equip(+itemId, index);
             },
-        }, 
+        },
         children: [
-            { 
-                tagName: 'div', 
+            {
+                tagName: 'div',
                 attributes: { className: 'empty-slot' },
                 children: [
                     {
@@ -33,30 +32,33 @@ export const emptySlotCmp = (app, item, options = {}) => {
                         children: [equipmentSlot[index]]
                     },
                     {
-                        tagName: 'img', 
-                        attributes: { 
+                        tagName: 'img',
+                        attributes: {
                             src: `./img/slots/${index}.webp`,
                             alt: [equipmentSlot[index]]
-                        }, 
+                        },
                         children: []
                     },
                 ].filter(Boolean)
-            },            
-        ] 
+            },
+        ]
     };
-    
+
     return cmp;
 }
 
-export const equipmentAreaCmp = (app) => {
-    const { store } = app;
-    const items = store.equippedItems;
-    const itemsCmp = items.map((item, idx) => item ? itemCmp(app, item, { showFusionSelect: true }) : emptySlotCmp(app, item, { index: idx }));
-    const eqInfo = store.getEquipmentInfo();
+export const equipmentAreaCmp = (store) => {
+    const items = store.inventory.slots;
+    const itemsCmp = items.map((item, idx) => (
+        item
+            ? itemCmp({ store, item, options: { showFusionSelect: true } })
+            : emptySlotCmp({ store, item, options: { index: idx } })
+    ));
+    const eqInfo = store.inventory.getInfo();
 
-    return { 
-        tagName: 'section', 
-        attributes: { className: 'equipment-area' }, 
+    return {
+        tagName: 'section',
+        attributes: { className: 'equipment-area' },
         children: [
             eqInfo.length > 0 && {
                 tagName: 'ul',

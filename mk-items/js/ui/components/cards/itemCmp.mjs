@@ -2,15 +2,15 @@ import { fusionSelectCmp } from './fusionSelectCmp.mjs';
 
 const overlay = (item) => {
     return {
-        tagName: 'div', 
-        attributes: { 
+        tagName: 'div',
+        attributes: {
             className: 'overlay',
-        }, 
+        },
         children: [
             {
-                tagName: 'ul', 
+                tagName: 'ul',
                 children: item.getInfo().map(x => ({
-                    tagName: 'li', 
+                    tagName: 'li',
                     children: [x]
                 }))
             }
@@ -18,33 +18,32 @@ const overlay = (item) => {
     };
 }
 
-export const itemCmp = (app, item, options = {}) => {
-    const { store } = app;
-    const index = store.equippedItems.findIndex(x => x && x.id === item.id);
+export const itemCmp = ({ store, item, options = {} }) => {
+    const index = store.inventory.getIndex(item.id);
     const isEquiped = index >= 0;
 
-    const cmp = { 
-        tagName: 'li', 
-        attributes: { 
+    const cmp = {
+        tagName: 'li',
+        attributes: {
             className: 'item',
             draggable: true,
             title: item.tags.join(', '),
             onDragStart: (ev) => ev.dataTransfer.setData("itemId", item.id)
-        }, 
+        },
         children: [
-            { 
-                tagName: 'div', 
+            {
+                tagName: 'div',
                 children: [
                     {
-                        tagName: 'img', 
-                        attributes: { 
+                        tagName: 'img',
+                        attributes: {
                             src: item.imageUrl,
                             alt: item.name
-                        }, 
+                        },
                         children: []
                     },
                     store.viewMode === 'overlay' && overlay(item),
-                    options.showFusionSelect && fusionSelectCmp(app, item),
+                    options.showFusionSelect && fusionSelectCmp(store, item),
                     store.viewMode !== 'overlay' && !isEquiped && {
                         tagName: 'div',
                         attributes: {
@@ -57,14 +56,14 @@ export const itemCmp = (app, item, options = {}) => {
                         tagName: 'div',
                         attributes: {
                             className: 'info-btn',
-                            onClick: () => store.unEquipItem(index)
+                            onClick: () => store.inventory.unEquip(index)
                         },
                         children: ['unequip']
                     }
                 ].filter(Boolean)
             }
-        ] 
+        ]
     };
-    
+
     return cmp;
 }

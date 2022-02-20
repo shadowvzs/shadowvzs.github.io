@@ -1,13 +1,15 @@
-export const tagItemCmp = ({ app, tag, onChange }) => {
-    const { store } = app;
-    const isSelected = store.tagFilter.has(tag);
+import global from '../../../data/global.mjs';
 
-    return { 
-        tagName: 'span', 
-        attributes: { 
+export const tagItemCmp = ({ tag, filter, onChange }) => {
+    const tagsMap = global.itemTags.valueMap;
+    const isSelected = filter.hasFilterTag(tag);
+
+    return {
+        tagName: 'span',
+        attributes: {
             className: ['tag-item', isSelected && 'active'],
             onClick: () => onChange(tag)
-        }, 
-        children: [ store.tagsMap[tag].replace(/_/g, ' ') ] 
+        },
+        children: [tagsMap[tag].name.replace(/_/g, ' ')]
     };
 }

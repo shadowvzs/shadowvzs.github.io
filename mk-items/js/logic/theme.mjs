@@ -23,6 +23,9 @@ const themes = {
         'tag-item-border-color': 'rgba(0,0,0,0.2)',
         'tag-item-hove-bg-color': 'rgba(0,0,0,0.1)',
         'tag-item-active-bg-color': 'rgba(0,0,0,0.2)',
+        'link-color': '#0000EE',
+        'link-color-hover': '#800080',
+        'link-color-active': '#FF0000',
     },
     "dark": {
         'body-bg-color': 'black',
@@ -48,6 +51,9 @@ const themes = {
         'tag-item-border-color': 'rgba(255,255,255,0.3)',
         'tag-item-hover-bg-color': 'rgba(255,255,255,0.15)',
         'tag-item-active-bg-color': 'rgba(255,255,255,0.45)',
+        'link-color': 'yellow',
+        'link-color-hover': '#ffff77',
+        'link-color-active': '#FF0000',
     }
 }
 

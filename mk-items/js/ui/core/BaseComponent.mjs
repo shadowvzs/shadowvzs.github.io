@@ -1,9 +1,12 @@
+import global from '../../data/global.mjs';
+
 export class BaseComponent {
     currentElement = null;
     parentElem = null;
 
     constructor() {
         this.refresh = this.refresh.bind(this);
+        global.refresh = this.refresh;
     }
 
     renderElement(data) {
@@ -19,15 +22,15 @@ export class BaseComponent {
         if (typeof attributes === 'object') {
             for (let attributeName in attributes) {
                 let value = attributes[attributeName];
-                if (attributeName.startsWith('on')) { 
-                    attributeName = attributeName.toLowerCase(); 
+                if (attributeName.startsWith('on')) {
+                    attributeName = attributeName.toLowerCase();
                 } else if (attributeName === 'className' && Array.isArray(value)) {
                     value = value.filter(Boolean).join(' ');
                 }
                 element[attributeName] = value;
             }
         }
-        if (Array.isArray(children)) { 
+        if (Array.isArray(children)) {
             for (const child of children) {
                 if (!child) { continue; }
                 element.appendChild(this.renderElement(child));

@@ -187,7 +187,7 @@ export const itemTags = [
 	{ id: 208, name: 'earthrealm_tower', group: 5 },
 	{ id: 209, name: 'dark_queen_tower', group: 5 },
 	{ id: 210, name: '-' },
-	
+
 	{ id: 400, name: 'sub_zero', group: 9 },
 	{ id: 401, name: 'jason_voorhees', group: 9 },
 	{ id: 402, name: 'freddy_krueger', group: 9 },
@@ -234,8 +234,9 @@ export const itemTags = [
 	{ id: 443, name: 'skarlet', group: 9 },
 ];
 
-itemTags.valueMap = itemTags.reduce((obj, x) => (obj[x.id] = x.name, obj), {});
+itemTags.valueMap = itemTags.reduce((obj, x) => (obj[x.id] = x, obj), {});
 tagGroups.valueMap = tagGroups.reduce((obj, x) => (obj[x.id] = x, x.items = [], obj), {});
+
 itemTags
 	.filter(tag => tagGroups.valueMap[tag.group])
 	.forEach(tag => tagGroups.valueMap[tag.group].items.push(tag));

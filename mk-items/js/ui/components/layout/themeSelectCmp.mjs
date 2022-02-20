@@ -1,7 +1,6 @@
 import { radioWithLabelCmp } from '../common/radioWithLabelCmp.mjs';
 
-export const themeSelectCmp = (app) => {
-    const { store } = app;
+export const themeSelectCmp = (store) => {
     return {
         tagName: 'fieldset',
         attributes: { className: 'theme-select-wrapper' },
