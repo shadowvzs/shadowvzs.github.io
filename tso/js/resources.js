@@ -1,17 +1,27 @@
 const deposits = {
+    "stone_deposit": {
+        name: 'Stone deposit',
+        icon: 'https://static.wikia.nocookie.net/thesettlersonline/images/d/d5/ResCSS.png/revision/latest?cb=20140501225055',
+        category: ['deposit'],
+    },
     "copper_deposit": {
         name: 'Copper deposit',
-        icon: '🌾',
+        icon: 'https://static.wikia.nocookie.net/thesettlersonline/images/d/d5/ResCSS.png/revision/latest?cb=20140501225055',
         category: ['deposit'],
     },
     "coal_deposit": {
         name: 'Coal deposit',
-        icon: '🌾',
+        icon: 'https://static.wikia.nocookie.net/thesettlersonline/images/d/d5/ResCSS.png/revision/latest?cb=20140501225055',
         category: ['deposit'],
     },
     "iron_deposit": {
         name: 'Iron deposit',
-        icon: '🌾',
+        icon: 'https://static.wikia.nocookie.net/thesettlersonline/images/d/d5/ResCSS.png/revision/latest?cb=20140501225055',
+        category: ['deposit'],
+    },
+    "fish_deposit": {
+        name: 'Fish deposit',
+        icon: 'https://en.tsomaps.com/images/resources/icon_ocean.png',
         category: ['deposit'],
     },
     "pinewood_deposit": {
@@ -19,14 +29,17 @@ const deposits = {
         icon: 'https://settlersonlinewiki.eu/images/drzewo.png',
         category: ['deposit'],
     },
+    "hardwood_deposit": {
+        name: 'Hardwood deposit',
+        icon: 'https://static.wikia.nocookie.net/thesettlersonline/images/d/d5/ResCSS.png/revision/latest?cb=20140501225055',
+        category: ['deposit'],
+    },
     "exotic_wood_deposit": {
         name: 'Exotic Wood deposit',
-        icon: '🌾',
+        icon: 'https://settlersonlinewiki.eu/images/drzewo2.png',
         category: ['deposit'],
     },
 };
-
-
 
 const basicResources = {
     "settler": {
