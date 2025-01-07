@@ -68,7 +68,7 @@ class ResourcesView {
             resource.id = key;
             fr.appendChild(this.renderSingleResourceListUI(resource));
         }
-        console.log(this.resources);
+
         this.resourcesListElement.appendChild(fr);
     }
 }

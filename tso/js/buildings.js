@@ -74,7 +74,7 @@ const buildings = {
         perLevel: [
             {
                 cost: [],
-                moveCost: [['pinewood_pank', 2], ['stone', 2]],
+                moveCost: [['pinewood_plank', 2], ['stone', 2]],
                 gem: 2,
                 moveGem: 1,
                 duration: 10,
@@ -82,7 +82,7 @@ const buildings = {
             },
             {
                 cost: [['hardwood_plank', 120], ['marble', 100]],
-                moveCost: [['pinewood_pank', 40], ['stone', 40]],
+                moveCost: [['pinewood_plank', 40], ['stone', 40]],
                 gem: 221,
                 moveGem: 2,
                 duration: 2.5 * 60,
@@ -141,13 +141,13 @@ const buildings = {
                 { item: 'pinewood', amount: 1 },
             ],
             output: [
-                { item: 'pinewood_pank', amount: 1 },
+                { item: 'pinewood_plank', amount: 1 },
             ],
         },
         perLevel: [
             {
                 cost: [['pinewood', 10]],
-                moveCost: [['pinewood_pank', 2], ['stone', 2]],
+                moveCost: [['pinewood_plank', 2], ['stone', 2]],
                 gem: 2,
                 moveGem: 1,
                 duration: 10,
@@ -155,7 +155,7 @@ const buildings = {
             },
             {
                 cost: [['hardwood_plank', 120], ['marble', 100]],
-                moveCost: [['pinewood_pank', 40], ['stone', 40]],
+                moveCost: [['pinewood_plank', 40], ['stone', 40]],
                 gem: 221,
                 moveGem: 2,
                 duration: 2.5 * 60,
@@ -203,90 +203,164 @@ const buildings = {
             },
         ]
     },
-/*
-    'farm': {
-        name: 'Farm',
-        icon: '🌾',
-        productionTime: 12 * 60,
-        cost: [],
-        output: [
-            { item: 'wheat', amount: 1 },
-        ],
+    'pinewood_forester': {
+        name: 'Pinewood Forester',
+        level: 3,
+        icon: 'https://settlersonlinewiki.eu/images/lesnikigla0.png',
+        needLicense: true,
+        production: {
+            time: 2 * 60 + 15,
+            output: [
+                { item: 'pinewood_deposit', amount: 1 },
+            ],
+        },
+        perLevel: [
+            {
+                cost: [['pinewood_plank', 10]],
+                moveCost: [['pinewood_plank', 2], ['stone', 2]],
+                gem: 2,
+                moveGem: 1,
+                duration: 10,
+                image: 'https://settlersonlinewiki.eu/budynek/lesnikigla1.png',
+            },
+            {
+                cost: [['hardwood_plank', 120], ['marble', 100]],
+                moveCost: [['pinewood_plank', 40], ['stone', 40]],
+                gem: 221,
+                moveGem: 2,
+                duration: 2.5 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/lesnikigla2.png',
+            },
+            {
+                cost: [['hardwood_plank', 300], ['marble', 150]],
+                moveCost: [['hardwood_plank', 100], ['stone', 75]],
+                gem: 439,
+                moveGem: 7,
+                duration: 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/lesnikigla3.png',
+            },
+            {
+                cost: [['coin', 500], ['marble', 300]],
+                moveCost: [['hardwood_plank', 100], ['marble', 100]],
+                gem: 1913,
+                moveGem: 11,
+                duration: 24  * 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/lesnikigla4.png',
+            },
+            {
+                cost: [['exotic_wood_plank', 500], ['granite', 300]],
+                moveCost: [['coin', 100], ['marble', 200]],
+                gem: 1253,
+                moveGem: 29,
+                duration: 7 * 24  * 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/lesnikigla5.png',
+            },
+            {
+                cost: [['grout', 50], ['granite', 500]],
+                moveCost: [['coin', 100], ['marble', 200]],
+                gem: 1031,
+                moveGem: 29,
+                duration: 7 * 24  * 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/lesnikigla6.png',
+            },
+            {
+                cost: [['advanced_tool', 500], ['oil', 300]],
+                moveCost: [['coin', 200], ['marble', 300]],
+                gem: 720,
+                moveGem: 53,
+                duration: 7 * 24  * 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/tartakigla7.png',
+            },
+        ]
     },
-    'improved_farm': {
-        name: 'Improved Farm',
-        icon: '🌾',
-        productionTime: 4 * 60,
-        cost: [],
-        output: [
-            { item: 'wheat', amount: 1 },
-        ],
+    'tavern': {
+        name: 'Tavern',
+        level: 4,
+        icon: 'https://settlersonlinewiki.eu/images/tawerna0.png',
+        needLicense: true,
+        perLevel: [
+            {
+                cost: [['pinewood_plank', 100]],
+                moveCost: [['pinewood_plank', 30], ['stone', 20]],
+                gem: 10,
+                moveGem: 1,
+                duration: 10*60,
+                image: 'https://settlersonlinewiki.eu/budynek/tawerna1.png',
+            },
+        ]
     },
-    'bio_farm': {
-        name: 'Bio Farm',
-        icon: '🌾',
-        productionTime: 10 * 60,
-        cost: [],
-        output: [
-            { item: 'wheat', amount: 1 },
-        ],
+    'mason': {
+        name: 'Mason',
+        level: 5,
+        icon: 'https://settlersonlinewiki.eu/images/kamieniolom0.png',
+        needLicense: true,
+        production: {
+            time: 5 * 60,
+            input: [
+                { item: 'stone_deposit', amount: 1 },
+            ],
+            output: [
+                { item: 'stone', amount: 1 },
+            ],
+        },
+        perLevel: [
+            {
+                cost: [['pinewood_plank', 40]],
+                moveCost: [['pinewood_plank', 6], ['stone', 6]],
+                gem: 2,
+                moveGem: 1,
+                duration: 10,
+                image: 'https://settlersonlinewiki.eu/budynek/kamieniolom1.png',
+            },
+            {
+                cost: [['hardwood_plank', 120], ['marble', 100]],
+                moveCost: [['pinewood_plank', 40], ['stone', 40]],
+                gem: 221,
+                moveGem: 2,
+                duration: 2.5 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/kamieniolom2.png',
+            },
+            {
+                cost: [['hardwood_plank', 300], ['marble', 150]],
+                moveCost: [['hardwood_plank', 100], ['stone', 75]],
+                gem: 439,
+                moveGem: 7,
+                duration: 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/kamieniolom3.png',
+            },
+            {
+                cost: [['coin', 500], ['marble', 300]],
+                moveCost: [['hardwood_plank', 100], ['marble', 100]],
+                gem: 1913,
+                moveGem: 11,
+                duration: 24  * 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/kamieniolom4.png',
+            },
+            {
+                cost: [['exotic_wood_plank', 500], ['granite', 300]],
+                moveCost: [['coin', 100], ['marble', 200]],
+                gem: 2061,
+                moveGem: 29,
+                duration: 7 * 24  * 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/kamieniolom5.png',
+            },
+            {
+                cost: [['grout', 50], ['granite', 500]],
+                moveCost: [['coin', 100], ['marble', 200]],
+                gem: 1253,
+                moveGem: 29,
+                duration: 7 * 24  * 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/kamieniolom6.png',
+            },
+            {
+                cost: [['advanced_tool', 500], ['oil', 200]],
+                moveCost: [['coin', 200], ['marble', 300]],
+                gem: 630,
+                moveGem: 53,
+                duration: 7 * 24  * 60 * 60,
+                image: 'https://settlersonlinewiki.eu/budynek/kamieniolom7.png',
+            },
+        ]
     },
-    'watermill': {
-        name: 'Watermill',
-        icon: '🌾',
-        productionTime: 3 * 60,
-        cost: [],
-        output: [
-            { item: 'water', amount: 1 },
-        ],
-    },
-    'improved_watermill': {
-        name: 'Improved Watermill',
-        icon: '🌾',
-        productionTime: 1 * 60,
-        cost: [],
-        output: [
-            { item: 'water', amount: 1 },
-        ],
-    },
-    'copper_mine': {
-        name: 'Cooper Mine',
-        icon: '🌾',
-        productionTime: 3 * 60,
-        cost: [{ item: 'copper_deposit', amount: 1 }],
-        output: [
-            { item: 'cooper_ore', amount: 1 },
-        ],
-    },
-    'copper_smelter': {
-        name: 'Copper Smelter',
-        icon: '🌾',
-        productionTime: 3 * 60,
-        cost: [
-            { item: 'copper_ore', amount: 1 }
-            { item: 'coal', amount: 1 }
-        ],
-        output: [
-            { item: 'bronze', amount: 1 },
-        ],
-    },
-    'coal_mine': {
-        name: 'Coal Mine',
-        icon: '🌾',
-        productionTime: 1.5 * 60,
-        cost: [{ item: 'coal_deposit', amount: 1 }],
-        output: [
-            { item: 'coal', amount: 1 },
-        ],
-    },
-    'iron_mine': {
-        name: 'Iron Mine',
-        icon: '🌾',
-        productionTime: 6 * 60,
-        cost: [{ item: 'iron_deposit', amount: 1 }],
-        output: [
-            { item: 'iron_ore', amount: 1 },
-        ],
-    },
-    */
+
 };

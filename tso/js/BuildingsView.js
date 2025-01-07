@@ -14,13 +14,12 @@ class CurrentBuildingView {
                 flex-wrap: wrap;
                 gap: 16px;
                 padding: 16px;
-                border: 1px solid #ddd;
-                border-radius: 4px;
                 box-sizing: border-box;
             }
             .building-details {
                 display: flex;
                 flex-direction: column;
+                gap: 16px;
             }
             .hide {
                 display: none;
@@ -48,10 +47,6 @@ class CurrentBuildingView {
                 font-size: 14px;
             }
             
-            .info-group {
-                margin-bottom: 16px;
-            }
-
             .building-info figcaption {
                 white-space: nowrap;
             }
@@ -65,6 +60,10 @@ class CurrentBuildingView {
             .building-benefit-info {
                 margin-top: 16px;
             }
+
+            .building-name {
+                font-weight: bold;
+            }
         `;
     }
 
@@ -75,9 +74,9 @@ class CurrentBuildingView {
                 <figure class='building-info'>
                     <img src='http://www.listercarterhomes.com/wp-content/uploads/2013/11/dummy-image-square.jpg' class='building-image' height='128' />
                     <figcaption>
-                        <span class='building-name'>Building name</span> Level <span class='building-lv'>1</span>/<span class='building-max-lv'>2</span>
+                        <span class='building-name'>Building name</span> - Lv <span class='building-lv'>1</span>/<span class='building-max-lv'>2</span>
                     </figcaption>
-                    <div class='input-line'>
+                    <div class='input-line building-level-box'>
                         <span>Level: </span>
                         <input type='range' min='1' max='2' value='1' name='building-level' />
                     </div>
@@ -97,11 +96,11 @@ class CurrentBuildingView {
                     <div class='building-benefit-info'></div>
                 </figure>
                 <div class='building-details'>
+                    <span class='required-level'></span>
                     <span class='building-cost'><div class='info-group'></div></span>
                     <span class='building-upgrade-cost'><div class='info-group'></div></span>
                     <span class='building-maxing-cost'><div class='info-group'></div></span>
                     <span class='building-move-cost'><div class='info-group'></div></span>
-                    <span class='building-production'><div class='info-group'></div></span>
                 </div>
             </div>        
         `;
@@ -117,14 +116,15 @@ class CurrentBuildingView {
             upgradeCost: this.container.querySelector('.building-upgrade-cost'),
             moveCost: this.container.querySelector('.building-move-cost'),
             maxingCost: this.container.querySelector('.building-maxing-cost'),
-            production: this.container.querySelector('.building-production'),
             travelTimeBox: this.container.querySelector('.travel-input-box'),
             benefitInfo: this.container.querySelector('.building-benefit-info'),
+            buildingLevelBox: this.container.querySelector('.building-level-box'),
             productionTimeBox: this.container.querySelector('.base-production-time-box'),
             productionBuffBox: this.container.querySelector('.production-buff-box'),
             productionBuffInput: this.container.querySelector('input[name="production-buff"]'),
             productionTimeInput: this.container.querySelector('input[name="production-time"]'),
             travelTimeInput: this.container.querySelector('input[name="travel-time"]'),
+            requiredLevel: this.container.querySelector('.required-level'),
         };
 
         this.elements.style.innerHTML = this.getCSS();
@@ -145,7 +145,8 @@ class CurrentBuildingView {
             productionTimeBox,
             productionBuffBox,
             productionTimeInput,
-            travelTimeInput
+            buildingLevelBox,
+            requiredLevel,
         } = this.elements;
 
         const maxLv = building.perLevel.length;
@@ -167,6 +168,13 @@ class CurrentBuildingView {
             productionBuffBox.classList.add('hide');
         }
 
+        if (maxLv === 1) {
+            buildingLevelBox.classList.add('hide');
+        } else {
+            buildingLevelBox.classList.remove('hide');
+        }
+
+        requiredLevel.innerHTML = `<strong>Required level</strong>: ${building.level || 0}`;
         this.render();
     }
 
@@ -179,7 +187,6 @@ class CurrentBuildingView {
             upgradeCost,
             moveCost,
             maxingCost,
-            production,
             benefitInfo,
         } = this.elements;
 
@@ -212,7 +219,6 @@ class CurrentBuildingView {
             maxingCost.classList.add('hide');
         }
 
-        console.log(info);
         if (info.moveCost) {
             const movCost = this.extractMoveCostData(info);
             moveCost.classList.remove('hide');
@@ -272,7 +278,6 @@ class CurrentBuildingView {
         if (perLevelData.moveCost) {
             rawData.cost = {};
             perLevelData.moveCost.forEach(([item, amount]) => {
-                console.log(item, amount);
                 rawData.cost[item] = amount;
             });
         }
@@ -321,14 +326,12 @@ class CurrentBuildingView {
             travelTimeInput,
         } = this.elements;
 
-        const { input, output } = building.production;
+        const { input = [], output } = building.production;
 
         const baseProductionTime = parseInt(productionTimeInput.value || 0);
         const additionalBuffValue = parseInt(productionBuffInput.value || 0);
         const travelTime = parseInt(travelTimeInput.value || 0);
-
         const totalProductionTime = baseProductionTime + travelTime;
-
         const finalInput = input.map(({ item, amount }) => ({
             item,
             amount: amount * level,
@@ -355,7 +358,7 @@ class CurrentBuildingView {
     convertProductionDataToHTML(rawData) {
         const div = document.createElement('div');
         div.classList.add('info-group');
-        const ul = document.createElement('ul');
+        div.innerHTML = '<strong>Production</strong>';
         const {
             finalInput,
             finalOutput,
@@ -365,16 +368,23 @@ class CurrentBuildingView {
 
         const { resources } = this;
 
-        const finalInputHTML = finalInput.map(({ item, amount }) => this.convertResourceDataToHTML(resources[item], amount)).join(' + ');
+        const finalInputHTML = finalInput.map(({ item, amount }) => this.convertResourceDataToHTML(resources[item], -amount)).join(' + ');
         const finalOutputHTML = finalOutput.map(({ item, amount }) => this.convertResourceDataToHTML(resources[item], amount)).join(' + ');
 
-        const finalConsuptionHTML = consumption.map(({ item, amount }) => this.convertResourceDataToHTML(resources[item], Math.floor(amount) * -1)).join(', ');
-        const finalProductionHTML = production.map(({ item, amount }) => this.convertResourceDataToHTML(resources[item], Math.floor(amount))).join(', ');
+        const finalConsuptionHTML = consumption.map(({ item, amount }) => this.convertResourceDataToHTML(resources[item], -amount)).join(', ');
+        const finalProductionHTML = production.map(({ item, amount }) => this.convertResourceDataToHTML(resources[item], amount)).join(', ');
 
-        ul.innerHTML += `<li> Production: ${finalInputHTML}&nbsp&nbsp=&nbsp&nbsp${finalOutputHTML}</li>`;
-        ul.innerHTML += `<li> Production (12h): ${finalConsuptionHTML}&nbsp&nbsp=>&nbsp&nbsp${finalProductionHTML}</li>`;
-
-        div.appendChild(ul);
+        div.innerHTML = `
+            <strong>Production</strong>
+            <ul>
+                <li> ${finalInputHTML}&nbsp&nbsp=>&nbsp&nbsp${finalOutputHTML}</li>
+            </ul>
+            <br />
+            <strong>Production (12h)</strong>
+            <ul>
+                <li> ${finalConsuptionHTML}&nbsp&nbsp=>&nbsp&nbsp${finalProductionHTML}</li>
+            </ul>
+        `;
         return div;
     }
 }
@@ -465,7 +475,9 @@ class BuildingsView {
     }
 
     renderBuildingIcon(building) {
+        const buildingWrapperElement = document.createElement('div');
         const buildingElement = document.createElement('div');
+        buildingWrapperElement.appendChild(buildingElement);
         buildingElement.classList.add('building');
         buildingElement.style.cursor = 'pointer';
         buildingElement.onclick = () => this.renderCurrentBuildingView(building.id);
@@ -475,7 +487,7 @@ class BuildingsView {
         img.dataset.id = building.id;
         img.style.width = '64px';
         buildingElement.appendChild(img);
-        return buildingElement;
+        return buildingWrapperElement;
     }
 
     renderBuildingListUI() {

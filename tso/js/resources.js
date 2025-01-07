@@ -41,7 +41,7 @@ const basicResources = {
         category: [],
         grade: 'basic',
     },
-    "pinewood_pank": {
+    "pinewood_plank": {
         name: 'Pinewood Plank',
         icon: 'https://settlersonlinewiki.eu/images/deskiigl.png',
         category: ['construction'],
