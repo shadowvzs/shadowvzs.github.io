@@ -245,10 +245,10 @@ export class ExplorerSkillPanelComponent extends PanelComponent {
   }
 
   updateExplorerIcon() {
-    const selectedExplorerId = this.explorerSelect.value;
-    const explorer = this.explorers.find(x => x.id === selectedExplorerId);
+    const selectedSepcialistId = this.explorerSelect.value;
+    const explorer = this.explorers.find(x => x.id === selectedSepcialistId);
     if (!explorer) {
-      throw new Error(`No explorer with id ${selectedExplorerId}`);
+      throw new Error(`No explorer with id ${selectedSepcialistId}`);
     }
     this.currentExplorerIcon.src = explorer.iconUrl;
   }

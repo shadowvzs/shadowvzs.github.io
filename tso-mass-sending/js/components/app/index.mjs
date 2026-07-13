@@ -2,6 +2,8 @@ import applicationTemplate from './template/index.mjs';
 import BaseComponent from "../shared/BaseComponent.mjs";
 import { EVENTS } from '../../constants/index.mjs';
 
+import { sendGroup } from '../../api/index.mjs';
+
 class AppComponent extends BaseComponent {
   constructor(messagingService) {
     super(messagingService, document.body);
@@ -29,7 +31,13 @@ class AppComponent extends BaseComponent {
         this.messagingService.publish(EVENTS.TAVERN_PANEL_OPEN, {});
     });
     this.messagingService.subscribe(EVENTS.TAVERN_SEND_GROUP, (payload) => {
-      alert(`Group was sent with id: ${payload.groupId}`);
+      const counter = sendGroup(payload.groupId);
+      if (counter === 0) {
+        alert('All explorer busy in the group');
+      } else {
+        alert(`${counter} explorer(s) was sent to their tasks`)
+      }
+      this.messagingService.publish(EVENTS.TAVERN_GROUP_SENT);
     });
     return super.mount();
   }
