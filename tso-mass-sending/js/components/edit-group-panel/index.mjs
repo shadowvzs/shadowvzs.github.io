@@ -29,6 +29,7 @@ export class EditGroupPanelComponent extends PanelComponent {
 
   applyFilter = () => {
     this.filterText = this.filterInput.value.trim().toLowerCase();
+    this.selectedSepcialistId = null;
     this.render();
   }
 
