@@ -90,6 +90,7 @@ export class EditGroupPanelComponent extends PanelComponent {
         const filteredExplorersId = this.filteredExplorers.map(exp => exp.id);
         updateGroupTasks(this.groupId, filteredExplorersId, taskId);
       }
+      this.messagingService.publish(EVENTS.TAVERN_GROUP_UPDATED);
     
       this.render();
     } else if (action === "send-group") {

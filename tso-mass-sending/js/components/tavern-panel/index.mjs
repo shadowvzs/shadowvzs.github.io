@@ -16,13 +16,14 @@ export class TavernPanelComponent extends PanelComponent {
   constructor(messagingService, root) {
     super(messagingService, root);
     this.show = this.show.bind(this);
+    this.renderGroups = this.renderGroups.bind(this);
   }
 
   mount() {
-    this.messagingService.subscribe(EVENTS.TAVERN_PANEL_OPEN, () => {
-      this.show();
-    });
-    
+    this.messagingService.subscribe(EVENTS.TAVERN_PANEL_OPEN, this.show);
+
+    this.messagingService.subscribe(EVENTS.TAVERN_GROUP_UPDATED, this.renderGroups);
+ 
     super.mount();
     this.listen(this.element, "click", this.clickHandler);
 

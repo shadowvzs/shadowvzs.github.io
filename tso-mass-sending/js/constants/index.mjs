@@ -5,6 +5,7 @@ export const EVENTS = {
     TAVERN_GROUP_SENT: 'the group was sent successfully',
     TAVERN_EDIT_GROUP:  'edit the group',
     TAVERN_GROUP_UPDATED:  'group was successfully update',
+    TAVERN_GROUP_UPDATED: 'group was updated',
 
 };
 
