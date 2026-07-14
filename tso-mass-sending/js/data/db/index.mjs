@@ -954,1860 +954,4404 @@ export const explorers = [
     "id": 1,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 2,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 1,
+      "extended_weekend": 3,
+      "mistwalker": 1,
+      "sturdy_shovel": 1,
+      "loot_wagon": 1,
+      "wild_determination": 2,
+      "pathfinder": 1,
+      "sabbatical": 1
+    }
   },
   {
     "id": 3,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "pilgrimage": 3,
+      "lucky_detour": 3,
+      "mountain_boots": 1,
+      "extended_weekend": 1,
+      "travel_expenses": 1,
+      "deforestation": 3,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 4,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 3,
+      "fearless_hiker": 3,
+      "extended_weekend": 3,
+      "loot_wagon": 2,
+      "sturdy_shovel": 1,
+      "pathfinder": 1,
+      "sabbatical": 2
+    }
   },
   {
     "id": 5,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "pilgrimage": 2,
+      "extended_weekend": 2,
+      "wild_determination": 2,
+      "travel_expenses": 1,
+      "deforestation": 1,
+      "mistwalker": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 6,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 7,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "pilgrimage": 3,
+      "lucky_detour": 3,
+      "mountain_boots": 1,
+      "extended_weekend": 3
+    }
   },
   {
     "id": 8,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "extended_weekend": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 9,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "pilgrimage": 3,
+      "lucky_detour": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 1,
+      "deforestation": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 10,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "mountain_boots": 1,
+      "pilgrimage": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 2
+    }
   },
   {
     "id": 11,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "pilgrimage": 3,
+      "fearless_hiker": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "offbeat_roads": 1,
+      "deforestation": 1,
+      "wild_determination": 1,
+      "mistwalker": 1,
+      "loot_wagon": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 12,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 3,
+      "pilgrimage": 3,
+      "extended_weekend": 2,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 13,
     "typeId": "adventurous_explorer",
     "currentTask": "adventure-medium",
-    "startedAt": 1783394945197
+    "startedAt": 1783394945197,
+    "skills": {
+      "fearless_hiker": 1,
+      "mountain_boots": 2,
+      "lucky_detour": 1,
+      "pilgrimage": 1,
+      "extended_weekend": 1
+    }
   },
   {
     "id": 14,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 15,
     "typeId": "adventurous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "lucky_detour": 3,
+      "mountain_boots": 3,
+      "pilgrimage": 1,
+      "extended_weekend": 1,
+      "loot_wagon": 1,
+      "deforestation": 1,
+      "travel_expenses": 1,
+      "sturdy_shovel": 1,
+      "offbeat_roads": 1,
+      "pathfinder": 3,
+      "sabbatical": 2
+    }
   },
   {
     "id": 16,
     "typeId": "benevolent_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 17,
     "typeId": "benevolent_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 18,
     "typeId": "benevolent_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 19,
     "typeId": "benevolent_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 2,
+      "mountain_boots": 1,
+      "pilgrimage": 1,
+      "extended_weekend": 2,
+      "wild_determination": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 20,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 21,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 3,
+      "mountain_boots": 2,
+      "pilgrimage": 1,
+      "extended_weekend": 3,
+      "wild_determination": 1
+    }
   },
   {
     "id": 22,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "lucky_detour": 1,
+      "pilgrimage": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 1,
+      "offbeat_roads": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 23,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "pilgrimage": 2,
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "extended_weekend": 1,
+      "deforestation": 2,
+      "travel_expenses": 2,
+      "offbeat_roads": 1,
+      "loot_wagon": 1,
+      "pathfinder": 1,
+      "sabbatical": 2
+    }
   },
   {
     "id": 24,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "mountain_boots": 3,
+      "lucky_detour": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "loot_wagon": 3,
+      "mistwalker": 1,
+      "deforestation": 1,
+      "travel_expenses": 1,
+      "pathfinder": 1,
+      "sabbatical": 2
+    }
   },
   {
     "id": 25,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 26,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "mountain_boots": 2,
+      "lucky_detour": 2,
+      "pilgrimage": 1,
+      "extended_weekend": 2,
+      "sturdy_shovel": 3,
+      "mistwalker": 2,
+      "travel_expenses": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 27,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 28,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "pilgrimage": 2,
+      "fearless_hiker": 2,
+      "lucky_detour": 2,
+      "extended_weekend": 3,
+      "loot_wagon": 1,
+      "travel_expenses": 1,
+      "mistwalker": 1,
+      "offbeat_roads": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 29,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "lucky_detour": 2,
+      "extended_weekend": 2,
+      "offbeat_roads": 1,
+      "mistwalker": 1,
+      "travel_expenses": 1,
+      "sturdy_shovel": 2,
+      "wild_determination": 1,
+      "deforestation": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 30,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 31,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 3,
+      "lucky_detour": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "mistwalker": 1,
+      "offbeat_roads": 2,
+      "sturdy_shovel": 1,
+      "travel_expenses": 1,
+      "loot_wagon": 1,
+      "pathfinder": 1,
+      "sabbatical": 1
+    }
   },
   {
     "id": 32,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 33,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "lucky_detour": 3,
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "extended_weekend": 2,
+      "travel_expenses": 1,
+      "offbeat_roads": 1,
+      "sturdy_shovel": 1,
+      "deforestation": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 34,
     "typeId": "bewitching_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 3,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "wild_determination": 1
+    }
   },
   {
     "id": 35,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "fearless_hiker": 3,
+      "lucky_detour": 3,
+      "mountain_boots": 1,
+      "extended_weekend": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 36,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "lucky_detour": 2,
+      "mountain_boots": 3,
+      "extended_weekend": 3,
+      "wild_determination": 1,
+      "deforestation": 1,
+      "loot_wagon": 1,
+      "sturdy_shovel": 2,
+      "pathfinder": 2,
+      "sabbatical": 1
+    }
   },
   {
     "id": 37,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "mistwalker": 1,
+      "travel_expenses": 1,
+      "deforestation": 1,
+      "sturdy_shovel": 1,
+      "loot_wagon": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 38,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "extended_weekend": 1,
+      "travel_expenses": 1,
+      "deforestation": 1,
+      "mistwalker": 2,
+      "sturdy_shovel": 2,
+      "pathfinder": 2,
+      "sabbatical": 1
+    }
   },
   {
     "id": 39,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 1,
+      "mountain_boots": 2,
+      "pilgrimage": 1,
+      "extended_weekend": 3,
+      "wild_determination": 1,
+      "travel_expenses": 1,
+      "offbeat_roads": 1,
+      "sturdy_shovel": 2,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 40,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "lucky_detour": 1,
+      "pilgrimage": 1,
+      "extended_weekend": 2,
+      "wild_determination": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 41,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "lucky_detour": 1,
+      "fearless_hiker": 1,
+      "pilgrimage": 1,
+      "extended_weekend": 3,
+      "wild_determination": 1
+    }
   },
   {
     "id": 42,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 43,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 44,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "pilgrimage": 2,
+      "extended_weekend": 3,
+      "mistwalker": 2,
+      "sturdy_shovel": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 45,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "offbeat_roads": 1,
+      "mistwalker": 2,
+      "deforestation": 1,
+      "loot_wagon": 1,
+      "travel_expenses": 1,
+      "pathfinder": 1,
+      "sabbatical": 1
+    }
   },
   {
     "id": 46,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 2,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "loot_wagon": 2,
+      "sturdy_shovel": 2,
+      "offbeat_roads": 1,
+      "deforestation": 1,
+      "pathfinder": 2,
+      "sabbatical": 1
+    }
   },
   {
     "id": 47,
     "typeId": "blacktree_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "mountain_boots": 2,
+      "lucky_detour": 2,
+      "extended_weekend": 3,
+      "travel_expenses": 2,
+      "wild_determination": 2,
+      "deforestation": 1,
+      "offbeat_roads": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 48,
     "typeId": "bold_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "lucky_detour": 2,
+      "pilgrimage": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "deforestation": 1
+    }
   },
   {
     "id": 49,
     "typeId": "bold_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "lucky_detour": 3,
+      "pilgrimage": 1,
+      "fearless_hiker": 2,
+      "extended_weekend": 1,
+      "wild_determination": 2,
+      "loot_wagon": 1,
+      "travel_expenses": 1,
+      "sturdy_shovel": 1,
+      "offbeat_roads": 1,
+      "mistwalker": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 50,
     "typeId": "bold_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "sturdy_shovel": 2,
+      "travel_expenses": 2,
+      "offbeat_roads": 2,
+      "loot_wagon": 2,
+      "pathfinder": 1,
+      "sabbatical": 3
+    }
   },
   {
     "id": 51,
     "typeId": "bold_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 52,
     "typeId": "candid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 53,
     "typeId": "candid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 1,
+      "lucky_detour": 2,
+      "fearless_hiker": 3,
+      "mountain_boots": 3,
+      "extended_weekend": 1,
+      "sturdy_shovel": 1,
+      "offbeat_roads": 2,
+      "wild_determination": 1,
+      "deforestation": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 54,
     "typeId": "candid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "fearless_hiker": 2,
+      "mountain_boots": 2,
+      "pilgrimage": 3,
+      "extended_weekend": 2,
+      "mistwalker": 1,
+      "sturdy_shovel": 1,
+      "wild_determination": 1,
+      "loot_wagon": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 55,
     "typeId": "candid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "pilgrimage": 1,
+      "mountain_boots": 2,
+      "lucky_detour": 2,
+      "extended_weekend": 3,
+      "deforestation": 1,
+      "offbeat_roads": 2
+    }
   },
   {
     "id": 56,
     "typeId": "candid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "lucky_detour": 1,
+      "mountain_boots": 2,
+      "extended_weekend": 1,
+      "offbeat_roads": 2
+    }
   },
   {
     "id": 57,
     "typeId": "candid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 58,
     "typeId": "candid_explorer",
     "currentTask": "adventure-short",
-    "startedAt": 1783282807197
+    "startedAt": 1783282807197,
+    "skills": {
+      "mountain_boots": 2,
+      "pilgrimage": 3,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "deforestation": 1
+    }
   },
   {
     "id": 59,
     "typeId": "chummy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "lucky_detour": 3,
+      "pilgrimage": 1,
+      "extended_weekend": 3,
+      "offbeat_roads": 2,
+      "wild_determination": 1
+    }
   },
   {
     "id": 60,
     "typeId": "chummy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 61,
     "typeId": "chummy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "fearless_hiker": 2,
+      "lucky_detour": 2,
+      "extended_weekend": 2,
+      "wild_determination": 2
+    }
   },
   {
     "id": 62,
     "typeId": "chummy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 63,
     "typeId": "chummy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 64,
     "typeId": "chummy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "pilgrimage": 3,
+      "extended_weekend": 2,
+      "mistwalker": 2,
+      "wild_determination": 1,
+      "loot_wagon": 1,
+      "offbeat_roads": 1,
+      "travel_expenses": 1,
+      "pathfinder": 3,
+      "sabbatical": 1
+    }
   },
   {
     "id": 65,
     "typeId": "chummy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "mistwalker": 2,
+      "sturdy_shovel": 1,
+      "wild_determination": 2,
+      "travel_expenses": 1,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 66,
     "typeId": "courageous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 67,
     "typeId": "courageous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 1,
+      "fearless_hiker": 1,
+      "mountain_boots": 3,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "sturdy_shovel": 1,
+      "offbeat_roads": 2,
+      "loot_wagon": 2,
+      "wild_determination": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 68,
     "typeId": "courageous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 69,
     "typeId": "courageous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 3,
+      "lucky_detour": 2,
+      "extended_weekend": 3,
+      "offbeat_roads": 1,
+      "deforestation": 1,
+      "mistwalker": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 70,
     "typeId": "courageous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "mountain_boots": 3,
+      "pilgrimage": 1,
+      "lucky_detour": 2,
+      "extended_weekend": 1,
+      "deforestation": 1,
+      "loot_wagon": 1,
+      "mistwalker": 3,
+      "sturdy_shovel": 1,
+      "wild_determination": 1,
+      "pathfinder": 1,
+      "sabbatical": 1
+    }
   },
   {
     "id": 71,
     "typeId": "courageous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 72,
     "typeId": "courageous_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 2,
+      "lucky_detour": 2,
+      "extended_weekend": 1,
+      "wild_determination": 2
+    }
   },
   {
     "id": 73,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 74,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "lucky_detour": 2,
+      "pilgrimage": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "deforestation": 2,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 75,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 76,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "pilgrimage": 1,
+      "lucky_detour": 2,
+      "extended_weekend": 3,
+      "wild_determination": 1,
+      "deforestation": 2
+    }
   },
   {
     "id": 77,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 78,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 79,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 80,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 2,
+      "extended_weekend": 1,
+      "travel_expenses": 3,
+      "sturdy_shovel": 2,
+      "loot_wagon": 1,
+      "wild_determination": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 81,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "lucky_detour": 2,
+      "fearless_hiker": 2,
+      "mountain_boots": 2,
+      "extended_weekend": 1,
+      "deforestation": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 82,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "pilgrimage": 1,
+      "mountain_boots": 2,
+      "lucky_detour": 2,
+      "extended_weekend": 3,
+      "wild_determination": 1
+    }
   },
   {
     "id": 83,
     "typeId": "emphatic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 84,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 85,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 86,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 87,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 2,
+      "lucky_detour": 3,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "wild_determination": 2,
+      "sturdy_shovel": 1,
+      "mistwalker": 1,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 88,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "deforestation": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 89,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 90,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 1,
+      "deforestation": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 91,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 92,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 2,
+      "loot_wagon": 1,
+      "deforestation": 1,
+      "mistwalker": 1,
+      "offbeat_roads": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 93,
     "typeId": "experienced_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "mountain_boots": 3,
+      "lucky_detour": 1,
+      "extended_weekend": 2,
+      "wild_determination": 1
+    }
   },
   {
     "id": 94,
     "typeId": "explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "lucky_detour": 3,
+      "pilgrimage": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "offbeat_roads": 2,
+      "deforestation": 1
+    }
   },
   {
     "id": 95,
     "typeId": "explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "lucky_detour": 2,
+      "pilgrimage": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "sturdy_shovel": 3,
+      "mistwalker": 1,
+      "pathfinder": 1,
+      "sabbatical": 3
+    }
   },
   {
     "id": 96,
     "typeId": "explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 97,
     "typeId": "explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 98,
     "typeId": "explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 2
+    }
   },
   {
     "id": 99,
     "typeId": "explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 100,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 2,
+      "lucky_detour": 1,
+      "fearless_hiker": 2,
+      "extended_weekend": 2
+    }
   },
   {
     "id": 101,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "pilgrimage": 3,
+      "mountain_boots": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 102,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 1,
+      "loot_wagon": 2,
+      "travel_expenses": 2,
+      "wild_determination": 2,
+      "offbeat_roads": 1,
+      "deforestation": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 103,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 3,
+      "pilgrimage": 1,
+      "lucky_detour": 2,
+      "extended_weekend": 3,
+      "sturdy_shovel": 2,
+      "offbeat_roads": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 104,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 105,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "wild_determination": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 106,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "pilgrimage": 2,
+      "lucky_detour": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 1,
+      "offbeat_roads": 3,
+      "deforestation": 2,
+      "mistwalker": 2,
+      "pathfinder": 1
+    }
   },
   {
     "id": 107,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "pilgrimage": 3,
+      "mountain_boots": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "wild_determination": 2,
+      "travel_expenses": 1,
+      "offbeat_roads": 2,
+      "sturdy_shovel": 1,
+      "pathfinder": 1,
+      "sabbatical": 2
+    }
   },
   {
     "id": 108,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "pilgrimage": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "travel_expenses": 2,
+      "offbeat_roads": 1,
+      "loot_wagon": 1,
+      "mistwalker": 2,
+      "sturdy_shovel": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 109,
     "typeId": "fluffy_butte_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 110,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "extended_weekend": 2,
+      "wild_determination": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 111,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 112,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 113,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 1,
+      "mountain_boots": 1,
+      "pilgrimage": 1,
+      "fearless_hiker": 2,
+      "extended_weekend": 1
+    }
   },
   {
     "id": 114,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 115,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 116,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "mountain_boots": 2,
+      "lucky_detour": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "wild_determination": 1
+    }
   },
   {
     "id": 117,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "lucky_detour": 3,
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "extended_weekend": 2,
+      "deforestation": 1
+    }
   },
   {
     "id": 118,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 119,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 120,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "pilgrimage": 2,
+      "lucky_detour": 3,
+      "mountain_boots": 2,
+      "extended_weekend": 3,
+      "wild_determination": 1
+    }
   },
   {
     "id": 121,
     "typeId": "ghost_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "lucky_detour": 1,
+      "pilgrimage": 2,
+      "extended_weekend": 3,
+      "deforestation": 2,
+      "sturdy_shovel": 2,
+      "loot_wagon": 1,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 122,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 1,
+      "mountain_boots": 3,
+      "lucky_detour": 3,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "deforestation": 1
+    }
   },
   {
     "id": 123,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 3,
+      "lucky_detour": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "wild_determination": 1,
+      "deforestation": 2,
+      "loot_wagon": 1,
+      "sturdy_shovel": 2,
+      "pathfinder": 3,
+      "sabbatical": 2
+    }
   },
   {
     "id": 124,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "lucky_detour": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 2,
+      "extended_weekend": 2,
+      "deforestation": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 125,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "lucky_detour": 1,
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "loot_wagon": 1,
+      "offbeat_roads": 1,
+      "wild_determination": 3,
+      "sturdy_shovel": 1,
+      "travel_expenses": 1,
+      "pathfinder": 1,
+      "sabbatical": 2
+    }
   },
   {
     "id": 126,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "deforestation": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 127,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 2,
+      "mountain_boots": 1,
+      "pilgrimage": 1,
+      "extended_weekend": 3,
+      "offbeat_roads": 2,
+      "wild_determination": 1
+    }
   },
   {
     "id": 128,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 129,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "lucky_detour": 3,
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "loot_wagon": 1,
+      "deforestation": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 130,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 131,
     "typeId": "humble_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "lucky_detour": 1,
+      "fearless_hiker": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 1
+    }
   },
   {
     "id": 132,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "mountain_boots": 3,
+      "pilgrimage": 1,
+      "fearless_hiker": 2,
+      "extended_weekend": 1,
+      "loot_wagon": 1,
+      "wild_determination": 1,
+      "offbeat_roads": 1,
+      "sturdy_shovel": 1,
+      "mistwalker": 1,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 133,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 134,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "sturdy_shovel": 2,
+      "mistwalker": 1,
+      "offbeat_roads": 1,
+      "travel_expenses": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 135,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 136,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 137,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "pilgrimage": 3,
+      "lucky_detour": 2,
+      "fearless_hiker": 2,
+      "extended_weekend": 2,
+      "offbeat_roads": 3,
+      "loot_wagon": 1,
+      "pathfinder": 2,
+      "sabbatical": 2
+    }
   },
   {
     "id": 138,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 3,
+      "lucky_detour": 1,
+      "fearless_hiker": 2,
+      "extended_weekend": 2,
+      "offbeat_roads": 2,
+      "wild_determination": 1
+    }
   },
   {
     "id": 139,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "lucky_detour": 3,
+      "mountain_boots": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "mistwalker": 2,
+      "offbeat_roads": 1,
+      "wild_determination": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 140,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 141,
     "typeId": "intrepid_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "mistwalker": 1,
+      "deforestation": 1,
+      "loot_wagon": 3,
+      "offbeat_roads": 1,
+      "travel_expenses": 1,
+      "pathfinder": 3,
+      "sabbatical": 1
+    }
   },
   {
     "id": 142,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 143,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "pilgrimage": 3,
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "deforestation": 2,
+      "offbeat_roads": 1,
+      "mistwalker": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 144,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "pilgrimage": 3,
+      "mountain_boots": 2,
+      "extended_weekend": 2,
+      "wild_determination": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 145,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 146,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 3,
+      "lucky_detour": 1,
+      "pilgrimage": 2,
+      "extended_weekend": 1,
+      "travel_expenses": 1,
+      "mistwalker": 2,
+      "deforestation": 1,
+      "loot_wagon": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 147,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "pilgrimage": 1,
+      "extended_weekend": 3,
+      "mistwalker": 1,
+      "deforestation": 3,
+      "travel_expenses": 1,
+      "pathfinder": 1,
+      "sabbatical": 2
+    }
   },
   {
     "id": 148,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 149,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "lucky_detour": 3,
+      "fearless_hiker": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "offbeat_roads": 2
+    }
   },
   {
     "id": 150,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "lucky_detour": 3,
+      "mountain_boots": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "travel_expenses": 1,
+      "loot_wagon": 2,
+      "deforestation": 1,
+      "offbeat_roads": 1,
+      "pathfinder": 1,
+      "sabbatical": 2
+    }
   },
   {
     "id": 151,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "pilgrimage": 2,
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "wild_determination": 1,
+      "deforestation": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 152,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "pilgrimage": 3,
+      "mountain_boots": 1,
+      "extended_weekend": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 153,
     "typeId": "keener_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "deforestation": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 154,
     "typeId": "love_struck_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 155,
     "typeId": "love_struck_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 156,
     "typeId": "love_struck_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "pilgrimage": 1,
+      "fearless_hiker": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "wild_determination": 2
+    }
   },
   {
     "id": 157,
     "typeId": "love_struck_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "pilgrimage": 1,
+      "lucky_detour": 3,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "offbeat_roads": 2,
+      "mistwalker": 1,
+      "deforestation": 2,
+      "sturdy_shovel": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 158,
     "typeId": "love_struck_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 3,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "deforestation": 2,
+      "sturdy_shovel": 1,
+      "mistwalker": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 159,
     "typeId": "lovely_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 1,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "mistwalker": 1,
+      "wild_determination": 1,
+      "travel_expenses": 1,
+      "loot_wagon": 1,
+      "sturdy_shovel": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 160,
     "typeId": "lovely_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 161,
     "typeId": "lovely_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "mountain_boots": 2,
+      "lucky_detour": 2,
+      "pilgrimage": 1,
+      "extended_weekend": 3,
+      "deforestation": 1
+    }
   },
   {
     "id": 162,
     "typeId": "lovely_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "lucky_detour": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "offbeat_roads": 1,
+      "wild_determination": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 163,
     "typeId": "lovely_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 164,
     "typeId": "lovely_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 165,
     "typeId": "lovely_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 166,
     "typeId": "lovely_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "pilgrimage": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 2
+    }
   },
   {
     "id": 167,
     "typeId": "lovely_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 1,
+      "wild_determination": 2,
+      "deforestation": 1
+    }
   },
   {
     "id": 168,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "lucky_detour": 3,
+      "extended_weekend": 3,
+      "wild_determination": 1,
+      "sturdy_shovel": 1,
+      "travel_expenses": 1,
+      "mistwalker": 1,
+      "loot_wagon": 1,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 169,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 3,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "loot_wagon": 2,
+      "wild_determination": 1,
+      "sturdy_shovel": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 170,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "pilgrimage": 2,
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "mistwalker": 1,
+      "wild_determination": 1,
+      "offbeat_roads": 2,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 171,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 1,
+      "mistwalker": 1,
+      "deforestation": 2,
+      "wild_determination": 1,
+      "offbeat_roads": 1,
+      "travel_expenses": 1,
+      "sturdy_shovel": 2,
+      "pathfinder": 1,
+      "sabbatical": 1
+    }
   },
   {
     "id": 172,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 173,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 1,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 174,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 175,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "fearless_hiker": 3,
+      "mountain_boots": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 2,
+      "offbeat_roads": 1,
+      "loot_wagon": 2,
+      "mistwalker": 1,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 176,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "extended_weekend": 1,
+      "loot_wagon": 3,
+      "mistwalker": 1,
+      "offbeat_roads": 2,
+      "deforestation": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 177,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 1
+    }
   },
   {
     "id": 178,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 179,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 180,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 181,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 182,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "lucky_detour": 2,
+      "pilgrimage": 1,
+      "mountain_boots": 2,
+      "extended_weekend": 1,
+      "travel_expenses": 2,
+      "loot_wagon": 1,
+      "offbeat_roads": 1,
+      "wild_determination": 2,
+      "sturdy_shovel": 2,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 183,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 184,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "mountain_boots": 1,
+      "pilgrimage": 3,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "offbeat_roads": 1,
+      "wild_determination": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 185,
     "typeId": "lucky_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "extended_weekend": 2,
+      "deforestation": 2
+    }
   },
   {
     "id": 186,
     "typeId": "mercenary_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 187,
     "typeId": "mercenary_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "pilgrimage": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "offbeat_roads": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 188,
     "typeId": "mercenary_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 1,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 189,
     "typeId": "mercenary_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 190,
     "typeId": "mercenary_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 1
+    }
   },
   {
     "id": 191,
     "typeId": "mercenary_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "deforestation": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 192,
     "typeId": "mercenary_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 193,
     "typeId": "mercenary_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 2,
+      "lucky_detour": 2,
+      "pilgrimage": 2,
+      "extended_weekend": 2,
+      "deforestation": 2,
+      "wild_determination": 1
+    }
   },
   {
     "id": 194,
     "typeId": "motherly_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 195,
     "typeId": "motherly_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "pilgrimage": 2,
+      "fearless_hiker": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "offbeat_roads": 1,
+      "wild_determination": 2
+    }
   },
   {
     "id": 196,
     "typeId": "motherly_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 197,
     "typeId": "motherly_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 1,
+      "mountain_boots": 2,
+      "lucky_detour": 1,
+      "fearless_hiker": 3,
+      "extended_weekend": 2,
+      "deforestation": 2,
+      "loot_wagon": 1,
+      "mistwalker": 1,
+      "travel_expenses": 1,
+      "sturdy_shovel": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 198,
     "typeId": "motherly_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "pilgrimage": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 1
+    }
   },
   {
     "id": 199,
     "typeId": "motherly_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 200,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 2,
+      "lucky_detour": 3,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "deforestation": 1,
+      "mistwalker": 1,
+      "offbeat_roads": 1,
+      "sturdy_shovel": 1,
+      "loot_wagon": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 201,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "pilgrimage": 3,
+      "lucky_detour": 2,
+      "extended_weekend": 2,
+      "deforestation": 2
+    }
   },
   {
     "id": 202,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "pilgrimage": 2,
+      "fearless_hiker": 2,
+      "extended_weekend": 1,
+      "loot_wagon": 1,
+      "sturdy_shovel": 2,
+      "offbeat_roads": 1,
+      "travel_expenses": 1,
+      "mistwalker": 1,
+      "deforestation": 1,
+      "wild_determination": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 203,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 204,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 2,
+      "fearless_hiker": 2,
+      "pilgrimage": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "loot_wagon": 3,
+      "sturdy_shovel": 1,
+      "mistwalker": 1,
+      "pathfinder": 1,
+      "sabbatical": 1
+    }
   },
   {
     "id": 205,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 206,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 1,
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 2,
+      "loot_wagon": 1,
+      "deforestation": 2,
+      "travel_expenses": 2,
+      "wild_determination": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 207,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "pilgrimage": 2,
+      "mountain_boots": 3,
+      "extended_weekend": 2,
+      "travel_expenses": 2,
+      "loot_wagon": 1,
+      "wild_determination": 1,
+      "offbeat_roads": 1,
+      "mistwalker": 1,
+      "deforestation": 1,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 208,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "pilgrimage": 2,
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "extended_weekend": 2,
+      "wild_determination": 1,
+      "travel_expenses": 3,
+      "sturdy_shovel": 1,
+      "loot_wagon": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 209,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 210,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 211,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "fearless_hiker": 3,
+      "mountain_boots": 1,
+      "lucky_detour": 2,
+      "extended_weekend": 1,
+      "travel_expenses": 1,
+      "mistwalker": 1,
+      "loot_wagon": 2,
+      "sturdy_shovel": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 212,
     "typeId": "nora_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 213,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "fearless_hiker": 2,
+      "lucky_detour": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "mistwalker": 1,
+      "loot_wagon": 1,
+      "deforestation": 1,
+      "travel_expenses": 1,
+      "sturdy_shovel": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 214,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "lucky_detour": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "wild_determination": 1,
+      "offbeat_roads": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 215,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "lucky_detour": 3,
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "deforestation": 1,
+      "mistwalker": 1,
+      "loot_wagon": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 216,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 217,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "pilgrimage": 3,
+      "lucky_detour": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "offbeat_roads": 1,
+      "deforestation": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 218,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 219,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 220,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "fearless_hiker": 3,
+      "lucky_detour": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "deforestation": 1
+    }
   },
   {
     "id": 221,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "deforestation": 2,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 222,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 3,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 223,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 224,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "lucky_detour": 1,
+      "fearless_hiker": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 3
+    }
   },
   {
     "id": 225,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 2,
+      "lucky_detour": 3,
+      "pilgrimage": 1,
+      "extended_weekend": 1,
+      "deforestation": 1,
+      "wild_determination": 2
+    }
   },
   {
     "id": 226,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 3,
+      "lucky_detour": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 1
+    }
   },
   {
     "id": 227,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 3,
+      "extended_weekend": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 228,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "fearless_hiker": 1,
+      "mountain_boots": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "deforestation": 1,
+      "offbeat_roads": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 229,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "fearless_hiker": 2,
+      "extended_weekend": 3,
+      "deforestation": 2,
+      "offbeat_roads": 1,
+      "mistwalker": 1,
+      "sturdy_shovel": 1,
+      "pathfinder": 3,
+      "sabbatical": 2
+    }
   },
   {
     "id": 230,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "pilgrimage": 3,
+      "mountain_boots": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "travel_expenses": 3,
+      "mistwalker": 1,
+      "sturdy_shovel": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 231,
     "typeId": "pirate_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 232,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 3,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "sturdy_shovel": 1,
+      "wild_determination": 1,
+      "travel_expenses": 1,
+      "pathfinder": 1,
+      "sabbatical": 3
+    }
   },
   {
     "id": 233,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 234,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 235,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 236,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 237,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 1,
+      "pilgrimage": 3,
+      "fearless_hiker": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "wild_determination": 1,
+      "offbeat_roads": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 238,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 239,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 1,
+      "fearless_hiker": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "mistwalker": 2,
+      "offbeat_roads": 1,
+      "travel_expenses": 1,
+      "loot_wagon": 1,
+      "deforestation": 1,
+      "pathfinder": 3
+    }
   },
   {
     "id": 240,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "lucky_detour": 3,
+      "pilgrimage": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "offbeat_roads": 1,
+      "sturdy_shovel": 1,
+      "deforestation": 2,
+      "pathfinder": 2,
+      "sabbatical": 2
+    }
   },
   {
     "id": 241,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 242,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "pilgrimage": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 2,
+      "wild_determination": 3
+    }
   },
   {
     "id": 243,
     "typeId": "princess_zoe",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "lucky_detour": 3,
+      "pilgrimage": 3,
+      "fearless_hiker": 1,
+      "extended_weekend": 2,
+      "deforestation": 1,
+      "offbeat_roads": 1,
+      "mistwalker": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 244,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "pilgrimage": 2,
+      "mountain_boots": 1,
+      "lucky_detour": 2,
+      "extended_weekend": 2,
+      "deforestation": 1,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 245,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 246,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "fearless_hiker": 3,
+      "extended_weekend": 3,
+      "offbeat_roads": 2,
+      "deforestation": 1
+    }
   },
   {
     "id": 247,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 2
+    }
   },
   {
     "id": 248,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 3,
+      "offbeat_roads": 1,
+      "mistwalker": 1,
+      "travel_expenses": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 249,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 1,
+      "pilgrimage": 1,
+      "fearless_hiker": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 2
+    }
   },
   {
     "id": 250,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 2,
+      "lucky_detour": 1,
+      "fearless_hiker": 2,
+      "extended_weekend": 3,
+      "loot_wagon": 2,
+      "deforestation": 1,
+      "offbeat_roads": 1,
+      "pathfinder": 2,
+      "sabbatical": 2
+    }
   },
   {
     "id": 251,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "fearless_hiker": 3,
+      "mountain_boots": 3,
+      "extended_weekend": 3,
+      "deforestation": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 252,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "lucky_detour": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 1,
+      "extended_weekend": 2,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 253,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 254,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 255,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 256,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "extended_weekend": 1,
+      "loot_wagon": 3,
+      "offbeat_roads": 1,
+      "deforestation": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 257,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 258,
     "typeId": "rina_the_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "fearless_hiker": 2,
+      "mountain_boots": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 1,
+      "sturdy_shovel": 1,
+      "offbeat_roads": 2,
+      "loot_wagon": 2,
+      "mistwalker": 1,
+      "deforestation": 1,
+      "pathfinder": 1,
+      "sabbatical": 3
+    }
   },
   {
     "id": 259,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 1,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 260,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "lucky_detour": 3,
+      "pilgrimage": 3,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "loot_wagon": 1,
+      "mistwalker": 1,
+      "travel_expenses": 1,
+      "sturdy_shovel": 1,
+      "pathfinder": 1,
+      "sabbatical": 1
+    }
   },
   {
     "id": 261,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "extended_weekend": 2,
+      "deforestation": 2,
+      "loot_wagon": 1,
+      "sturdy_shovel": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 262,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 2,
+      "travel_expenses": 1,
+      "sturdy_shovel": 3,
+      "pathfinder": 1,
+      "sabbatical": 1
+    }
   },
   {
     "id": 263,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 264,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "lucky_detour": 3,
+      "fearless_hiker": 1,
+      "mountain_boots": 2,
+      "extended_weekend": 3,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 265,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 1,
+      "fearless_hiker": 2,
+      "extended_weekend": 1,
+      "mistwalker": 3,
+      "deforestation": 2,
+      "wild_determination": 1,
+      "offbeat_roads": 2,
+      "pathfinder": 2
+    }
   },
   {
     "id": 266,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 267,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "lucky_detour": 3,
+      "pilgrimage": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 2
+    }
   },
   {
     "id": 268,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "lucky_detour": 2,
+      "mountain_boots": 3,
+      "pilgrimage": 1,
+      "extended_weekend": 2,
+      "offbeat_roads": 1,
+      "wild_determination": 1,
+      "deforestation": 1
+    }
   },
   {
     "id": 269,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "lucky_detour": 1,
+      "pilgrimage": 1,
+      "mountain_boots": 3,
+      "extended_weekend": 3,
+      "deforestation": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 270,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "pilgrimage": 1,
+      "fearless_hiker": 1,
+      "mountain_boots": 1,
+      "extended_weekend": 1,
+      "loot_wagon": 2,
+      "offbeat_roads": 2,
+      "sturdy_shovel": 1,
+      "mistwalker": 1,
+      "deforestation": 2,
+      "pathfinder": 3,
+      "sabbatical": 1
+    }
   },
   {
     "id": 271,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "lucky_detour": 3,
+      "pilgrimage": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "deforestation": 1,
+      "offbeat_roads": 1,
+      "wild_determination": 2,
+      "sturdy_shovel": 1,
+      "pathfinder": 3,
+      "sabbatical": 2
+    }
   },
   {
     "id": 272,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 3,
+      "extended_weekend": 3,
+      "offbeat_roads": 2
+    }
   },
   {
     "id": 273,
     "typeId": "romantic_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 2,
+      "lucky_detour": 2,
+      "pilgrimage": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 1,
+      "travel_expenses": 2,
+      "sturdy_shovel": 3,
+      "mistwalker": 2,
+      "pathfinder": 1
+    }
   },
   {
     "id": 274,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "lucky_detour": 3,
+      "mountain_boots": 2,
+      "pilgrimage": 1,
+      "extended_weekend": 1,
+      "offbeat_roads": 2
+    }
   },
   {
     "id": 275,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1
+    }
   },
   {
     "id": 276,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 277,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "lucky_detour": 2,
+      "mountain_boots": 1,
+      "pilgrimage": 1,
+      "extended_weekend": 2,
+      "travel_expenses": 1,
+      "loot_wagon": 1,
+      "deforestation": 3,
+      "sturdy_shovel": 1,
+      "pathfinder": 2,
+      "sabbatical": 3
+    }
   },
   {
     "id": 278,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "mountain_boots": 2,
+      "pilgrimage": 1,
+      "extended_weekend": 1,
+      "deforestation": 2,
+      "sturdy_shovel": 2,
+      "offbeat_roads": 1,
+      "mistwalker": 2,
+      "travel_expenses": 1,
+      "pathfinder": 2
+    }
   },
   {
     "id": 279,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 280,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 1,
+      "extended_weekend": 1,
+      "loot_wagon": 1,
+      "deforestation": 1,
+      "offbeat_roads": 1,
+      "mistwalker": 1,
+      "travel_expenses": 1,
+      "pathfinder": 2,
+      "sabbatical": 2
+    }
   },
   {
     "id": 281,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 282,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 1,
+      "mountain_boots": 2,
+      "fearless_hiker": 2,
+      "lucky_detour": 1,
+      "extended_weekend": 1,
+      "wild_determination": 1
+    }
   },
   {
     "id": 283,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "fearless_hiker": 1,
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "extended_weekend": 3,
+      "loot_wagon": 2,
+      "sturdy_shovel": 1,
+      "pathfinder": 1,
+      "sabbatical": 2
+    }
   },
   {
     "id": 284,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 2,
+      "fearless_hiker": 2
+    }
   },
   {
     "id": 285,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "lucky_detour": 2,
+      "extended_weekend": 3,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 286,
     "typeId": "royal_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "pilgrimage": 3,
+      "lucky_detour": 1,
+      "fearless_hiker": 1,
+      "extended_weekend": 1,
+      "offbeat_roads": 1,
+      "deforestation": 1,
+      "sturdy_shovel": 2,
+      "wild_determination": 1,
+      "travel_expenses": 1,
+      "mistwalker": 1,
+      "loot_wagon": 1,
+      "pathfinder": 1
+    }
   },
   {
     "id": 287,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "mountain_boots": 2,
+      "fearless_hiker": 1,
+      "pilgrimage": 1,
+      "extended_weekend": 2,
+      "wild_determination": 1,
+      "mistwalker": 2,
+      "loot_wagon": 1,
+      "offbeat_roads": 1,
+      "sturdy_shovel": 1,
+      "pathfinder": 3,
+      "sabbatical": 1
+    }
   },
   {
     "id": 288,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "fearless_hiker": 2,
+      "mountain_boots": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 1,
+      "offbeat_roads": 2,
+      "wild_determination": 2,
+      "loot_wagon": 1,
+      "mistwalker": 2,
+      "pathfinder": 3,
+      "sabbatical": 1
+    }
   },
   {
     "id": 289,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "lucky_detour": 2,
+      "extended_weekend": 3
+    }
   },
   {
     "id": 290,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 291,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "lucky_detour": 3,
+      "mountain_boots": 1,
+      "pilgrimage": 3,
+      "extended_weekend": 3,
+      "wild_determination": 3
+    }
   },
   {
     "id": 292,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "lucky_detour": 1,
+      "pilgrimage": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 1
+    }
   },
   {
     "id": 293,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 294,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 2,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "mountain_boots": 2,
+      "extended_weekend": 2,
+      "deforestation": 2,
+      "offbeat_roads": 1
+    }
   },
   {
     "id": 295,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 296,
     "typeId": "savage_scout",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 297,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 3,
+      "lucky_detour": 2,
+      "fearless_hiker": 1,
+      "extended_weekend": 3,
+      "wild_determination": 1
+    }
   },
   {
     "id": 298,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 1
+    }
   },
   {
     "id": 299,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 1,
+      "pilgrimage": 2,
+      "mountain_boots": 3,
+      "lucky_detour": 2,
+      "extended_weekend": 2,
+      "deforestation": 3
+    }
   },
   {
     "id": 300,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 301,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "lucky_detour": 3,
+      "mountain_boots": 2,
+      "fearless_hiker": 3,
+      "extended_weekend": 1,
+      "deforestation": 1,
+      "offbeat_roads": 2
+    }
   },
   {
     "id": 302,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 2,
+      "pilgrimage": 3
+    }
   },
   {
     "id": 303,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "fearless_hiker": 1,
+      "lucky_detour": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "offbeat_roads": 2,
+      "travel_expenses": 1,
+      "wild_determination": 1,
+      "deforestation": 1,
+      "pathfinder": 1,
+      "sabbatical": 3
+    }
   },
   {
     "id": 304,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 3
+    }
   },
   {
     "id": 305,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 1,
+      "fearless_hiker": 3,
+      "lucky_detour": 2,
+      "mountain_boots": 2,
+      "extended_weekend": 3
+    }
   },
   {
     "id": 306,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "fearless_hiker": 3,
+      "lucky_detour": 2,
+      "pilgrimage": 2,
+      "mountain_boots": 1,
+      "extended_weekend": 3,
+      "wild_determination": 1,
+      "deforestation": 1,
+      "sturdy_shovel": 2,
+      "pathfinder": 1,
+      "sabbatical": 1
+    }
   },
   {
     "id": 307,
     "typeId": "scared_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "pilgrimage": 3,
+      "mountain_boots": 1,
+      "fearless_hiker": 2,
+      "lucky_detour": 3,
+      "extended_weekend": 3,
+      "travel_expenses": 1,
+      "loot_wagon": 1,
+      "wild_determination": 1,
+      "pathfinder": 2,
+      "sabbatical": 2
+    }
   },
   {
     "id": 308,
     "typeId": "snowy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "fearless_hiker": 1,
+      "pilgrimage": 2
+    }
   },
   {
     "id": 309,
     "typeId": "snowy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 3,
+      "pilgrimage": 2,
+      "fearless_hiker": 1,
+      "lucky_detour": 1,
+      "extended_weekend": 2,
+      "travel_expenses": 1,
+      "deforestation": 3,
+      "loot_wagon": 1,
+      "offbeat_roads": 1,
+      "pathfinder": 3,
+      "sabbatical": 3
+    }
   },
   {
     "id": 310,
     "typeId": "snowy_explorer",
     "currentTask": null,
-    "startedAt": null
+    "startedAt": null,
+    "skills": {
+      "mountain_boots": 1,
+      "fearless_hiker": 3,
+      "pilgrimage": 1
+    }
   }
 ];

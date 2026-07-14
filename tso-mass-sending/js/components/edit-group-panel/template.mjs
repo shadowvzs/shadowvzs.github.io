@@ -71,7 +71,7 @@ export const listItemTemplate = (info) => {
     const htmlId = `item-${id}`;
     const leftIconStr = leftIcon ? `<img src=${leftIcon} class="left-icon" title="${leftIconTitle}" class="${disabled ? 'grayscale-100' : ''}" />` : '';
     const rightIconStr = rightIcon ? `<img src=${rightIcon} class="right-icon" title="${rightIconTitle}" class="${disabled ? 'grayscale-100' : ''}" />` : '';
-    const imageTitle = disabled ? "Busy" : `${name}: skills should be listed here`;
+    const imageTitle = disabled ? "Busy" : title;
 
     return `
        <div class="relative group-list-item ${selected ? 'selected' : ''}" title="${title}">

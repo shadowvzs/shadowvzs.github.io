@@ -3,11 +3,13 @@ import { editGroupPanelTemplate, listItemTemplate } from './template.mjs';
 import { EVENTS, STORAGE_KEY, FRIEND_BUFF_MULTIPLIER } from "../../constants/index.mjs";
 
 import { loadGroupData, updateGroupTasks } from "../../api/index.mjs";
+import { explorerSearchTimeCalculator } from './Calculator.mjs';
 
 import { queryElement, queryElements } from "../../utils/dom.mjs";
 import JsonStorage from "../../utils/storage.mjs";
 import { escapeAttribute } from "../../utils/html.mjs";
 import { normalizeId } from "../../utils/normalize.mjs";
+import { formatDate, formatTime } from "../../utils/date.mjs";
 
 export class EditGroupPanelComponent extends PanelComponent {
   constructor(messagingService, root) {
@@ -15,6 +17,7 @@ export class EditGroupPanelComponent extends PanelComponent {
     this.render = this.render.bind(this);
     this.openGroup = this.openGroup.bind(this);
     this.selectedSepcialistId = null;
+    this.explorerSearchTimeCalculator = explorerSearchTimeCalculator;
     this.filterText = '';
   }
 
@@ -48,6 +51,8 @@ export class EditGroupPanelComponent extends PanelComponent {
     const { group, explorers, explorerSearchInfoIdMap } = loadGroupData(this.groupId);
     const filterFn = exp => exp.type.name.toLowerCase().startsWith(this.filterText);
     this.filteredExplorers = this.filterText ? explorers.filter(filterFn) : explorers;
+
+
     const items = this.filteredExplorers.map(explorer => {
       const assignedTaskId = group.members[explorer.id];
 
@@ -63,7 +68,26 @@ export class EditGroupPanelComponent extends PanelComponent {
         leftIconTitle: '',
         rightIconTitle: '',
       };
+
       if (assignedTaskId) {
+        const searchTime = this.explorerSearchTimeCalculator.calculate(
+          explorer.typeId,
+          explorer.skills,
+          assignedTaskId
+        );
+
+        const now = new Date();
+        const arriveDateTime = new Date(now.getTime() + searchTime.durationMilliseconds);
+        const arriveToday = arriveDateTime.getDate() === now.getDate();
+        const formattedArriveTime = arriveToday ? formatTime(arriveDateTime) : formatDate(arriveDateTime);
+        const formattedSkills = searchTime.appliedSkills.map((skill) => `${skill.name}: ${skill.level}`).join(', ');
+
+        data.title = `
+          Duration: ${searchTime.formattedDuration}
+          Estimated arrive: ${formattedArriveTime}
+          Skills: ${formattedSkills}
+        `;
+
         const assignedTask = explorerSearchInfoIdMap[assignedTaskId];
         data.leftIcon = assignedTask.iconButtonUrl;
         data.rightIcon = assignedTask.iconUrl;
