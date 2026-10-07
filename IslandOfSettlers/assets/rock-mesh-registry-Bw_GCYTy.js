@@ -1,0 +1,1 @@
+var e=e=>{let t=[];return{add:(e,n,r)=>{t.push({chunk:e,group:n,item:r})},remove:(n,r)=>{let i=new Set(n),a=e=>i.has(e.chunk)&&(r===void 0||e.group===r);for(let n of t)a(n)&&e(n.item);t=t.filter(e=>!a(e))}}};export{e as t};
